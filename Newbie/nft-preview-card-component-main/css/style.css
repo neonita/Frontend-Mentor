@@ -3,3 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --main-font: "Outfit", sans-serif;
+  --text-para: 1.125rem;
+
+  --primary-soft-blue: hsl(215, 51%, 70%);
+  --primary-cyan: hsl(178, 100%, 50%);
+
+  --neutral-main-bg: hsl(217, 54%, 11%);
+  --neutral-card-bg: hsl(216, 50%, 16%);
+  --neutral-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* 
+    Mobile - 375px
+    Desktop - 1440px
+*/
