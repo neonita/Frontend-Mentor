@@ -19,6 +19,17 @@
   --border-radius: 8px;
 }
 
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.15s ease-in-out;
+}
+
+a:hover {
+  color: var(--primary-cyan);
+}
+
 hr {
   height: 0.5px;
   background-color: var(--neutral-line);
@@ -37,27 +48,62 @@ hr {
   background-color: var(--neutral-card-bg);
   border-radius: var(--border-radius);
   padding: 1.2em;
-  max-width: 20em;
+  max-width: 21em;
   max-height: 40em;
   font-family: var(--main-font);
-
   /* h-offset v-offset blur spread color */
   box-shadow: 0em 0.9em 0.7em 0.7em rgba(15, 11, 41, 0.308);
 }
 
 .img-container {
   margin: 0 auto;
+  border-radius: var(--border-radius);
+
+  position: relative;
+  width: 100%;
 }
 
 .img-container img {
+  display: block;
   width: 100%;
   height: auto;
   border-radius: var(--border-radius);
 }
 
+.img-container .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+
+  transition: 0.15s ease-in-out;
+  background-color: var(--primary-cyan);
+  border-radius: var(--border-radius);
+}
+
+.img-container:hover .overlay {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+img.icon-view {
+  width: 20%;
+  height: auto;
+  color: white;
+  position: absolute;
+}
+
 .nft-description {
   margin: 1.5em auto;
-  /* border: 1px dashed red; */
 }
 
 .nft-description h3 {
@@ -116,14 +162,3 @@ hr {
   padding-left: 0.8em;
   font-weight: 300;
 }
-
-.author-container a:link,
-.author-container a:visited {
-  text-decoration: none;
-  color: #fff;
-}
-
-/* 
-    Mobile - 375px
-    Desktop - 1440px
-*/
