@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](/Screen Shot 2022-02-15 at 9.28.57 PM.png)
-![](Screen Shot 2022-02-15 at 9.29.38 PM.png)
+![](screenshot-desktop.png);
+![](screenshot-mobile.png)
 
 ### Links
 
