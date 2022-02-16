@@ -22,7 +22,7 @@
 a:link,
 a:visited {
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
   transition: color 0.15s ease-in-out;
 }
 
@@ -38,7 +38,9 @@ hr {
 
 .main-container {
   background-color: var(--neutral-main-bg);
+  font-family: var(--main-font);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -50,15 +52,12 @@ hr {
   padding: 1.2em;
   max-width: 21em;
   max-height: 40em;
-  font-family: var(--main-font);
-  /* h-offset v-offset blur spread color */
-  box-shadow: 0em 0.9em 0.7em 0.7em rgba(15, 11, 41, 0.308);
+  box-shadow: 0em 0.9em 0.7em 0.7em rgba(15, 11, 41, 0.308); /* h-offset v-offset blur spread color */
 }
 
 .img-container {
   margin: 0 auto;
   border-radius: var(--border-radius);
-
   position: relative;
   width: 100%;
 }
@@ -161,4 +160,17 @@ img.icon-view {
   color: var(--primary-soft-blue);
   padding-left: 0.8em;
   font-weight: 300;
+}
+
+footer {
+  justify-self: flex-end;
+  font-size: 0.72rem;
+  color: var(--neutral-line);
+  margin-top: 2em;
+}
+
+footer a:link,
+footer a:visited {
+  color: var(--neutral-line);
+  font-weight: 600;
 }
