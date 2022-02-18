@@ -21,6 +21,7 @@
   --bg-repeat: no-repeat;
   --bg-size: contain;
   --border-radius: 15px;
+  --shadow-box: 0 5px 60px 0.5px rgba(0, 0, 0, 0.144); /*h-offset v-offset blur spread color */
 }
 
 body {
@@ -50,10 +51,11 @@ body {
 
   background-color: var(--neutral-very-pale-blue);
   border-radius: var(--border-radius);
+  box-shadow: var(--shadow-box);
 }
 
 header {
-  width: inherit;
+  width: 454.05px;
   border-radius: var(--border-radius);
 }
 
