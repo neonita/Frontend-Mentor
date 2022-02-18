@@ -19,7 +19,7 @@
   --bg-img-desktop: url("/images/pattern-background-desktop.svg");
   --bg-img-mobile: url("/images/pattern-background-mobile.svg");
   --bg-repeat: no-repeat;
-  --bg-size: cover;
+  --bg-size: contain;
   --border-radius: 15px;
 }
 
