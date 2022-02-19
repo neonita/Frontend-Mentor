@@ -244,4 +244,8 @@ footer a:hover {
   .cancel-link:link {
     margin: 1.5em auto 2.2em auto;
   }
+
+  footer {
+    font-size: 0.6rem;
+  }
 }
