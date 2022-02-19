@@ -66,6 +66,48 @@ header img {
   border-top-right-radius: var(--border-radius);
 }
 
+summary {
+  border: 1px solid pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* height: 460px; */
+}
+
+summary h1,
+.order-card-summary-annual-plan span h4 {
+  color: var(--neutral-dark-blue);
+  font-weight: 900;
+}
+
+summary p,
+.order-card-summary-annual-plan span p {
+  color: var(--neutral-desaturate-blue);
+  text-align: center;
+}
+
+.order-card-summary-annual-plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3em;
+  border: 1px solid orange;
+}
+
+/* .order-card-summary-annual-plan span h4 {} */
+
+/* .order-card-summary-annual-plan span p {} */
+
+/* .order-card-summary-annual-plan a:link, .order-card-summary-annual-plan a:visited, {} */
+/* .order-card-summary-annual-plan a:hover {} */
+
+/* button {} */
+/* button:hover {} */
+
+/* .cancel-link:link, .cancel-link:visited {} */
+/* .cancel-link:hover */
+
 /* 
     Mobile: 375px
 */
