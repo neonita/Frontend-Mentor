@@ -17,10 +17,9 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 ### Screenshot
 
 ![](images/screenshot-desktop.png)
-Desktop
 
-![](images/screenshot-mobile.png)
-Mobile
+![](images/preview.gif)
+Desktop to mobile preview 🦭
 
 ### The challenge
 
