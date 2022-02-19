@@ -41,10 +41,10 @@ body {
 }
 
 .order-card-container {
-  max-width: 454px;
-  max-height: 698px;
-  min-width: 454px;
-  min-height: 698px;
+  max-width: 28em;
+  max-height: 44em;
+  /* min-width: 28.375em; */
+  /* min-height: 43.625em; */
 
   display: flex;
   flex-direction: column;
@@ -56,7 +56,7 @@ body {
 }
 
 header {
-  width: 454.05px;
+  width: 28em;
   border-radius: var(--border-radius);
 }
 
@@ -68,12 +68,9 @@ header img {
 }
 
 summary {
-  /* border: 1px solid pink; */
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  /* justify-content: space-between; */
-  /* height: 460px; */
   margin: 0 3em;
   text-align: center;
 }
@@ -84,7 +81,7 @@ summary h1 {
 
 summary .description {
   margin-top: 0.7em;
-  padding: 0 2em;
+  padding: 0 1.8em;
   line-height: 1.7rem;
 }
 
