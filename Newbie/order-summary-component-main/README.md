@@ -10,7 +10,6 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
@@ -19,6 +18,9 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ![](images/screenshot-desktop.png)
 Desktop
+
+![](images/screenshot-mobile.png)
+Mobile
 
 ### The challenge
 
@@ -39,8 +41,6 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-
-### What I learned
 
 ## Author
 
