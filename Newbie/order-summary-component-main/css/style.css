@@ -101,22 +101,32 @@ summary p,
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 3em;
 
   background-color: var(--neutral-very-pale-blue);
   border-radius: var(--border-radius);
 
   margin-top: 1em;
-  padding: 0 2em;
+  padding: 1.5em;
 }
 
-/* .order-card-summary-annual-plan span h4 {} */
-/* .order-card-summary-annual-plan span p {} */
+.right {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+}
+
+.order-card-summary-annual-plan span {
+  text-align: start;
+}
+
+.order-card-summary-annual-plan span h4 {
+  margin-bottom: 0.3em;
+}
 
 .order-card-summary-annual-plan a:link,
 .order-card-summary-annual-plan a:visited {
   text-decoration: underline;
   font-weight: 700;
+  font-size: 0.9rem;
   color: var(--primary-bright-blue);
   transition: all 0.15s ease-in-out;
 }
@@ -139,7 +149,6 @@ button {
 
   padding: 1.1em;
   margin-top: 2.3em;
-  /* margin-bottom: 2em; */
   transition: all 0.15s ease-in-out;
 }
 button:hover {
