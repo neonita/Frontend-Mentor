@@ -43,8 +43,6 @@ body {
 .order-card-container {
   max-width: 28em;
   max-height: 44em;
-  /* min-width: 28.375em; */
-  /* min-height: 43.625em; */
 
   display: flex;
   flex-direction: column;
@@ -178,5 +176,53 @@ button:hover {
 @media screen and (max-width: 375px) {
   body {
     background-image: var(--bg-img-mobile);
+  }
+
+  .order-card-container {
+    max-width: 20em;
+    max-height: 38em;
+  }
+
+  header {
+    width: 20em;
+  }
+
+  summary {
+    margin: 0 1.2em;
+  }
+
+  summary h1 {
+    font-size: 1.4em;
+    margin-top: 1.2em;
+  }
+
+  summary .description {
+    font-size: 0.9rem;
+    padding: 0 1.2em;
+  }
+
+  .order-card-summary-annual-plan {
+    padding: 0.8em 1.2em;
+  }
+
+  .right span h4 {
+    /* align-content: center; */
+    margin-top: 0.3em;
+    margin-left: 0.4em;
+  }
+
+  .order-card-summary-annual-plan h4,
+  .order-card-summary-annual-plan p,
+  .order-card-summary-annual-plan a:link {
+    font-size: 0.85rem;
+  }
+
+  button {
+    margin-top: 1.3em;
+    padding: 1em;
+  }
+
+  .cancel-link:link {
+    margin: 1.5em auto 2.2em auto;
   }
 }
