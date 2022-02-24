@@ -10,6 +10,8 @@
   --main-heading: hsl(0, 0%, 100%);
   --main-para: hsla(0, 0%, 100%, 0.75);
   --stat-headings: hsla(0, 0%, 100%, 0.6);
+
+  --radius: 8px;
 }
 
 *,
@@ -31,14 +33,16 @@ body {
 
 .card {
   background-color: var(--card-bg);
-  border-radius: 10px;
+  border-radius: var(--radius);
   color: white;
 
-  width: 70vw;
-  height: 40vh;
+  /* width: 70vw;
+  height: 40vh; */
+  width: 1000px;
+  height: 400px;
 
-  display: flex;
-  grid-template-columns: 55% 45%;
+  display: grid;
+  grid-template-columns: 51% 49%;
   grid-template-rows: 1fr;
 }
 
@@ -46,7 +50,7 @@ body {
 } */
 
 .card__cell-left {
-  padding: 1.5em;
+  padding: 3.5em;
   text-align: start;
 }
 
@@ -54,10 +58,13 @@ body {
   color: var(--main-heading);
   font-family: var(--font-main);
   font-weight: 700;
+  font-size: 1.3em;
+  margin-bottom: 1em;
 }
 
 .cell-left__header--highlight {
   color: var(--accent-violet);
+  margin-bottom: 1em;
 }
 
 .cell-left__text {
@@ -65,11 +72,12 @@ body {
   font-family: var(--font-secondary);
   font-size: var(--text-body);
   font-weight: 400;
-  line-height: 22px;
+  line-height: calc(var(--text-body) + 12px);
+  margin-bottom: 4.8em;
 }
 
 .cell-left__stats {
-  border: 1px solid white;
+  width: 80%;
 }
 
 .cell-left__stats ul {
@@ -82,7 +90,9 @@ body {
 
 .stats__headings {
   color: var(--main-heading);
-  font-family: var(--font-secondary);
+  font-family: var(--font-main);
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 .stats__stat {
@@ -90,4 +100,25 @@ body {
   font-family: var(--font-secondary);
   text-transform: uppercase;
   font-size: 0.8rem;
+}
+
+/* .card__cell-right::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-violet);
+  opacity: 0.7;
+} */
+
+.cell-right__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
 }
