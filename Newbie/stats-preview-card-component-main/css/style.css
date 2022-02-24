@@ -122,3 +122,12 @@ body {
   border-top-right-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
 }
+
+.footer,
+.footer__link {
+  font-family: var(--font-main);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: hsl(233, 14%, 24%);
+  margin-top: 1.5em;
+}
