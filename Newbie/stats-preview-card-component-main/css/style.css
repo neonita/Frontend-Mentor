@@ -37,8 +37,8 @@ body {
   border-radius: var(--radius);
   color: white;
 
-  width: 1000px;
-  height: 400px;
+  width: 1110px;
+  height: 520px;
 
   display: grid;
   grid-template-columns: 51% 49%;
