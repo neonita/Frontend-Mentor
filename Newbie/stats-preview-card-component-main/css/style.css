@@ -107,7 +107,7 @@ body {
       var(--img-color-tint),
       var(--img-color-tint)
     ),
-    url("images/image-header-desktop.jpg");
+    url(../images/image-header-desktop.jpg);
   background-size: 100% 400px;
   border-top-right-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
