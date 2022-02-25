@@ -50,7 +50,7 @@ Users should be able to:
 
 ### What I learned
 
-In this challenge, I spent the most time figuring out how to apply a color overlay above an image. I saw there were many methods but I prefered adding the image and tint in CSS.
+In this challenge, I spent the most time figuring out how to apply a color overlay above an image. I saw there were many methods but I preferred adding the image and tint in CSS.
 
 To see how you can add code snippets, see below:
 
