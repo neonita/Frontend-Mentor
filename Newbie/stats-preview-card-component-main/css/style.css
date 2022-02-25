@@ -13,6 +13,7 @@
 
   --radius: 8px;
   --img-color-tint: hsla(283, 62%, 46%, 0.596);
+  --test-border: 1px solid red;
 }
 
 *,
@@ -33,47 +34,48 @@ body {
 }
 
 .card {
-  background-color: var(--card-bg);
-  border-radius: var(--radius);
-  color: white;
-
   width: 1320px;
   height: 520px;
 
   display: grid;
   grid-template-columns: 51% 49%;
   grid-template-rows: 1fr;
+
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+  color: white;
 }
 
 .card__cell-left {
-  padding: 3.5em;
+  margin: 5em 9em 5em 5em;
   text-align: start;
 }
 
 .cell-left__header {
+  margin-bottom: 1.2em;
   color: var(--main-heading);
   font-family: var(--font-main);
+  font-size: 1.65em;
   font-weight: 700;
-  font-size: 1.3em;
-  margin-bottom: 1em;
+  line-height: 2em;
 }
 
 .cell-left__header--highlight {
   color: var(--accent-violet);
-  margin-bottom: 1em;
 }
 
 .cell-left__text {
+  margin-bottom: 4.8em;
+  width: 90%;
   color: var(--main-para);
   font-family: var(--font-secondary);
   font-size: var(--text-body);
   font-weight: 400;
-  line-height: calc(var(--text-body) + 12px);
-  margin-bottom: 4.8em;
+  line-height: calc(var(--text-body) + 15px);
 }
 
 .cell-left__stats {
-  width: 80%;
+  width: 87%;
 }
 
 .cell-left__stats ul {
@@ -87,15 +89,16 @@ body {
 .stats__headings {
   color: var(--main-heading);
   font-family: var(--font-main);
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   font-weight: 700;
+  margin-bottom: 0.25em;
 }
 
 .stats__stat {
   color: var(--stat-headings);
   font-family: var(--font-secondary);
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.83rem;
   letter-spacing: 0.1em;
 }
 
@@ -167,7 +170,6 @@ body {
 
   .stats__headings {
     font-size: 1.5rem;
-    margin-bottom: 0.25em;
   }
 
   .card__cell-right {
