@@ -127,13 +127,12 @@ body {
 @media screen and (max-width: 576px) {
   body {
     justify-content: space-between;
-    min-height: auto;
+    /* min-height: auto; */
   }
 
   .card {
     height: 82vh;
-    width: 300px;
-    /* width: 90vw; */
+    width: 90vw;
     grid-template-columns: 1fr;
     grid-template-rows: 31% 69%;
     margin: auto 0;
@@ -187,7 +186,6 @@ body {
     border-top-right-radius: var(--radius);
     border-top-left-radius: var(--radius);
     border-bottom-right-radius: 0;
-    filter: contrast(150%);
   }
 
   .footer,
