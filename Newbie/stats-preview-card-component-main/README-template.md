@@ -92,7 +92,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Image Overlay Effect with CSS | CSS Color Overlay For Background Images](https://www.youtube.com/watch?v=9C755W2epTs) - This not only helped me know how to apply a color-overlay above an image but also helped me better understand the relationship between position absolute and relative.
+- [Creating Image Overlays with CSS Multiple Backgrounds](https://spin.atomicobject.com/2015/04/07/css-multiple-backgrounds/) - This helped me understand how to apply a color-overlay above an image.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
