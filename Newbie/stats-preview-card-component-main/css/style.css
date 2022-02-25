@@ -12,6 +12,7 @@
   --stat-headings: hsla(0, 0%, 100%, 0.6);
 
   --radius: 8px;
+  --img-color-tint: hsla(286, 52%, 45%, 0.65);
 }
 
 *,
@@ -108,13 +109,16 @@ body {
   height: 400px;
 
   background-image: linear-gradient(
-      hsla(277, 64%, 61%, 0.7),
-      hsla(277, 64%, 61%, 0.7)
+      var(--img-color-tint),
+      var(--img-color-tint)
     ),
     url("/images/image-header-desktop.jpg");
   background-size: 100% 400px;
   border-top-right-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
+  /* filter: brightness(-800%); */
+  /* filter: saturate(200%); */
+  filter: contrast(150%);
 }
 
 .footer,
