@@ -144,13 +144,14 @@ body {
   }
 
   .cell-left__header {
-    font-size: 1.15em;
-    margin-top: 0.9em;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 0.7em;
   }
 
   .cell-left__text {
-    font-size: 15.3px;
-    margin-bottom: 2em;
+    font-size: 16px;
+    margin-bottom: 2.3em;
   }
 
   .cell-left__stats {
@@ -158,13 +159,13 @@ body {
   }
 
   .cell-left__stats ul {
-    height: 13.95em;
+    height: 13.65em;
     flex-direction: column;
     justify-content: space-between;
   }
 
   .stats__headings {
-    font-size: 1.55rem;
+    font-size: 1.5rem;
     margin-bottom: 0.25em;
   }
 
