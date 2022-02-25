@@ -79,13 +79,17 @@ To see how you can add code snippets, see below:
 }
 ```
 
+<strong>Use devtools to troubleshoot an image's pathway.</strong>
+
 ### Continued development
 
 Continue practicing responsive web development:
 
 - gauging whether to use CSS Flexbox or grid,
 - knowing when to use absolute and relative units,
-- assessing if an element on mobile design fits in a viewport height or is scrollable, etc.
+- assessing if an element on mobile design fits in a viewport height or is scrollable,
+- <strong>Use devtools to troubleshoot an image's pathway</strong>,
+  etc.
 
 ### Useful resources
 
