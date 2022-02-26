@@ -19,7 +19,7 @@
     <title>Frontend Mentor | Stats preview card component (MBG)</title>
   </head>
   <body>
-    <section class="card">
+    <main class="card">
       <div role="main" class="card__cell card__cell-left">
         <header class="cell-left__header">
           <h1>
@@ -27,23 +27,23 @@
             help your business grow.
           </h1>
         </header>
-        <main class="cell-left__text">
+        <section class="cell-left__text">
           <p>
             Discover the benefits of data analytics and make better decisions
             regarding revenue, customer experience, and overall efficiency.
           </p>
-        </main>
-        <div role="tablist" class="cell-left__stats">
-          <ul>
-            <li>
+        </section>
+        <div role="listbox" class="cell-left__stats">
+          <ul role="list">
+            <li role="listitem">
               <h2 class="stats__headings">10k+</h2>
               <p class="stats__stat">companies</p>
             </li>
-            <li>
+            <li role="listitem">
               <h2 class="stats__headings">314</h2>
               <p class="stats__stat">templates</p>
             </li>
-            <li>
+            <li role="listitem">
               <h2 class="stats__headings">12M+</h2>
               <p class="stats__stat">queries</p>
             </li>
@@ -53,7 +53,7 @@
       <div role="img" class="card__cell card__cell-right">
         <div class="cell-right__img"></div>
       </div>
-    </section>
+    </main>
     <footer role="contentinfo" class="footer">
       Challenge by
       <a
