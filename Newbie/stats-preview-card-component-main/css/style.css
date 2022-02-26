@@ -192,15 +192,15 @@ body {
 
   .footer,
   .footer__link {
-    font-size: 4px;
+    font-size: 0.65rem;
   }
 
   .footer {
-    margin: 0 auto 1em auto;
     display: block;
     width: 100vw;
-    text-align: center;
+    margin: 0 auto 1em auto;
     position: fixed;
     bottom: 2em;
+    text-align: center;
   }
 }
