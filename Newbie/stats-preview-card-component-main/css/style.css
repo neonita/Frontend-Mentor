@@ -116,7 +116,8 @@ body {
 }
 
 .footer {
-  position: absolute;
+  display: block;
+  position: relative;
   bottom: 15%;
 }
 
@@ -200,9 +201,8 @@ body {
   }
 
   .footer {
-    display: block;
     width: 100vw;
-    margin: 5em auto 1em auto;
+    margin: 5em auto 2em auto;
     text-align: center;
   }
 }
