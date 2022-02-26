@@ -26,7 +26,7 @@ Users should be able to:
 ### Screenshot
 
   <div align="center">
-  <img src="images/dtop2.png" width="49.2%"/> <img src="design/desktop-design.jpg" width="49%" />
+  <img src="images/sc-desktop.png" width="49.2%"/> <img src="design/desktop-design.jpg" width="49%" />
   <small>Desktop result — Design image</small> <br>
  <br>
   <img src="images/sc-mobile.png" width="22.1%"/> <img src="design/mobile-design.jpg" width="23%" />
