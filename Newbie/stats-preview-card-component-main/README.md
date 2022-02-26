@@ -26,10 +26,10 @@ Users should be able to:
 ### Screenshot
 
   <div align="center">
-  <img src="images/screenshot-desktop.png" width="49%"/> <img src="design/desktop-design.jpg" width="49%" />
+  <img src="images/sc-desktop.png" width="48.5%"/> <img src="design/desktop-design.jpg" width="49%" />
   <small>Desktop result — Design image</small> <br>
  <br>
-  <img src="images/screenshot-mobile.png" width="22.1%"/> <img src="design/mobile-design.jpg" width="23%" />
+  <img src="images/sc.png" width="22.1%"/> <img src="design/mobile-design.jpg" width="23%" />
  <br>
   <small>Mobile result — Design image</small> <br>
 </div>
@@ -50,9 +50,7 @@ Users should be able to:
 
 ### What I learned
 
-In this challenge, I spent the most time figuring out how to apply a color overlay above an image. I saw there were many methods but I preferred adding the image and tint in CSS.
-
-To see how you can add code snippets, see below:
+In this challenge, I spent the most time figuring out how to apply a color overlay above an image. I saw there were many methods but I preferred adding the image and tint in CSS:
 
 ```html
 <!-- HTML -->
@@ -65,17 +63,14 @@ To see how you can add code snippets, see below:
 /* CSS */
 .cell-right__img {
   width: 100%;
-  height: 400px;
+  height: 100%;
 
-  background-image: linear-gradient(
-      var(--img-color-tint),
-      var(--img-color-tint)
-    ), url("/images/image-header-desktop.jpg");
-  background-size: 100% 400px;
+  background: var(--desktop-img) var(--accent-violet) 0% 0% / 100% no-repeat
+    border-box border-box;
+  background-blend-mode: multiply;
+
   border-top-right-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
-  mix-blend-mode: lighten;
-  filter: contrast(130%);
 }
 ```
 
