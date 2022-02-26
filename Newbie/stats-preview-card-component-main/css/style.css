@@ -34,8 +34,8 @@ body {
 }
 
 .card {
-  width: 1320px;
-  height: 520px;
+  width: 69em; /*1110px*/
+  height: 28em; /*445px*/
 
   display: grid;
   grid-template-columns: 51% 49%;
@@ -47,7 +47,7 @@ body {
 }
 
 .card__cell-left {
-  margin: 5em 9em 5em 5em;
+  margin: 4.25em;
   text-align: start;
 }
 
@@ -55,7 +55,7 @@ body {
   margin-bottom: 1.2em;
   color: var(--main-heading);
   font-family: var(--font-main);
-  font-size: 1.65em;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 2em;
 }
@@ -65,7 +65,7 @@ body {
 }
 
 .cell-left__text {
-  margin-bottom: 4.8em;
+  margin-bottom: 3.7em;
   width: 90%;
   color: var(--main-para);
   font-family: var(--font-main);
@@ -89,7 +89,7 @@ body {
 .stats__headings {
   color: var(--main-heading);
   font-family: var(--font-main);
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 0.25em;
 }
@@ -102,18 +102,22 @@ body {
   text-transform: uppercase;
 }
 
-/* #aa5bdb */
-
 .cell-right__img {
   width: 100%;
-  height: 100%;
+  height: 28em;
 
-  background: var(--desktop-img) var(--accent-violet) 0% 0% / 100% no-repeat
+  background: var(--desktop-img) var(--accent-violet) 0% 0% / cover no-repeat
     border-box border-box;
   background-blend-mode: multiply;
+  filter: contrast(90%);
 
   border-top-right-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
+}
+
+.footer {
+  position: absolute;
+  bottom: 15%;
 }
 
 .footer,
