@@ -136,7 +136,7 @@ body {
     width: 325px;
     margin: 25% auto 0 auto;
     grid-template-columns: 1fr;
-    grid-template-rows: 31% 69%;
+    grid-template-rows: 30% 70%;
   }
 
   .card__cell-left {
@@ -182,19 +182,12 @@ body {
 
   .cell-right__img {
     height: 100%;
-    background-image: linear-gradient(
-        var(--img-color-tint),
-        var(--img-color-tint)
-      ),
-      url("./../images/image-header-mobile.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat no-repeat;
+    background: var(--mobile-img) var(--accent-violet) 0% 0% / cover no-repeat
+      border-box border-box;
+
     border-top-right-radius: var(--radius);
     border-top-left-radius: var(--radius);
     border-bottom-right-radius: 0;
-
-    /* 
-    [<background-image>] [<background-color>]  [<background-position>]/[<background-size>] [<background-repeat>] [<background-origin>] [<background-clip>] [<background-attachment>] [<initial|inherit>]; */
   }
 
   .footer,
