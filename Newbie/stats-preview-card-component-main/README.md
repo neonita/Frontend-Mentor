@@ -95,6 +95,8 @@ Continue practicing responsive web development:
 
 - [Creating Image Overlays with CSS Multiple Backgrounds](https://spin.atomicobject.com/2015/04/07/css-multiple-backgrounds/) - This helped me understand how to apply a color-overlay above an image.
 - [Media Queries Breakpoints For Responsive Design In 2021](https://devfacts.com/media-queries-breakpoints-2021/) - An article discussing the media queries breakpoints for responsive design and its standards.
+- [Make some magic with CSS blend modes](https://pawelgrzybek.com/make-some-magic-with-css-blend-modes/) - An article that helped me understand the difference between `mix-blend-mode` and `background-blend-mode`.
+- [Background Shorthand](https://riptutorial.com/css/example/3595/background-shorthand) - Provides the syntax of the background shorthand declaration with all background properties.
 
 ## Author
 
