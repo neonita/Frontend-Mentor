@@ -29,7 +29,7 @@ Users should be able to:
   <img src="images/sc-desktop.png" width="48.5%"/> <img src="design/desktop-design.jpg" width="49%" />
   <small>Desktop result — Design image</small> <br>
  <br>
-  <img src="images/sc.png" width="22.1%"/> <img src="design/mobile-design.jpg" width="23%" />
+  <img src="images/sc-mobile.png" width="22.1%"/> <img src="design/mobile-design.jpg" width="23%" />
  <br>
   <small>Mobile result — Design image</small> <br>
 </div>
@@ -50,7 +50,7 @@ Users should be able to:
 
 ### What I learned
 
-In this challenge, I spent the most time figuring out how to apply a color overlay above an image. I saw there were many methods but I preferred adding the image and tint in CSS:
+In this challenge, I spent most of my time figuring out how to apply a color overlay above an image. I found quite a few methods & chose to add the image and tint via CSS:
 
 ```html
 <!-- HTML -->
@@ -74,7 +74,8 @@ In this challenge, I spent the most time figuring out how to apply a color overl
 }
 ```
 
-<strong>Use devtools to troubleshoot an image's pathway.</strong>
+<br> 
+Another valuable lesson I learned is to absolutely <strong>use devtools to troubleshoot an image's pathway.</strong>
 
 ### Continued development
 
