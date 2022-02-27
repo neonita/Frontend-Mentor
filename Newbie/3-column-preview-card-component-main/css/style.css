@@ -11,6 +11,7 @@
 
   --white-text: hsla(0, 0%, 100%, 0.75);
   --v-lightgray: hsl(0, 0%, 95%);
+  --radius: 10px;
 }
 
 *,
@@ -19,4 +20,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+
+  height: 31.25rem; /* 920px */
+  width: 57.5rem; /* 500px */
+  border-radius: var(--radius);
+}
+
+.grid__cell--one {
+  background-color: var(--card-orange);
+  border-top-left-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
+}
+
+.grid__cell--two {
+  background-color: var(--card-darkcyan);
+}
+
+.grid__cell--three {
+  background-color: var(--card-v-darkcyan);
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
 }
