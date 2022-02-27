@@ -131,7 +131,7 @@ body {
 .footer {
   display: block;
   position: relative;
-  top: 5%;
+  bottom: -5%;
   font-size: 0.7rem;
 }
 
