@@ -11,6 +11,7 @@
 
   --white-text: hsla(0, 0%, 100%, 0.75);
   --v-lightgray: hsl(0, 0%, 95%);
+  --grey: rgba(128, 128, 128, 0.397);
   --radius: 10px;
 }
 
@@ -124,4 +125,22 @@ body {
 
 .card__btn--three:hover {
   background-color: var(--card-v-darkcyan);
+}
+
+.footer {
+  display: block;
+  position: relative;
+  top: 5%;
+  font-size: 0.7rem;
+}
+
+.footer,
+.footer__link {
+  color: var(--grey);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.footer__link:hover {
+  color: var(--card-orange);
 }
