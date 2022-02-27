@@ -41,6 +41,10 @@ body {
   border-radius: var(--radius);
 }
 
+.grid__cell {
+  padding: 3em;
+}
+
 .grid__cell--one {
   background-color: var(--card-orange);
   border-top-left-radius: var(--radius);
@@ -55,4 +59,69 @@ body {
   background-color: var(--card-v-darkcyan);
   border-top-right-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
+}
+
+.card {
+  color: var(--white-text);
+}
+
+.card__icon {
+  margin-bottom: 2em;
+}
+
+.card__title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.8em;
+}
+
+.card__description {
+  font-size: var(--text--size);
+  font-weight: 400;
+  line-height: calc(var(--text--size) + 10px);
+  text-align: start;
+  margin-bottom: 4.3em;
+}
+
+.card__btn {
+  padding: 1em 2.3em;
+  border-radius: 60px;
+  font-size: var(--text--size);
+  font-family: var(--font-body);
+  transition: all 0.1s ease-in-out;
+}
+
+.card__btn:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card__btn--one {
+  border: 1px solid var(--card-orange);
+  color: var(--card-orange);
+}
+
+.card__btn--one:hover {
+  background-color: var(--card-orange);
+}
+
+.card__btn--two {
+  border: 1px solid var(--card-darkcyan);
+  color: var(--card-darkcyan);
+}
+
+.card__btn--two:hover {
+  background-color: var(--card-darkcyan);
+}
+
+.card__btn--three {
+  border: 1px solid var(--card-v-darkcyan);
+  color: var(--card-v-darkcyan);
+}
+
+.card__btn--three:hover {
+  background-color: var(--card-v-darkcyan);
 }
