@@ -27,20 +27,33 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+  <div align="center">
+  <img src="images/sc-desktop.png" width="49.2%"/> <img src="design/desktop-design.jpg" width="49%" />
+  <small>Desktop result — Design image</small> <br>
+ <br>
+  <img src="images/sc-mobile.png" width="23%"/> <img src="design/mobile-design.jpg" width="23%" />
+ <br>
+  <small>Mobile result — Design image</small> <br>
+</div>
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Repository](https://github.com/neonita/Frontend-Mentor/tree/main/Newbie/3-column-preview-card-component-main)
+- Live Site URL: [Live Demo](https://neonita.github.io/Frontend-Mentor/Newbie/3-column-preview-card-component-main/)
 
 ## My process
+
+- Plan and draw the layout by breaking the website down into elements. Jot down class names I might find to be useful.
+ <div align="center">
+  <img src="images/sc-notes.jpeg" width="60%"/> 
+  <br>
+  <small>configuring the layout, if containers are needed, etc. also, i'm sorry for the bad handwriting, I'm still learning how to write comfortably on a tablet. :) </small> 
+</div>
+<br>
+
+- Add HTML and classes by applying the BEM method. You can read about BEM [here](http://getbem.com/introduction/).
+- Style the markups. I styled mobile last but thinking about trying mobile-first.
+- Eyeball whether final results match the provided desktop and mobile design.
 
 ### Built with
 
@@ -48,50 +61,45 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+I learned how to center a component on the page without it being affected by the footer, using CSS `position` and `z-index` properties.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<body>
+  <main class="grid">[...]</main>
+  <footer class="footer">[...]</footer>
+</body>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.grid {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 5%;
+  z-index: 1;
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [CSS z-index Property](https://www.w3schools.com/cssref/pr_pos_z-index.asp) - This helped me better understand how to properly implement the `z-index` property in CSS.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+- GitHub - [@neonita](https://github.com/neonita)

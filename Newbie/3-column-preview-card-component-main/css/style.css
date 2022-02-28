@@ -161,8 +161,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--v-lightgray);
     height: auto;
+    background-color: var(--v-lightgray) !important;
   }
 
   .grid {
