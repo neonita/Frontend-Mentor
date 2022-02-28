@@ -83,7 +83,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 0.8em;
-  color: #fff;
+  color: var(--white-text);
 }
 
 .card__description {
@@ -229,6 +229,6 @@ body {
     position: absolute;
     bottom: 2%;
     z-index: 1;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 }
