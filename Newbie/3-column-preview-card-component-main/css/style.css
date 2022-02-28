@@ -44,6 +44,9 @@ body {
   border-radius: var(--radius);
 
   position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
 }
 
 .grid__cell {
@@ -135,6 +138,7 @@ body {
   display: block;
   position: absolute;
   bottom: 5%;
+  z-index: 1;
   font-size: 0.7rem;
 }
 
@@ -147,4 +151,5 @@ body {
 
 .footer__link:hover {
   color: var(--card-orange);
+  opacity: 0.7;
 }
