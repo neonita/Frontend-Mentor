@@ -42,6 +42,8 @@ body {
   width: 57.5rem; /* 500px */
   margin-top: 1.75em;
   border-radius: var(--radius);
+
+  position: relative;
 }
 
 .grid__cell {
@@ -131,8 +133,8 @@ body {
 
 .footer {
   display: block;
-  position: relative;
-  bottom: -5%;
+  position: absolute;
+  bottom: 5%;
   font-size: 0.7rem;
 }
 
