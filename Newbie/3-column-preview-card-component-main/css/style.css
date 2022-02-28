@@ -91,11 +91,11 @@ body {
   font-weight: 400;
   line-height: calc(var(--text--size) + 10px);
   text-align: start;
-  margin-bottom: 4.3em;
+  margin-bottom: 4.5em;
 }
 
 .card__btn {
-  padding: 1em 2.3em;
+  padding: 1em 2em;
   border-radius: 60px;
   font-size: var(--text--size);
   font-family: var(--font-body);
