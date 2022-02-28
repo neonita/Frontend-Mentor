@@ -162,8 +162,7 @@ body {
     justify-content: center;
     align-items: center;
     /* background-color: var(--v-lightgray); */
-    background-color: pink;
-
+    background-color: #fff;
     height: auto;
   }
 
@@ -177,7 +176,7 @@ body {
     margin: 5em auto;
     border-radius: var(--radius);
 
-    position: static;
+    position: relative;
     top: 0px;
     left: 0px;
     z-index: 0;
@@ -223,5 +222,13 @@ body {
     font-size: var(--text--size);
     font-family: var(--font-body);
     transition: all 0.1s ease-in-out;
+  }
+
+  .footer {
+    display: block;
+    position: absolute;
+    bottom: 2%;
+    z-index: 1;
+    font-size: 0.7rem;
   }
 }
