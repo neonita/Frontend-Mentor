@@ -83,6 +83,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 0.8em;
+  color: #fff;
 }
 
 .card__description {
@@ -198,5 +199,30 @@ body {
     border-bottom-left-radius: var(--radius);
     border-bottom-right-radius: var(--radius);
     border-top-right-radius: 0;
+  }
+
+  .card__icon {
+    margin-bottom: 2em;
+  }
+
+  .card__title {
+    font-size: 2.5rem;
+    margin-bottom: 0.8em;
+  }
+
+  .card__description {
+    font-size: var(--text--size);
+    font-weight: 400;
+    line-height: calc(var(--text--size) + 10px);
+    text-align: start;
+    margin-bottom: 4.3em;
+  }
+
+  .card__btn {
+    padding: 1em 2.3em;
+    border-radius: 60px;
+    font-size: var(--text--size);
+    font-family: var(--font-body);
+    transition: all 0.1s ease-in-out;
   }
 }
