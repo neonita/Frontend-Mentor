@@ -91,7 +91,7 @@ body {
   font-weight: 400;
   line-height: calc(var(--text--size) + 10px);
   text-align: start;
-  margin-bottom: 4.6em;
+  margin-bottom: 4.8em;
 }
 
 .card__btn {
