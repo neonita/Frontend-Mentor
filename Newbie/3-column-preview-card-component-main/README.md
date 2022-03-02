@@ -103,3 +103,8 @@ body {
 ## Author
 
 - GitHub - [@neonita](https://github.com/neonita)
+
+## Acknowledgements
+
+- [@Sdann26](https://www.frontendmentor.io/profile/Sdann26) - for letting me know that it's not recommended to use more than one h1 per page and how to proceed from there.
+- [@denielden](https://www.frontendmentor.io/profile/denielden) - for suggesting I change the fallback font of the headings' font, "Big Shoulders Display", to sans-serif instead of cursive.
