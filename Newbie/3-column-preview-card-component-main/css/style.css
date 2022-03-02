@@ -49,6 +49,16 @@ body {
   z-index: 0;
 }
 
+/* Allows some screen readers to recognize it and not give accessibility errors */
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
 .grid__cell {
   padding: 3em;
 }
@@ -83,7 +93,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 0.8em;
-  color: var(--white-text);
+  color: #fff;
 }
 
 .card__description {
