@@ -2,7 +2,7 @@
 
 :root {
   --font-body: "Lexend Deca", sans-serif;
-  --font-heading: "Big Shoulders Display", cursive;
+  --font-heading: "Big Shoulders Display", sans-serif;
   --text--size: 0.938rem; /* 15px */
 
   --card-orange: hsl(31, 77%, 52%);
@@ -40,7 +40,6 @@ body {
 
   height: 31.25em; /* 920px */
   width: 57.5em; /* 500px */
-  margin-top: 2.2em;
   border-radius: var(--radius);
 
   position: relative;
