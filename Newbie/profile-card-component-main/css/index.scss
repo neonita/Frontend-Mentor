@@ -17,6 +17,15 @@ $drk-gray: hsl(0, 0%, 59%);
 $mobile: 375px;
 $desktop: 1440px;
 
+// --imgs
+$bg-dekstop-bottom: url(images/bg-pattern-bottom.svg);
+$bg-dekstop-top: url(images/bg-pattern-top.svg);
+$bg-card: url(images/bg-pattern-card.svg);
+$user-dp: url(images/image-victor.jpg);
+
+$radius: 10px;
+// $shadow: ;
+
 * {
   margin: 0;
   padding: 0;
