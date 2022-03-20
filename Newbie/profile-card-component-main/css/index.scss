@@ -1,7 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
-// Variables
+// Variables (according to style-guide)
+// --font
 $ff-primary: "Kumbh Sans", sans-serif;
+$font-size: 18px;
+$reg: 400;
+$bold: 700;
+
+// --colors
+$drk-cyan: hsl(185, 75%, 39%);
+$drk-desat-blue: hsl(229, 23%, 23%);
+$drk-gray-blue: hsl(227, 10%, 46%);
+$drk-gray: hsl(0, 0%, 59%);
+
+// --layout
+$mobile: 375px;
+$desktop: 1440px;
 
 * {
   margin: 0;
