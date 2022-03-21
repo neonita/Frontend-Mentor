@@ -79,18 +79,27 @@ ul {
       &__img {
         border-radius: 100%;
         border: 5px solid #fff;
+        padding-bottom: 3%;
       }
 
+      // name and stats
       &__name,
       &__value > h2 {
         font-size: $font-size;
         color: $drk-desat-blue;
+        font-weight: 700;
       }
 
       &__age,
       &__location,
       &__value > p {
         color: $drk-gray;
+        font-weight: 400;
+      }
+
+      &__value > p {
+        padding-top: 0.5em;
+        font-size: 0.7rem;
       }
 
       &__stats {
@@ -99,7 +108,7 @@ ul {
         align-items: center;
         text-align: center;
         gap: 2em;
-        padding: 1.7em;
+        padding: 1.3em;
 
         border-top: 0.7px solid lightgrey;
         width: 100%;

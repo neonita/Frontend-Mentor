@@ -51,13 +51,20 @@ ul {
 .container .card .profile__img {
   border-radius: 100%;
   border: 5px solid #fff;
+  padding-bottom: 3%;
 }
 .container .card .profile__name, .container .card .profile__value > h2 {
   font-size: 18px;
   color: #2d3248;
+  font-weight: 700;
 }
 .container .card .profile__age, .container .card .profile__location, .container .card .profile__value > p {
   color: #969696;
+  font-weight: 400;
+}
+.container .card .profile__value > p {
+  padding-top: 0.5em;
+  font-size: 0.7rem;
 }
 .container .card .profile__stats {
   display: flex;
@@ -65,7 +72,7 @@ ul {
   align-items: center;
   text-align: center;
   gap: 2em;
-  padding: 1.7em;
+  padding: 1.3em;
   border-top: 0.7px solid lightgrey;
   width: 100%;
 }
