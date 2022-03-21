@@ -52,3 +52,10 @@ ul {
   border-radius: 100%;
   border: 5px solid #fff;
 }
+.container .card .profile__name, .container .card .profile__value > h2 {
+  font-size: 1.2rem;
+  color: #2d3248;
+}
+.container .card .profile__age, .container .card .profile__location, .container .card .profile__value > p {
+  color: #969696;
+}
