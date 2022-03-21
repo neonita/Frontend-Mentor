@@ -12,6 +12,7 @@ $drk-cyan: hsl(185, 75%, 39%);
 $drk-desat-blue: hsl(229, 23%, 23%);
 $drk-gray-blue: hsl(227, 10%, 46%);
 $drk-gray: hsl(0, 0%, 59%);
+$shadow-clr: hsla(229, 23%, 23%, 0.26);
 
 // --layout
 $mobile: 375px;
@@ -54,7 +55,8 @@ ul {
     height: 370px;
     border-radius: $radius;
     background-color: #fff;
-    // font-size: $font-size;
+    //h-offset v-offset blur spread color
+    box-shadow: 0 8px 90px 10px $shadow-clr;
 
     &__pattern {
       background-image: $bg-card;

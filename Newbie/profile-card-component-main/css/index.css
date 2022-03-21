@@ -28,6 +28,7 @@ ul {
   height: 370px;
   border-radius: 15px;
   background-color: #fff;
+  box-shadow: 0 8px 90px 10px rgba(45, 50, 72, 0.26);
 }
 .container .card__pattern {
   background-image: url(/images/bg-pattern-card.svg);
