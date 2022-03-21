@@ -51,31 +51,22 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+In this challenge, I learned how to add mutiple background images as well as the syntax in styling each background image in different CSS properties. I learned that I could style each background image with commas as long as its key-value matches the order of background images listed.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="container">[...]</div>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.container {
+  background-image: $bg-desktop-top, $bg-desktop-bottom;
+  background-position: left -318px top -530px, right -237px bottom -575px;
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+In future projects, I aim to practice using the Sass CSS framework. Particularly styling efficiently and using responsive techniques.
 
 ### Useful resources
 
