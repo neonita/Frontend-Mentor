@@ -7,9 +7,8 @@ function buildStyle() {
 }
 
 // watch sass file for changes and recompiles it at each update
-function watchTask(done) {
+function watchTask() {
   watch(["css/**/*.scss"], buildStyle);
-  done();
 }
 
 // run the files
