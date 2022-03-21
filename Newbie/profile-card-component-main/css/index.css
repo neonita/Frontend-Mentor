@@ -5,3 +5,27 @@
   box-sizing: border-box;
   font-family: "Kumbh Sans", sans-serif;
 }
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #19a2ae;
+  background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+  background-position: left -318px top -530px, right -237px bottom -575px;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.container .card {
+  width: 400px;
+  height: 400px;
+  border-radius: 15px;
+  border: 1px solid grey;
+}

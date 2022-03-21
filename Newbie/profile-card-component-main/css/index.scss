@@ -18,12 +18,11 @@ $mobile: 375px;
 $desktop: 1440px;
 
 // --imgs
-$bg-dekstop-bottom: url(images/bg-pattern-bottom.svg);
-$bg-dekstop-top: url(images/bg-pattern-top.svg);
-$bg-card: url(images/bg-pattern-card.svg);
-$user-dp: url(images/image-victor.jpg);
+$bg-desktop-bottom: url(/images/bg-pattern-bottom.svg);
+$bg-desktop-top: url(/images/bg-pattern-top.svg);
+$bg-card: url(/images/bg-pattern-card.svg);
 
-$radius: 10px;
+$radius: 15px;
 // $shadow: ;
 
 * {
@@ -31,4 +30,29 @@ $radius: 10px;
   padding: 0;
   box-sizing: border-box;
   font-family: $ff-primary;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $drk-cyan;
+  background-image: $bg-desktop-top, $bg-desktop-bottom;
+  background-position: left -318px top -530px, right -237px bottom -575px;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  .card {
+    width: 400px;
+    height: 400px;
+    border-radius: $radius;
+    border: 1px solid grey;
+  }
 }
