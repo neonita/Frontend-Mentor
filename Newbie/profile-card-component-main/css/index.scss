@@ -112,7 +112,7 @@ ul {
       }
 
       &__value > p {
-        padding-top: 0.5em;
+        padding-top: 0.3em;
         font-size: 0.7rem;
       }
 
@@ -121,8 +121,8 @@ ul {
         justify-content: space-around;
         align-items: center;
         text-align: center;
-        gap: 2em;
-        padding: 1.3em;
+        // gap: 2em;
+        padding: 1.2em 1.6em;
 
         border-top: 0.7px solid lightgrey;
         width: 100%;
