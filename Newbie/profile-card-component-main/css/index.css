@@ -25,10 +25,9 @@ ul {
 }
 .container .card {
   width: 330px;
-  height: 380px;
+  height: 370px;
   border-radius: 15px;
   background-color: #fff;
-  font-size: 18px;
 }
 .container .card__pattern {
   background-image: url(/images/bg-pattern-card.svg);
@@ -47,15 +46,26 @@ ul {
   position: relative;
   bottom: 13%;
   z-index: 1;
+  gap: 0.7em;
 }
 .container .card .profile__img {
   border-radius: 100%;
   border: 5px solid #fff;
 }
 .container .card .profile__name, .container .card .profile__value > h2 {
-  font-size: 1.2rem;
+  font-size: 18px;
   color: #2d3248;
 }
 .container .card .profile__age, .container .card .profile__location, .container .card .profile__value > p {
   color: #969696;
+}
+.container .card .profile__stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 2em;
+  padding: 1.7em;
+  border-top: 0.7px solid lightgrey;
+  width: 100%;
 }

@@ -3,7 +3,7 @@
 // Variables (according to style-guide)
 // --font
 $ff-primary: "Kumbh Sans", sans-serif;
-$font-size: 18px;
+$font-size: 18px; // name & stats
 $reg: 400;
 $bold: 700;
 
@@ -51,10 +51,10 @@ ul {
 
   .card {
     width: 330px;
-    height: 380px;
+    height: 370px;
     border-radius: $radius;
     background-color: #fff;
-    font-size: $font-size;
+    // font-size: $font-size;
 
     &__pattern {
       background-image: $bg-card;
@@ -74,6 +74,7 @@ ul {
       position: relative;
       bottom: 13%;
       z-index: 1;
+      gap: 0.7em;
 
       &__img {
         border-radius: 100%;
@@ -82,7 +83,7 @@ ul {
 
       &__name,
       &__value > h2 {
-        font-size: 1.2rem;
+        font-size: $font-size;
         color: $drk-desat-blue;
       }
 
@@ -90,6 +91,18 @@ ul {
       &__location,
       &__value > p {
         color: $drk-gray;
+      }
+
+      &__stats {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        gap: 2em;
+        padding: 1.7em;
+
+        border-top: 0.7px solid lightgrey;
+        width: 100%;
       }
     }
   }
