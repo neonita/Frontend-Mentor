@@ -78,3 +78,17 @@ ul {
   width: 100%;
   letter-spacing: 0.1rem;
 }
+.container .attribution {
+  color: #0b6c75;
+  font-size: 65%;
+  position: relative;
+  top: 5%;
+}
+.container .attribution a {
+  text-decoration: none;
+  color: #0b6c75;
+  transition: color 0.15s ease-in-out;
+}
+.container .attribution a:hover {
+  color: #d8d8d8;
+}

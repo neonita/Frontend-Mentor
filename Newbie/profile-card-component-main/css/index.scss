@@ -12,6 +12,7 @@ $drk-cyan: hsl(185, 75%, 39%);
 $drk-desat-blue: hsl(229, 23%, 23%);
 $drk-gray-blue: hsl(227, 10%, 46%);
 $drk-gray: hsl(0, 0%, 59%);
+$link: hsl(185, 83%, 25%);
 $shadow-clr: hsla(229, 23%, 23%, 0.26);
 
 // --layout
@@ -116,6 +117,23 @@ ul {
         width: 100%;
         letter-spacing: 0.1rem;
       }
+    }
+  }
+
+  .attribution {
+    color: $link;
+    font-size: 65%;
+    position: relative;
+    top: 5%;
+
+    a {
+      text-decoration: none;
+      color: $link;
+      transition: color 0.15s ease-in-out;
+    }
+
+    a:hover {
+      color: rgb(216, 216, 216);
     }
   }
 }
