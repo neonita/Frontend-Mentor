@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+// Variables (according to style-guide)
+// --font
+$ff-primary: "Kumbh Sans", sans-serif;
+$font-size: 18px; // name & stats
+$reg: 400;
+$bold: 700;
+
+// --colors
+$drk-cyan: hsl(185, 75%, 39%);
+$drk-desat-blue: hsl(229, 23%, 23%);
+$drk-gray-blue: hsl(227, 10%, 46%);
+$drk-gray: hsl(0, 0%, 59%);
+$link: hsla(184, 17%, 84%, 0.527);
+$shadow-clr: hsla(229, 23%, 23%, 0.26);
+
+// --layout
+$mobile: 375px;
+$desktop: 1440px;
+
+// --imgs
+$bg-desktop-bottom: url(/images/bg-pattern-bottom.svg);
+$bg-desktop-top: url(/images/bg-pattern-top.svg);
+$bg-card: url(/images/bg-pattern-card.svg);
+
+$radius: 15px;
+// $shadow: ;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $ff-primary;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $drk-cyan;
+  background-image: $bg-desktop-top, $bg-desktop-bottom;
+  background-position: left -318px top -530px, right -237px bottom -575px;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  @media (max-width: $mobile) {
+    background-position: left -764px top -559px, right -415px bottom -321px;
+    background-size: auto, 170%;
+  }
+
+  .card {
+    width: 350px;
+    height: 370px;
+    border-radius: $radius;
+    background-color: #fff;
+    box-shadow: 0 15px 90px 10px $shadow-clr;
+
+    @media (max-width: $mobile) {
+      width: 330px;
+    }
+
+    &__pattern {
+      background-image: $bg-card;
+      width: auto;
+      height: 8.5em;
+      position: relative;
+      z-index: 0;
+      border-top-left-radius: $radius;
+      border-top-right-radius: $radius;
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      bottom: 13%;
+      z-index: 1;
+      gap: 0.5em;
+
+      &__img {
+        border-radius: 100%;
+        border: 5px solid #fff;
+        padding-bottom: 3%;
+      }
+
+      // name and stats
+      &__name,
+      &__value > h2 {
+        font-size: $font-size;
+        color: $drk-desat-blue;
+        font-weight: 700;
+      }
+
+      &__age,
+      &__location,
+      &__value > p {
+        color: $drk-gray;
+        font-weight: 400;
+      }
+
+      &__value > p {
+        padding-top: 0.3em;
+        font-size: 0.7rem;
+      }
+
+      &__stats {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        // gap: 2em;
+        padding: 1.5em 1.6em;
+
+        border-top: 0.7px solid lightgrey;
+        width: 100%;
+        letter-spacing: 0.1rem;
+      }
+    }
+  }
+
+  .attribution {
+    color: $link;
+    font-size: 65%;
+    position: relative;
+    top: 5%;
+
+    a {
+      text-decoration: none;
+      color: $link;
+      transition: color 0.15s ease-in-out;
+    }
+
+    a:hover {
+      color: rgb(216, 216, 216);
+    }
+  }
+}

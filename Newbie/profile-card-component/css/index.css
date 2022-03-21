@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #19a2ae;
+  background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+  background-position: left -318px top -530px, right -237px bottom -575px;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+@media (max-width: 375px) {
+  .container {
+    background-position: left -764px top -559px, right -415px bottom -321px;
+    background-size: auto, 170%;
+  }
+}
+.container .card {
+  width: 350px;
+  height: 370px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 15px 90px 10px rgba(45, 50, 72, 0.26);
+}
+@media (max-width: 375px) {
+  .container .card {
+    width: 330px;
+  }
+}
+.container .card__pattern {
+  background-image: url(/images/bg-pattern-card.svg);
+  width: auto;
+  height: 8.5em;
+  position: relative;
+  z-index: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.container .card .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 13%;
+  z-index: 1;
+  gap: 0.5em;
+}
+.container .card .profile__img {
+  border-radius: 100%;
+  border: 5px solid #fff;
+  padding-bottom: 3%;
+}
+.container .card .profile__name, .container .card .profile__value > h2 {
+  font-size: 18px;
+  color: #2d3248;
+  font-weight: 700;
+}
+.container .card .profile__age, .container .card .profile__location, .container .card .profile__value > p {
+  color: #969696;
+  font-weight: 400;
+}
+.container .card .profile__value > p {
+  padding-top: 0.3em;
+  font-size: 0.7rem;
+}
+.container .card .profile__stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 1.5em 1.6em;
+  border-top: 0.7px solid lightgrey;
+  width: 100%;
+  letter-spacing: 0.1rem;
+}
+.container .attribution {
+  color: rgba(207, 220, 221, 0.527);
+  font-size: 65%;
+  position: relative;
+  top: 5%;
+}
+.container .attribution a {
+  text-decoration: none;
+  color: rgba(207, 220, 221, 0.527);
+  transition: color 0.15s ease-in-out;
+}
+.container .attribution a:hover {
+  color: #d8d8d8;
+}
