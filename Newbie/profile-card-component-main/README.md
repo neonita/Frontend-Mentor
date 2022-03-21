@@ -33,12 +33,10 @@ Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to t
 
 Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Repository](https://github.com/neonita/Frontend-Mentor/tree/main/Newbie/profile-card-component-main)
+- Live Site URL: [Live](https://neonita.github.io/Frontend-Mentor/Newbie/profile-card-component-main/index.html)
 
 ## My process
 
