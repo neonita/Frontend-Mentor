@@ -1,6 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway&display=swap");
+
 // Variables
 $mobile: 375px;
 $desktop: 1440px;
+
+$headings-ff: "Raleway", sans-serif; // 400, 700
+$body-ff: "Open Sans", sans-serif; // 400
+
+$prim--v-drk-blue: hsl(243, 87%, 12%);
+$prim--desat-blue: hsl(238, 22%, 44%);
+$accent--br-blue: hsl(224, 93%, 58%);
+$accent--mod-cyan: hsl(170, 45%, 43%);
+$neut--lght-g-blue: hsl(240, 75%, 98%);
+$net--lght-gray: hsl(0, 0%, 75%);
 
 *,
 *::after,
