@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
 
 // Variables
 $mobile: 375px;
@@ -17,10 +17,48 @@ $net--lght-gray: hsl(0, 0%, 75%);
 $bg-desktop-curve: url(../images/bg-curve-desktop.svg);
 $bg-mobile-curve: url(../images/bg-curve-desktop.svg);
 
+$test: 1px dashed red;
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+  padding: 0 5em;
+
+  &__logo {
+    height: 30%;
+    width: auto;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__nav {
+    width: 22%;
+    font-family: $body-ff;
+    font-size: 1.2rem;
+
+    ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+
+      .item {
+        &__link {
+          text-decoration: none;
+          color: $prim--desat-blue;
+        }
+      }
+    }
+  }
 }
