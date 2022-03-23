@@ -10,6 +10,7 @@ $body-ff: "Open Sans", sans-serif; // 400
 $prim--v-drk-blue: hsl(243, 87%, 12%);
 $prim--desat-blue: hsl(238, 22%, 44%);
 $accent--br-blue: hsl(224, 93%, 58%);
+$accent--br-blue-hover: hsl(224, 89%, 64%);
 $accent--mod-cyan: hsl(170, 45%, 43%);
 $neut--lght-g-blue: hsl(240, 75%, 98%);
 $net--lght-gray: hsl(0, 0%, 75%);
@@ -66,9 +67,7 @@ $test: 1px dashed red;
   }
 
   .hero {
-    border: $test;
-
-    height: 80vh;
+    height: 68vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,17 +76,63 @@ $test: 1px dashed red;
     &__left {
       text-align: left;
       width: 50%;
+      padding-right: 3.5em;
+      position: relative;
+      top: -5%;
+      color: $prim--v-drk-blue;
 
       .title {
         font-family: $headings-ff;
         font-size: 2.7rem;
         line-height: 4rem;
-        padding-bottom: 1em;
+        padding-bottom: 0.4em;
       }
 
       .para {
         font-family: $body-ff;
         font-size: 1.2rem;
+        padding-bottom: 1.5em;
+      }
+
+      .form {
+        // border: $test;
+        width: 100%;
+        height: 3.2em;
+
+        &__email,
+        &__btn {
+          height: 100%;
+        }
+
+        &__email {
+          width: 55%;
+
+          border: 1px solid $prim--desat-blue;
+          border-radius: 3px;
+          padding: 1em;
+          margin-right: 1em;
+          font-family: $body-ff;
+
+          &::placeholder {
+            color: $net--lght-gray;
+            font-size: 1rem;
+          }
+        }
+
+        &__btn {
+          width: 32%;
+          background-color: $accent--br-blue;
+          border: none;
+          border-radius: 3px;
+          color: #fff;
+          font-size: 1rem;
+          transition: background 0.15s ease-in-out;
+
+          &:hover {
+            background: $accent--br-blue-hover;
+            cursor: pointer;
+          }
+        }
       }
     }
 

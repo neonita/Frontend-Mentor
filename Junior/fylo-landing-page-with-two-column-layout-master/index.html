@@ -40,10 +40,15 @@
               Access them wherever you need, share and collaborate with friends,
               family, and co-workers.
             </p>
-            <div class="input-prompt">
-              <input type="text" placeholder="Enter your email..." />
-              <button>Get Started</button>
-            </div>
+            <form action="#!" class="form">
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email..."
+                class="form__email"
+              />
+              <input type="submit" value="Get Started" class="form__btn" />
+            </form>
           </article>
           <div class="hero__right">
             <img src="images/illustration-1.svg" alt="an illustration" />
@@ -102,10 +107,14 @@
             would be happy to help you.
           </p>
         </article>
-        <div class="cta__right">
-          <input type="text" placeholder="email@example.com" />
-          <button>Get Started For Free</button>
-        </div>
+        <form action="#!" class="form">
+          <input
+            type="text"
+            placeholder="email@example.com"
+            class="form__email"
+          />
+          <input type="submit" value="Get Started For Free" class="form__btn" />
+        </form>
       </section>
 
       <footer class="footer">

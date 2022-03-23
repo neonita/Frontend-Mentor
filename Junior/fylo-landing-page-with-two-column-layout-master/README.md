@@ -94,6 +94,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [How to use BEM with SASS for your component based website](https://www.youtube.com/watch?v=anBRs0TmOUE) - This help me understand clearly how to use the BEM methodology with SASS.
+- [Styling Form Validation Errors - HTML & CSS Web Design Tutorial](https://www.youtube.com/watch?v=6NdWrZ77YO4) - Showed me how to
+- [HTML5 Custom Data Attributes (data-\*)](http://html5doctor.com/html5-custom-data-attributes/) - Explains about custom data attributes which helped me further understand how to add a validation error. -[HTML forms](https://flaviocopes.com/html-forms/) - HTML Forms
 
 ## Author
 
