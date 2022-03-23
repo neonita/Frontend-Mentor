@@ -154,8 +154,8 @@
 
 .midway {
   border: 1px dashed red;
-  padding: 0 5em;
   height: 100vh;
+  padding: 5em 5em 0 5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,16 +168,88 @@
   gap: 1em;
   background-image: url(../images/bg-curve-desktop.svg);
   background-repeat: no-repeat;
-  background-size: 300% 100%;
-  background-position: top;
+  background-size: 310% 95%;
+  background-position: bottom;
 }
 
 .midway__left {
-  width: 50%;
+  width: 55%;
+}
+
+.midway__left .title {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.7rem;
+  line-height: 4rem;
+  padding-bottom: 0.4em;
+}
+
+.midway__left .para {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  padding-bottom: 1.5em;
+  padding-right: 6em;
+}
+
+.midway__left .link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  color: #3c9f8f;
+}
+
+.midway__left .link span img {
+  height: 20px;
+  width: auto;
+}
+
+.midway__left .card {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 400px;
+  height: auto;
+  padding: 1.5em;
+  margin-top: 3em;
+  -webkit-box-shadow: 0 2px 10px 2px rgba(233, 233, 233, 0.8);
+          box-shadow: 0 2px 10px 2px rgba(233, 233, 233, 0.8);
+}
+
+.midway__left .card__p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.midway__left .card__source {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.2fr 1fr;
+      grid-template-columns: 0.2fr 1fr;
+  margin-top: 1em;
+}
+
+.midway__left .card__source .avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: auto;
+}
+
+.midway__left .card__source .avatar-title {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.midway__left .card__source .avatar-title h5 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.midway__left .card__source .avatar-title p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1rem;
 }
 
 .midway__right {
-  width: 50%;
+  width: 45%;
 }
 
 .midway__right img {
