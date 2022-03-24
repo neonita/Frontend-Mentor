@@ -7,6 +7,40 @@
   box-sizing: border-box;
 }
 
-.h1 {
+h2 {
+  color: #070439;
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  line-height: 4.5rem;
+}
+
+h3 {
+  color: pink;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+.text {
+  color: #070439;
   font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.btn {
+  background-color: #3065f8;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+  height: 5vmin;
+  width: 22vmin;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 2.5px 7px #bfbfbf;
+  transition: background-color 0.1s ease-in-out;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #5984f9;
 }

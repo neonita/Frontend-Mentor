@@ -1,0 +1,39 @@
+@mixin fylo-btn {
+  background-color: $accent-blue;
+  color: #fff;
+  font-family: $ff-headings;
+  font-size: 0.9rem;
+
+  height: 5vmin;
+  width: 22vmin;
+  border: none;
+  border-radius: 3px;
+  box-shadow: $shadow;
+  transition: background-color 0.1s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $accent-blue-hover;
+  }
+}
+
+@mixin fylo-title($f-size, $color) {
+  color: $color;
+  font-family: $ff-headings;
+  font-size: $f-size * 1rem;
+  line-height: $f-size * 1.5rem;
+}
+
+@mixin fylo-text($color) {
+  color: $color;
+  font-family: $ff-body;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@mixin scene {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5em;
+}
