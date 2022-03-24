@@ -14,22 +14,89 @@
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
   </head>
   <body>
-    <div class="scene">
-      <h2>
-        Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur
-        adipisicing elit. Perferendis similique dolor cum nisi soluta dolorum
-        aliquid repellat at sequi, ullam porro debitis provident asperiores
-        unde, veniam inventore autem temporibus tempore!
-      </h2>
-      <h3>Lorem ipsum dolor sit amet.</h3>
-      <input type="submit" value="Get Started" class="btn" />
-      <p class="text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloribus
-        unde ipsa, ad quam possimus temporibus id. Voluptas nesciunt, assumenda
-        error facilis dolore est repellendus hic perferendis non enim!
-        Voluptatum?
-      </p>
-    </div>
+    <section class="scene">
+      <header class="header">
+        <h1 class="logo">
+          <img src="images/logo.svg" alt="Fylo logo" />
+        </h1>
+        <nav class="nav">
+          <ul>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Features</a>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">Team</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Sign In</a></li>
+          </ul>
+        </nav>
+      </header>
+      <article class="content">
+        <h2 class="content__title">
+          All your files in one secure location, accessible anywhere.
+        </h2>
+        <p class="content__text">
+          Fylo stores your most important files in one secure location. Access
+          them wherever you need, share and collaborate with friends, family,
+          and co-workers.
+        </p>
+        <form action="#!" class="content__cta">
+          <input type="email" placeholder="Enter your email..." />
+          <input type="submit" value="Get Started" />
+        </form>
+      </article>
+      <aside class="illu">
+        <img
+          src="../images/illustration-1.svg"
+          alt="Fylo theme illustration of hero section"
+        />
+      </aside>
+    </section>
+
+    <section class="scene">
+      <article class="content">
+        <h2 class="content__title">Stay productive, wherever you are</h2>
+        <p class="content__text">
+          Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.
+        </p>
+        <p class="content__text">
+          Securely share files and folders with friends, family and colleagues
+          for live collaboration. No email attachments required!
+        </p>
+        <div class="content__link">
+          <a href="#">See how Fylo works</a>
+          <img src="images/icon-arrow.svg" alt="arrow icon" />
+        </div>
+        <div class="content__card card">
+          <img
+            src="images/icon-quotes.svg"
+            alt="quotes icon"
+            class="card__icon"
+          />
+          <p class="card__text">
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </p>
+          <div class="card__source source">
+            <img
+              src="images/avatar-testimonial.jpg"
+              alt="avatar of Kyle Burton"
+              class="source__avatar"
+            />
+            <div class="source__client client">
+              <p class="client__name">Kyle Burton</p>
+              <p class="client__title">Founder & CEO, Huddle</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <aside class="illu">
+        <img
+          src="images/illustration-2.svg"
+          alt="Fylo theme illustration of hero section"
+        />
+      </aside>
+    </section>
   </body>
 </html>
 
