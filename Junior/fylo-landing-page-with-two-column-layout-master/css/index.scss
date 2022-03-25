@@ -8,22 +8,8 @@
   box-sizing: border-box;
 }
 
-h2 {
-  @include fylo-title(3, $primary-drk-blue);
-}
-
-h3 {
-  @include fylo-title(1.5, pink);
-}
-
-.text {
-  @include fylo-text($primary-drk-blue);
-}
-
-.btn {
-  @include fylo-btn;
-}
-
 .scene {
+  height: 100vh;
+
   @include scene;
 }
