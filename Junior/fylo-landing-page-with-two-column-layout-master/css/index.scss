@@ -219,6 +219,26 @@
 .cta {
   background-color: $bg-cta;
   height: 38.5vh;
+  padding: 3em $d-px 0 $d-px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__content,
+  .content {
+    width: 50%;
+    color: white;
+
+    &__title {
+      @include fylo-title(2, #fff);
+    }
+
+    &__text {
+      @include fylo-text(#fff);
+      font-size: 1.1rem;
+      padding-right: 9em;
+    }
+  }
 }
 
 .footer {

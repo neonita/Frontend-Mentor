@@ -308,6 +308,43 @@
 .cta {
   background-color: #575989;
   height: 38.5vh;
+  padding: 3em 5em 0 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cta__content,
+.cta .content {
+  width: 50%;
+  color: white;
+}
+
+.cta__content__title,
+.cta .content__title {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+  margin-bottom: 0.5em;
+}
+
+.cta__content__text,
+.cta .content__text {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin-bottom: 1.5em;
+  font-size: 1.1rem;
+  padding-right: 9em;
 }
 
 .footer {
