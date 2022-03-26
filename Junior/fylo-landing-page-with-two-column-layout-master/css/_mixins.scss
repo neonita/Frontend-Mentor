@@ -3,9 +3,10 @@
   color: #fff;
   font-family: $ff-headings;
   font-size: 0.9rem;
+  font-weight: 700;
 
-  height: 5vmin;
-  width: 22vmin;
+  height: 100%;
+  width: 25vmin;
   border: none;
   border-radius: 3px;
   box-shadow: $shadow;
@@ -21,14 +22,17 @@
   color: $color;
   font-family: $ff-headings;
   font-size: $f-size * 1rem;
+  font-weight: 700;
   line-height: $f-size * 1.5rem;
+  margin-bottom: 0.5em;
 }
 
 @mixin fylo-text($color) {
   color: $color;
   font-family: $ff-body;
   font-size: 1.2rem;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
+  margin-bottom: 1.5em;
 }
 
 @mixin scene {
