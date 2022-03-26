@@ -10,6 +10,8 @@
 
 .scene {
   height: 100vh;
+  position: relative;
+  z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,5 +22,62 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 0 5em;
+}
+
+.scene .header {
+  height: 20vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5em;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.scene .header .nav ul {
+  padding-left: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4em;
+}
+
+.scene .header .nav__item {
+  color: #585989;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.scene .header .nav__link {
+  text-decoration: none;
+}
+
+.scene .header .nav__link:hover {
+  cursor: pointer;
+}
+
+.scene .header .nav__link:visited {
+  color: #585989;
 }
 /*# sourceMappingURL=index.css.map */

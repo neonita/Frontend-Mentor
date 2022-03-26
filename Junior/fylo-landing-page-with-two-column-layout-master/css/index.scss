@@ -10,6 +10,49 @@
 
 .scene {
   height: 100vh;
+  position: relative;
+  z-index: 0;
 
   @include scene;
+
+  .header {
+    height: 20vh;
+    width: 100%;
+    @include scene;
+    justify-content: space-between !important;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: #fff;
+
+    .nav {
+      ul {
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4em;
+      }
+
+      &__item {
+        @include fylo-text($primary-desat-blue);
+      }
+
+      &__link {
+        text-decoration: none;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:visited {
+          color: $primary-desat-blue;
+        }
+      }
+    }
+  }
 }

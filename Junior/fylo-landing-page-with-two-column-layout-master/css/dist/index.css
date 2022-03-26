@@ -9,8 +9,47 @@
 
 .scene {
   height: 100vh;
+  position: relative;
+  z-index: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 5em;
+}
+.scene .header {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5em;
+  justify-content: space-between !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+}
+.scene .header .nav ul {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4em;
+}
+.scene .header .nav__item {
+  color: #585989;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.scene .header .nav__link {
+  text-decoration: none;
+}
+.scene .header .nav__link:hover {
+  cursor: pointer;
+}
+.scene .header .nav__link:visited {
+  color: #585989;
 }
