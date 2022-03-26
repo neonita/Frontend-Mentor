@@ -6,13 +6,15 @@ $ff-body: "Open Sans", sans-serif; // 400
 $mobile: 375px;
 $desktop: 1440px;
 $d-px: 5em; // desktop padding-x
+$bg-desktop: url(../images/bg-curve-desktop.svg);
+$bg-mobile: url(../images/bg-curve-mobile.svg);
 
 $primary-drk-blue: hsl(243, 87%, 12%);
 $primary-desat-blue: hsl(238, 22%, 44%);
 $accent-blue: hsl(224, 93%, 58%);
 $accent-cyan: hsl(170, 45%, 43%);
 $accent-blue-hover: mix($accent-blue, #fff, 80%);
-$accent-cyan-hover: mix($accent-cyan, #fff, 80%);
+$accent-cyan-hover: mix($accent-cyan, #fff, 90%);
 $neutral-light-blue: hsl(240, 75%, 98%);
 $neutral-light-gray: hsl(0, 0%, 75%);
 
