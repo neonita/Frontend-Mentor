@@ -44,9 +44,30 @@ body {
   color: #fff;
 }
 
+.info {
+  text-align: center;
+}
+
+.info__title {
+  font-size: calc(var(--base-fs) * 1.5);
+  font-weight: 600;
+  line-height: calc(var(--base-fs) * 1.9);
+  padding: 0.7em 2em;
+}
+
+.info__description {
+  font-size: var(--base-fs);
+  font-weight: 400;
+}
+
 /* tablet, desktop */
 @media (min-width: 600px) {
   body {
     background-image: var(--bg-img-desktop);
+  }
+
+  .container {
+    flex-direction: row;
+    padding: 10em;
   }
 }
