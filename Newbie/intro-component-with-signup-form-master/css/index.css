@@ -15,6 +15,8 @@
 
   --radius: 0.5em;
   --shadow: 0 7px hsla(249, 10%, 26%, 0.25);
+  --shadow-btn: 0 3px hsl(154, 57%, 45%);
+  --btn-hovered: hsla(154, 59%, 51%, 0.779);
 }
 
 *,
@@ -82,11 +84,12 @@ body {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 
-  padding: 1.5em 5.1em;
+  padding: 1.5em 5.2em;
   margin-bottom: 1.8em;
 
   text-align: center;
   font-size: calc(var(--base-fs) - 0.2rem);
+  line-height: 1.6;
   font-weight: 400;
 }
 
@@ -101,7 +104,7 @@ body {
   align-items: stretch;
   gap: 0.8em;
 
-  padding: 1.2em;
+  padding: 1.3em;
 }
 
 .form__input {
@@ -135,12 +138,38 @@ body {
   color: red;
 }
 
+.form__btn {
+  height: 3.5em;
+  box-shadow: var(--shadow-btn);
+
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+  border-radius: 0.3em;
+
+  color: #fff;
+  font-family: var(--ff);
+  font-weight: 600;
+  text-transform: uppercase;
+
+  transition: background-color 0.15s ease-in-out;
+}
+
+.form__btn:hover {
+  background-color: var(--btn-hovered);
+  cursor: pointer;
+}
+
 .form__ts {
   color: var(--color-neutral-light);
   font-size: calc(var(--base-fs) - 0.35rem);
   font-weight: 500;
+  line-height: 1.7;
   text-align: center;
-  padding: 0 2.5em;
+  padding: 0 3em;
+}
+
+.form__ts a {
+  text-decoration: none;
 }
 
 /* tablet, desktop */
