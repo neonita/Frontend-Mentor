@@ -197,11 +197,6 @@ footer a:hover {
     background-image: var(--bg-img-desktop);
   }
 
-  .container {
-    flex-direction: row;
-    padding: 10em;
-  }
-
   footer {
     position: absolute;
     bottom: 4.5%;
@@ -209,15 +204,40 @@ footer a:hover {
     transform: translate(-50%, -50%);
   }
 
-  /* .info {} */
+  .container {
+    flex-direction: row;
+    align-items: center;
+    padding: 10em;
+    gap: 7vmin;
+  }
 
-  /* .info__title {} */
+  .info {
+    text-align: left;
+    flex: 1;
+  }
 
-  /* .info__description {} */
+  .info__title {
+    font-size: calc(var(--base-fs) * 3);
+    line-height: 1.2;
+    font-weight: 700;
 
-  /* .cta {} */
+    padding: 0;
+    margin-bottom: 0.7em;
+  }
+
+  .info__description {
+    line-height: 1.8;
+  }
+
+  .cta {
+    flex: 1;
+    height: 100%;
+  }
 
   /* .cta__detail {} */
 
-  /* .form {} */
+  .form {
+    padding: 2em;
+    gap: 1.15em;
+  }
 }
