@@ -117,17 +117,21 @@ footer a:hover {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 
-  display: flex;
+  height: 30em;
+
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  gap: 0.8em;
+  justify-content: space-around;
+  align-items: stretch; */
+  /* gap: 0.8em; */
+  /* gap: 1em; */
 
   padding: 1.3em;
 }
 
 .form__input {
   height: 3em;
+  position: relative;
 }
 
 .form__input input {
@@ -147,18 +151,44 @@ footer a:hover {
   font-weight: 500;
 }
 
+.form__input input:focus {
+  outline: 1px solid var(--color-accent);
+}
+
+.error-input {
+  outline: 1px solid red;
+}
+
 .form__icon {
-  /* ERROR ICON */
-  display: none;
+  display: block;
+  line-height: 0.8;
+  position: absolute;
+  right: 1%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form__icon img {
+  width: 100%;
+  height: auto;
 }
 
 .form__errormsg {
+  /* display: block; */
   display: none;
+
   color: red;
+  text-align: right;
+  font-style: italic;
+  font-size: 2.8vmin;
+
+  margin: 0.5em 0 1.2em 0;
 }
 
 .form__btn {
   height: 3.5em;
+  width: 100%;
+
   box-shadow: var(--shadow-btn);
 
   background-color: var(--color-secondary);
@@ -237,5 +267,9 @@ footer a:hover {
   .form {
     padding: 2em;
     gap: 1.15em;
+  }
+
+  .form__errormsg {
+    font-size: 1.4vmin;
   }
 }

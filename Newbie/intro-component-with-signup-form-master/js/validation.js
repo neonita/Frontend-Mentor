@@ -5,6 +5,8 @@ const email = document.querySelector(".email");
 const password = document.querySelector(".password");
 const btn = document.querySelector(".form__btn");
 
+const displayError = (inputType, message) => {};
+
 const validateEmail = (inputEmail) => {
   let reGex =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
