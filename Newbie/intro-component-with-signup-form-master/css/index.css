@@ -117,7 +117,7 @@ footer a:hover {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 
-  height: 30em;
+  height: fit-content;
 
   /* display: flex;
   flex-direction: column;
@@ -131,6 +131,7 @@ footer a:hover {
 
 .form__input {
   height: 3em;
+  margin-bottom: 1em;
   position: relative;
 }
 
@@ -188,6 +189,7 @@ footer a:hover {
 .form__btn {
   height: 3.5em;
   width: 100%;
+  margin-bottom: 1em;
 
   box-shadow: var(--shadow-btn);
 
@@ -209,6 +211,7 @@ footer a:hover {
 }
 
 .form__ts {
+  display: block;
   color: var(--color-neutral-light);
   font-size: calc(var(--base-fs) - 0.35rem);
   font-weight: 500;
