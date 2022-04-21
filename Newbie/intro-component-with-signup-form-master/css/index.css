@@ -118,14 +118,6 @@ footer a:hover {
   box-shadow: var(--shadow);
 
   height: fit-content;
-
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: stretch; */
-  /* gap: 0.8em; */
-  /* gap: 1em; */
-
   padding: 1.3em;
 }
 
@@ -157,7 +149,7 @@ footer a:hover {
 }
 
 .error-input {
-  outline: 1px solid red;
+  outline: 2px solid var(--color-primary);
 }
 
 .form__icon {
@@ -175,8 +167,8 @@ footer a:hover {
 }
 
 .form__errormsg {
-  display: block;
-  /* display: none; */
+  /* display: block; */
+  display: none;
 
   color: red;
   text-align: right;
@@ -272,8 +264,12 @@ footer a:hover {
     gap: 1.15em;
   }
 
+  .form__input {
+    margin-bottom: 1.5em;
+  }
+
   .form__errormsg {
     font-size: 1.4vmin;
-    margin-top: -0.7em;
+    margin-top: -1.4em;
   }
 }
