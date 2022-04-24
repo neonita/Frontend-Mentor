@@ -4,8 +4,29 @@ const lastName = document.querySelector(".last-name");
 const email = document.querySelector(".email");
 const password = document.querySelector(".password");
 const btn = document.querySelector(".form__btn");
+const errorFn = document.querySelector(".error-first-name");
+const errorLn = document.querySelector(".error-last-name");
+const errorEmail = document.querySelector(".error-email");
+const errorPw = document.querySelector(".error-password");
 
-const displayError = (inputType, message) => {};
+const displayError = (inputType, message, errmsg) => {
+  // grab parent element of input type
+  let parent = inputType.parentElement;
+  console.log(parent);
+
+  // grab icon
+  let icon = parent.querySelector(".form__icon img");
+
+  // add red outline
+  inputType.classList.add("error-input");
+
+  // display error icon
+  icon.style.visibility = "visible";
+
+  // display error msg
+  errmsg.innerText = message;
+  errmsg.style.display = "block";
+};
 
 const validateEmail = (inputEmail) => {
   let reGex =
@@ -21,7 +42,7 @@ const checkInputs = () => {
     firstName.value === null ||
     firstName.length === 0
   ) {
-    alert("🚫  Error!");
+    displayError(firstName, "First name cannot be empty", errorFn);
   } else {
     console.log("✅ Valid! (firstname)");
   }
@@ -32,9 +53,9 @@ const checkInputs = () => {
     lastName.value === null ||
     lastName.length === 0
   ) {
-    alert("🚫  Error!");
+    displayError(lastName, "Last name cannot be empty", errorLn);
   } else {
-    console.log("✅ Valid! (lastname)");
+    console.log("Last Name: ✅ Valid!");
   }
 
   // Email
@@ -43,16 +64,16 @@ const checkInputs = () => {
     lastName.value === null ||
     lastName.length === 0
   ) {
-    alert("🚫  Error! Please enter an email.");
+    displayError(email, "Email address cannot be empty", errorEmail);
   } else if (!validateEmail(email.value)) {
-    alert("🚫 Error! Please enter a valid email.");
+    displayError(email, "Looks like this is not an email", errorEmail);
   } else {
-    alert("✅ Valid! (email)");
+    console.log("Email: ✅ Valid!");
   }
 
   // Password
   if (password.value.length <= 7) {
-    alert("🚫  Error! Password cannot be empty or less than 7 characters");
+    displayError(password, "Password cannot be empty", errorPw);
   } else {
     console.log("✅ Valid! (pw)");
   }
