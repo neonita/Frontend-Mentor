@@ -4,8 +4,8 @@
   --ff: "Poppins", Arial, Helvetica, sans-serif;
   --base-fs: 1rem; /* 16px */
 
-  --bg-img-desktop: url(../../images/bg-intro-desktop.png);
-  --bg-img-mobile: url(../../images/bg-intro-mobile.png);
+  --bg-img-desktop: url(.././images/bg-intro-desktop.png);
+  --bg-img-mobile: url(.././images/bg-intro-mobile.png);
 
   --color-primary: hsl(0, 100%, 74%);
   --color-secondary: hsl(154, 59%, 51%);

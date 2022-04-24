@@ -12,7 +12,6 @@ const errorPw = document.querySelector(".error-password");
 const displayError = (inputType, message, errmsg) => {
   // grab parent element of input type
   let parent = inputType.parentElement;
-  console.log(parent);
 
   // grab icon
   let icon = parent.querySelector(".form__icon img");
@@ -66,6 +65,7 @@ const checkInputs = () => {
   ) {
     displayError(email, "Email address cannot be empty", errorEmail);
   } else if (!validateEmail(email.value)) {
+    email.placeholder = "email@example/com";
     displayError(email, "Looks like this is not an email", errorEmail);
   } else {
     console.log("Email: ✅ Valid!");
