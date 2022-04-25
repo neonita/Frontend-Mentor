@@ -33,7 +33,12 @@
         <form action="/" class="form">
           <!-- First Name -->
           <div class="form__input">
-            <input type="text" class="first-name" placeholder="First Name" />
+            <input
+              type="text"
+              class="first-name"
+              placeholder="First Name"
+              aria-label="First name"
+            />
             <span class="form__icon">
               <img src="images/icon-error.svg" alt="error icon" />
             </span>
@@ -45,7 +50,12 @@
 
           <!-- Last Name -->
           <div class="form__input">
-            <input type="text" class="last-name" placeholder="Last Name" />
+            <input
+              type="text"
+              class="last-name"
+              placeholder="Last Name"
+              aria-label="Last name"
+            />
             <span class="form__icon">
               <img src="images/icon-error.svg" alt="error icon" />
             </span>
@@ -62,6 +72,7 @@
               name="email"
               class="email"
               placeholder="Email Address"
+              aria-label="E-mail"
             />
             <span class="form__icon">
               <img src="images/icon-error.svg" alt="error icon" />
@@ -89,6 +100,7 @@
             type="submit"
             class="form__btn"
             value="Claim your free trial"
+            aria-label="Submit button"
           />
 
           <small class="form__ts">
