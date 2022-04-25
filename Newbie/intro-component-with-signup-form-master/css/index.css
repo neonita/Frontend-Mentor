@@ -112,6 +112,15 @@ footer a:hover {
   font-weight: 400;
 }
 
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
 .form {
   background-color: #fff;
   border-radius: var(--radius);
