@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  /* -- */
+  --c-bg: hsl(218, 23%, 16%);
+  --c-bg-card: hsl(217, 19%, 24%);
+  --c-primary: hsl(193, 38%, 86%);
+  --c-secondary: hsl(150, 100%, 66%);
+  --c-tertiary: hsl(217, 19%, 38%);
+
+  --ff: "Manrope", sans-serif;
+  --fs-base: 1.75rem; /* 28px */
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--c-bg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ff);
+}
+
+.card {
+  background-color: var(--c-bg-card);
+  border-radius: 10px;
+
+  height: 32vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 1em;
+}
+
+.sr-only {
+  position: absolute;
+  left: -1000px;
+}
+
+.card__title {
+  color: var(--c-secondary);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: calc(var(--fs-base) / 3);
+}
+
+/* .card__number{} */
+
+.attribution {
+  color: var(--c-tertiary);
+  font-size: calc(var(--fs-base) / 2.3);
+
+  position: absolute;
+  bottom: 30%;
+}
+
+.attribution a:link,
+.attribution a:visited {
+  color: var(--c-tertiary);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.attribution a:hover {
+  color: var(--c-secondary);
+}
