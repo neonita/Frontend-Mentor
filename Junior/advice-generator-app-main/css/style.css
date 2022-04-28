@@ -22,24 +22,29 @@
 
 body {
   background-color: var(--c-bg);
+  font-family: var(--ff);
+
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: var(--ff);
+  gap: 15%;
 }
 
 .card {
   background-color: var(--c-bg-card);
   border-radius: 10px;
 
-  height: 32vmin;
+  height: 85vmin;
+  width: 92vmin;
+  min-height: 85vmin;
+  min-width: 92vmin;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  padding: 1em;
+  padding: 2em;
 }
 
 .sr-only {
@@ -59,9 +64,12 @@ body {
 .attribution {
   color: var(--c-tertiary);
   font-size: calc(var(--fs-base) / 2.3);
+  text-align: center;
 
   position: absolute;
-  bottom: 30%;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 50%);
 }
 
 .attribution a:link,
@@ -73,4 +81,10 @@ body {
 
 .attribution a:hover {
   color: var(--c-secondary);
+}
+
+@media screen (min-width: 600px) {
+  .attribution {
+    bottom: 30%;
+  }
 }
