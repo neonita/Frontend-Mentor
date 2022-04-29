@@ -58,11 +58,7 @@ const checkInputs = () => {
   }
 
   // Email
-  if (
-    lastName.value === "" ||
-    lastName.value === null ||
-    lastName.length === 0
-  ) {
+  if (email.value === "" || email.value === null || email.length === 0) {
     displayError(email, "Email address cannot be empty", errorEmail);
   } else if (!validateEmail(email.value)) {
     email.placeholder = "email@example/com";
