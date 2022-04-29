@@ -12,8 +12,8 @@
   --ff: "Manrope", sans-serif;
   --fs-base: 1.75rem; /* 28px */
 
-  --divider-mobile: url(/images/pattern-divider-mobile.svg);
-  --divider-dekstop: url(/images/pattern-divider-desktop.svg);
+  --divider-mobile: url(../images/pattern-divider-mobile.svg);
+  --divider-dekstop: url(../images/pattern-divider-desktop.svg);
 }
 
 *,
