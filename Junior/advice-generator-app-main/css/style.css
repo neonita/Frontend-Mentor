@@ -136,12 +136,14 @@ body {
 
 @media (min-width: 600px) {
   .card {
-    height: 10vmin;
-    width: 10vmin;
-    min-height: 10vmin;
-    min-height: 10vmin;
-    /* min-height: 85vmin;
-  min-width: 92vmin; */
+    height: 40vmin;
+    width: 65vmin;
+    min-height: 40vmin;
+    min-width: 65vmin;
+  }
+
+  .card__advice {
+    font-size: var(--fs-base);
   }
 
   button {
@@ -159,6 +161,6 @@ body {
   }
 
   .attribution {
-    bottom: 30%;
+    bottom: 20%;
   }
 }
