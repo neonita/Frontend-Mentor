@@ -1,4 +1,5 @@
 let adviceNum = document.querySelector(".card__number");
+let adviceBlock = document.querySelector(".card__advice");
 let adviceText = document.querySelector(".card__advice-generated");
 let btn = document.querySelector(".card__btn");
 
@@ -20,6 +21,13 @@ const showAdvice = (response) => {
 
   adviceNum.innerHTML = adviceId;
   adviceText.innerHTML = adviceTxt;
+
+  console.log(adviceTxt.length);
+
+  if (adviceTxt.length > 90) {
+    adviceText.style.fontSize = "1.2rem";
+    adviceBlock.style.fontSize = "1.2rem";
+  }
 };
 
 const apiUrl = `https://api.adviceslip.com/advice`;

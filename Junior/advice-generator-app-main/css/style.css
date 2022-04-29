@@ -153,7 +153,6 @@ body {
   button:hover {
     box-shadow: 0 0 20px 10px var(--c-btn-hover);
     cursor: pointer;
-    /* box-shadow: none|h-offset v-offset blur spread color  */
   }
 
   .card__divider {
