@@ -112,6 +112,11 @@ body {
   vertical-align: middle;
 }
 
+.card__btn:hover {
+  box-shadow: 0 0 20px 10px var(--c-btn-hover);
+  cursor: pointer;
+}
+
 .attribution {
   color: var(--c-tertiary);
   font-size: calc(var(--fs-base) / 2.3);
@@ -148,11 +153,6 @@ body {
 
   button {
     transition: all 0.2s ease-in-out;
-  }
-
-  button:hover {
-    box-shadow: 0 0 20px 10px var(--c-btn-hover);
-    cursor: pointer;
   }
 
   .card__divider {

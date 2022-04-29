@@ -9,6 +9,9 @@ const shrink = (adviceData) => {
   if (adviceData.length > 90) {
     adviceText.style.fontSize = "1.2rem";
     adviceBlock.style.fontSize = "1.2rem";
+  } else {
+    adviceText.style.fontSize = "calc(var(--fs-base) * 0.8)";
+    adviceBlock.style.fontSize = "calc(var(--fs-base) * 0.8)";
   }
 };
 
