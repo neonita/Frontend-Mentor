@@ -39,6 +39,5 @@ window.addEventListener("load", () => {
 btn.addEventListener("click", (event) => {
   event.preventDefault();
 
-  let apiUrl = `https://api.adviceslip.com/advice`;
   axios.get(apiUrl).then(grabData);
 });
