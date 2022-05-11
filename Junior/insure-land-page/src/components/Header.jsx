@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { GrMenu, GrClose } from "react-icons/gr";
+import MobileNavPattern from "../assets/images/bg-pattern-mobile-nav.svg";
 
 const Logo = () => (
   <svg
@@ -45,7 +46,7 @@ const Header = () => {
             : "md:hidden fixed top-16 left-0 w-full nav-container bg-neutralViolet transition ease-in-out duration-500 pt-14"
         }
       >
-        <ul className="uppercase text-neutralGray text-center flex flex-col gap-8 text-2xl mx-7">
+        <ul className="uppercase text-neutralGray text-center flex flex-col gap-5 text-2xl mx-7">
           <li className="w-[100%] py-2 hover:border border-neutralGray transition ease-in-out duration-150">
             <a href="/">How we work</a>
           </li>
@@ -59,6 +60,11 @@ const Header = () => {
             <a href="/">View plans</a>
           </li>
         </ul>
+        <img
+          className="absolute bottom-0 right-0 w-full h-auto"
+          src={MobileNavPattern}
+          alt="Mobile background pattern of navigation menu"
+        />
       </div>
     </header>
   );
