@@ -22,6 +22,7 @@ const Header = () => {
 
   return (
     <header className="flex items-center justify-between p-5 md:px-12 lg:px-20 xl:px-40 h-16 relative top-0 left-0 w-full bg-white border-b border-b-zinc-200">
+      <h1 className="sr-only absolute top-[-100%] left-1000">Insure</h1>
       <a href="/">
         <Logo width={10} height={10} />
       </a>
