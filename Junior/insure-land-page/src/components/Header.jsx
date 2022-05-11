@@ -21,11 +21,47 @@ const Header = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <header className="flex items-center justify-between p-5 h-16 relative top-0 left-0 w-full bg-white border-b border-b-zinc-200">
+    <header className="flex items-center justify-between p-5 md:px-12 lg:px-20 xl:px-40 h-16 relative top-0 left-0 w-full bg-white border-b border-b-zinc-200">
       <a href="/">
         <Logo width={10} height={10} />
       </a>
 
+      <nav className="hidden md:block uppercase">
+        <ul className="w-[400px] h-10 flex items-center justify-between text-[14px] font-bold">
+          <li>
+            <a
+              className="text-neutralGrayViolet hover:text-neutralViolet transition ease-in-out duration-300"
+              href="/"
+            >
+              How we work
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-neutralGrayViolet hover:text-neutralViolet transition ease-in-out duration-300"
+              href="/"
+            >
+              Blog
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-neutralGrayViolet hover:text-neutralViolet transition ease-in-out duration-300"
+              href="/"
+            >
+              Account
+            </a>
+          </li>
+          <li className="flex items-center px-6 border-2 border-neutralViolet h-full transition ease-in-out duration-300 group hover:bg-neutralViolet">
+            <a
+              className="text-neutralViolet transition ease-in-out duration-300 group-hover:text-neutralGray"
+              href="/"
+            >
+              View plans
+            </a>
+          </li>
+        </ul>
+      </nav>
       {/* Mobile menu icon */}
       <div
         className="md:hidden border-[1.8px] border-primaryViolet p-1"
