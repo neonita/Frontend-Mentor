@@ -185,6 +185,28 @@ const Footer = () => {
           </ul>
         </div>
       </section>
+
+      <div className="text-[0.6rem] tracking-wide text-neutralGrayViolet text-center md:text-left relative bottom-2 md:static my-8 md:my-0 opacity-60">
+        Challenge by{" "}
+        <a
+          className="text-bold hover:underline"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Frontend Mentor
+        </a>
+        . Coded by{" "}
+        <a
+          className="text-bold hover:underline"
+          href="https://github.com/neonita"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Neonita
+        </a>
+        .
+      </div>
     </footer>
   );
 };
