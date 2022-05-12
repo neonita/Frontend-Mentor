@@ -1,4 +1,5 @@
-import CTAPattern from "../assets/images/bg-pattern-how-we-work-mobile.svg";
+import CTAPatternMobile from "../assets/images/bg-pattern-how-we-work-mobile.svg";
+import CTAPatternDesktop from "../assets/images/bg-pattern-how-we-work-desktop.svg";
 import Card from "./Card";
 
 const Thunder = () => (
@@ -13,7 +14,6 @@ const Thunder = () => (
     </g>
   </svg>
 );
-
 const Dollar = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="86" height="86">
     <g fill="none" fill-rule="evenodd">
@@ -26,7 +26,6 @@ const Dollar = () => (
     </g>
   </svg>
 );
-
 const Person = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="86" height="86">
     <g fill="none" fill-rule="evenodd">
@@ -61,41 +60,51 @@ const Information = () => {
 
   return (
     <section
-      className="flex flex-col items-center justify-center gap-16 py-40 px-10 
-      md:px-12 lg:px-20 xl:px-40"
+      className="flex flex-col items-center md:items-start justify-center gap-16 md:gap-8 py-40 px-10 
+      md:px-12 lg:px-20 xl:px-40 md:mt-40"
     >
-      <div className="bg-neutralGrayViolet h-[1px] w-[12em] " />
+      <div className="bg-neutralGrayViolet h-[1px] w-[12em] md:w-[9em] md:mb-6" />
 
-      <h2 className="text-[3.8em] text-primaryViolet font-headings font-normal text-center md:text-left mb-8">
+      <h2 className="text-[3.8em] md:text-[4.1em] text-primaryViolet font-headings font-normal text-center md:text-left mb-8 md:mb-0">
         We're different
       </h2>
-      <Card
-        icon={<Thunder />}
-        title={infos.process.title}
-        desc={infos.process.description}
-      />
-      <Card
-        icon={<Dollar />}
-        title={infos.price.title}
-        desc={infos.price.description}
-      />
-      <Card
-        icon={<Person />}
-        title={infos.people.title}
-        desc={infos.people.description}
-      />
+
+      <div className="flex flex-col md:flex-row gap-16 md:gap-6 md:my-16">
+        <Card
+          icon={<Thunder />}
+          title={infos.process.title}
+          desc={infos.process.description}
+        />
+        <Card
+          icon={<Dollar />}
+          title={infos.price.title}
+          desc={infos.price.description}
+        />
+        <Card
+          icon={<Person />}
+          title={infos.people.title}
+          desc={infos.people.description}
+        />
+      </div>
 
       {/* cta card */}
-      <section className="bg-primaryViolet w-full h-fit py-28 flex flex-col gap-10 justify-center items-center relative mt-32">
-        <h2 className="text-neutralGray text-[3.5rem] px-8 font-headings text-center leading-[1.1em] relative z-10">
-          Find out more about how we work
+      <section className="bg-primaryViolet w-full h-fit py-28 md:py-20 md:px-20 flex flex-col md:flex-row gap-10 justify-center md:justify-between items-center relative mt-14">
+        <h2 className="text-neutralGray text-[3.2rem] md:text-[3.6rem] px-8 md:px-0 md:w-[10em] md:text-left font-headings text-center leading-[1.1em] relative z-10">
+          Find out more <br /> about how we work
         </h2>
-        <button className="text-neutralGray bg-primaryViolet tracking-widest uppercase py-[.7em] px-10 border-2 border-neutralGray hover:bg-neutralGray hover:text-primaryViolet transition ease-in-out duration-200 relative z-10 text-xl font-bold">
+        <button className="text-neutralGray bg-transparent tracking-widest uppercase py-[.7em] px-10 border-2 border-neutralGray hover:bg-neutralGray hover:text-primaryViolet transition ease-in-out duration-200 relative z-10 text-xl font-bold">
           How we work
         </button>
+        {/* mobile pattern */}
         <img
-          className="absolute top-0 right-0 z-0 h-full"
-          src={CTAPattern}
+          className="block md:hidden absolute top-0 right-0 z-0 h-full w-auto"
+          src={CTAPatternMobile}
+          alt="Call to action's mobile pattern"
+        />
+        {/* desktop pattern */}
+        <img
+          className="hidden md:block absolute top-0 right-0 z-0 h-full w-auto"
+          src={CTAPatternDesktop}
           alt="Call to action's mobile pattern"
         />
       </section>
