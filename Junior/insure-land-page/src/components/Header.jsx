@@ -80,7 +80,7 @@ const Header = () => {
         className={
           !menu
             ? "md:hidden fixed top-[-100%] transition ease-in-out duration-500"
-            : "md:hidden fixed top-16 left-0 w-full nav-container bg-neutralViolet transition ease-in-out duration-500 pt-14"
+            : "md:hidden fixed top-16 left-0 z-50 w-full nav-container bg-neutralViolet transition ease-in-out duration-500 pt-14"
         }
       >
         <ul className="uppercase text-neutralGray text-center flex flex-col gap-5 text-2xl mx-7">

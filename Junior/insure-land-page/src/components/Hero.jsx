@@ -7,7 +7,7 @@ import PatternIntroRightDesktop from "../assets/images/bg-pattern-intro-right-de
 
 const Hero = () => {
   return (
-    <main className="relative">
+    <div className="relative">
       <img
         className="block md:hidden w-screen h-auto"
         src={FamilyImgMobile}
@@ -21,7 +21,7 @@ const Hero = () => {
         {/* line above header */}
         <section className="flex flex-col items-center md:items-start gap-5">
           <div className="hidden md:block bg-white h-[1px] w-[9em] mb-6" />
-          <h2 className="text-6xl text-neutralGray font-headings font-normal relative z-10 text-center md:text-left">
+          <h2 className="text-[3.5em] leading-[0.95em] text-neutralGray font-headings font-normal relative z-10 text-center md:text-left">
             Humanizing your insurance.
           </h2>
           <p className="text-[18px] text-neutralGray text-center md:text-left leading-8 px-6 md:px-0 mb-6 md:mb-0 opacity-80 relative z-10">
@@ -67,7 +67,7 @@ const Hero = () => {
           alt="intro right desktop pattern"
         />
       </article>
-    </main>
+    </div>
   );
 };
 
