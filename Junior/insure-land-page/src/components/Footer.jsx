@@ -45,20 +45,20 @@ const IGIcon = () => (
 
 const Footer = () => {
   return (
-    <footer className="bg-neutralGray h-fit p-5 pt-28 md:px-12 lg:px-20 xl:px-40 relative">
+    <footer className="bg-neutralGray h-fit p-5 pt-28 md:pt-16 md:px-12 lg:px-20 xl:px-40 relative">
       <img
         className="block md:hidden absolute top-0 left-0 z-0 w-full h-auto "
         src={PatternFooterMobile}
         alt="Mobile resolution of the footer's theme-pattern."
       />
       <img
-        className="hidden md:block absolute top-0 left-0 z-0 w-full h-auto "
+        className="hidden md:block absolute top-0 left-0 z-0 w-2/5 h-auto "
         src={PatternFooterDesktop}
         alt="Desktop resolution of the footer's theme-pattern."
       />
 
       {/* Footer's header */}
-      <section className=" flex flex-col gap-8 items-center justify-center relative z-10">
+      <section className=" flex flex-col md:flex-row gap-8 items-center justify-center md:justify-between relative z-10">
         <a className="" href="/">
           <Logo />
         </a>
@@ -85,14 +85,14 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-
-        <div className="h-[0.5px] w-full bg-[#837D88] opacity-30"></div>
       </section>
 
+      <div className="h-[0.5px] w-full bg-[#837D88] opacity-30 mt-8"></div>
+
       {/* Links */}
-      <section className="flex flex-col gap-6 items-center justify-center my-20 text-center uppercase">
+      <section className="flex flex-col md:flex-row gap-6 items-center md:items-start justify-center md:justify-between md:w-5/6 my-20 md:my-12 text-center md:text-left uppercase relative z-10">
         <div className="">
-          <h5 className="text-neutralGrayViolet mb-6">Our company</h5>
+          <h5 className="text-neutralGrayViolet mb-8">Our company</h5>
           <ul className="flex flex-col gap-2">
             <li>
               <a className="hover:cursor-pointer hover:underline" href="/">
@@ -118,7 +118,7 @@ const Footer = () => {
         </div>
 
         <div className="">
-          <h5 className="text-neutralGrayViolet mb-6">Help me</h5>
+          <h5 className="text-neutralGrayViolet mb-8">Help me</h5>
           <ul className="flex flex-col gap-2">
             <li>
               <a className="hover:cursor-pointer hover:underline" href="/">
@@ -144,7 +144,7 @@ const Footer = () => {
         </div>
 
         <div className="">
-          <h5 className="text-neutralGrayViolet mb-6">Contact</h5>
+          <h5 className="text-neutralGrayViolet mb-8">Contact</h5>
           <ul className="flex flex-col gap-2">
             <li>
               <a className="hover:cursor-pointer hover:underline" href="/">
@@ -165,7 +165,7 @@ const Footer = () => {
         </div>
 
         <div className="">
-          <h5 className="text-neutralGrayViolet mb-6">Others</h5>
+          <h5 className="text-neutralGrayViolet mb-8">Others</h5>
           <ul className="flex flex-col gap-2">
             <li>
               <a className="hover:cursor-pointer hover:underline" href="/">
