@@ -1,26 +1,18 @@
-import Button from "./components/Button";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div>
-      <h1>easybank</h1>
-      <Button />
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+    </>
   );
 }
 
 export default App;
 
 /**
- *  Home
-  About
-  Contact
-  Blog
-  Careers
-
-  Request Invite
-
-
 
   Next generation digital banking
 

@@ -13,8 +13,8 @@
   --base-fs: 14px;
   --ff: "Public Sans", Helvetica, sans-serif;
 
-  --w-mobile: 375px;
-  --w-desktop: 1440px;
+  --max-w-desktop: 1100px;
+  --min-w-desktop: 960px;
 
   --theme-gradient: linear-gradient(
     to right,
@@ -34,4 +34,8 @@
 body {
   font-family: var(--ff);
   color: var(--c-prim-blue);
+  /* padding: var(--px-desktop); */
+
+  /* max-width: 1000px;
+  margin: 0 auto; */
 }
