@@ -19,3 +19,12 @@ button:hover {
   cursor: pointer;
   opacity: 0.6;
 }
+
+@media (max-width: 920px) {
+  button {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
