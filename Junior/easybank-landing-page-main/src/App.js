@@ -3,6 +3,7 @@ import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Nav/Navbar";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Main from "./components/Main/Main";
 
 function App() {
   useEffect(() => {
@@ -13,6 +14,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      <Main />
     </>
   );
 }

@@ -4,9 +4,9 @@ import Mockup from "../../images/image-mockups.png";
 
 const Hero = () => {
   return (
-    <main className="hero">
-      <section className="hero__content content">
-        <div
+    <section className="hero">
+      <div className="hero__content content">
+        <aside
           data-aos="fade-up"
           data-aos-duration="2000"
           data-aos-delay="1000"
@@ -21,8 +21,8 @@ const Hero = () => {
           <div className="content__btn">
             <Button />
           </div>
-        </div>
-      </section>
+        </aside>
+      </div>
       <img
         src={Mockup}
         alt="Mockup of Easybanking mobile app."
@@ -30,7 +30,7 @@ const Hero = () => {
         data-aos="fade-left"
         data-aos-duration="1000"
       />
-    </main>
+    </section>
   );
 };
 
