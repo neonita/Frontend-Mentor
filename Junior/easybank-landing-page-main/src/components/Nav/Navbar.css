@@ -63,9 +63,9 @@
   display: none;
 }
 
-/* .header__btn-mobile {
+.mobileNav__btn {
   display: none;
-} */
+}
 
 @media (max-width: 920px) {
   .header__content {
@@ -144,5 +144,13 @@
 
   .header__btn-mobile > *:hover {
     cursor: pointer;
+  }
+
+  .mobileNav__btn {
+    display: block;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

@@ -54,7 +54,10 @@ const NavMobile = () => {
           className="mobileNav__open"
         >
           <NavLinks />
-          <Button />
+
+          <div className="mobileNav__btn">
+            <Button />
+          </div>
         </div>
       )}
     </nav>

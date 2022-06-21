@@ -21,6 +21,8 @@
     var(--c-prim-green),
     var(--c-prim-cyan)
   );
+  --bg-img-desktop: url(./images/bg-intro-desktop.svg);
+  --bg-img-mobile: url(./images/bg-intro-mobile.svg);
 }
 
 *,
