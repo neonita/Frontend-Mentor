@@ -1,5 +1,7 @@
 import Button from "../Button/Button";
+import MobileNav from "./MobileNav";
 import styles from "./Navbar.module.css";
+import Navigation from "./Navigation";
 
 const Logo = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20">
@@ -27,43 +29,21 @@ const Logo = () => (
 const Navbar = () => {
   return (
     <header className={styles.header}>
-      <h1 className={styles.header__logo}>
-        <a href="/">
-          <Logo />
-        </a>
-      </h1>
+      <div className={styles.header__content}>
+        <h1 className={styles.header__logo}>
+          <a href="/">
+            <Logo />
+          </a>
+        </h1>
 
-      <nav className={styles.nav}>
-        <ul>
-          <li className={styles.nav__item}>
-            <a href="/" className={styles.nav__link}>
-              Home
-            </a>
-          </li>
-          <li className={styles.nav__item}>
-            <a href="/" className={styles.nav__link}>
-              About
-            </a>
-          </li>
-          <li className={styles.nav__item}>
-            <a href="/" className={styles.nav__link}>
-              Contact
-            </a>
-          </li>
-          <li className={styles.nav__item}>
-            <a href="/" className={styles.nav__link}>
-              Blog
-            </a>
-          </li>
-          <li className={styles.nav__item}>
-            <a href="/" className={styles.nav__link}>
-              Careers
-            </a>
-          </li>
-        </ul>
-      </nav>
+        <Navigation />
 
-      <Button />
+        <div className={styles.header__btn}>
+          <Button />
+        </div>
+
+        <MobileNav />
+      </div>
     </header>
   );
 };

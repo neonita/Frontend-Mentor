@@ -1,0 +1,20 @@
+.MobileNav {
+  display: block;
+}
+
+.MobileNav__btn {
+  cursor: pointer;
+}
+
+.MobileNav__themeBtn {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+  .MobileNav {
+    display: none;
+  }
+}
