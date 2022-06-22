@@ -1,0 +1,20 @@
+.header {
+  border-bottom: 1px solid red;
+  background-color: var(--neut-white);
+  height: 4em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo a {
+  cursor: pointer;
+}

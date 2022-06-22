@@ -20,6 +20,8 @@
 
   --bg-desktop: url(./assets/images/bg-intro-desktop.svg);
   --bg-mobile: url(./assets/images/bg-intro-mobile.svg);
+
+  --transition: 0.2s linear;
 }
 
 *,
@@ -31,5 +33,5 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: var(--ff);
 }
