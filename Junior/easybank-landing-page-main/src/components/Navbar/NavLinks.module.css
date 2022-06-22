@@ -1,13 +1,13 @@
 .nav__ul {
   display: block;
+}
+
+.nav__menuBg {
+  display: block;
   list-style: none;
   display: flex;
   justify-content: space-between;
   gap: 2em;
-}
-
-.nav__menuBg {
-  display: none;
 }
 
 .nav__item {
@@ -68,5 +68,11 @@
   .nav__link:hover {
     color: var(--neut-blue);
     border-bottom: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav__ul {
+    top: 4em;
   }
 }

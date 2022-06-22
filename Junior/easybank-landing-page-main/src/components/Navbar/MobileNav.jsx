@@ -22,7 +22,9 @@ const CloseIcon = () => (
 
 const MobileNav = () => {
   const [open, setOpen] = useState(false);
+
   const toggle = open ? <CloseIcon /> : <MenuIcon />;
+
   const openMenu = open && (
     <>
       <NavLinks />
