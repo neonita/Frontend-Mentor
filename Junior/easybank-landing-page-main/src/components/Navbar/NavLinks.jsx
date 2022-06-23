@@ -3,7 +3,11 @@ import styles from "./NavLinks.module.css";
 const NavLinks = () => {
   return (
     <ul className={styles.nav__ul}>
-      <div className={styles.nav__menuBg}>
+      <div
+        className={styles.nav__menuBg}
+        data-aos="fade-down"
+        data-aos-duration="500"
+      >
         <li className={styles.nav__item}>
           <a href="/" className={styles.nav__link}>
             Home

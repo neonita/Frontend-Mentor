@@ -37,8 +37,9 @@
     position: absolute;
     top: 5em;
     left: 0;
+    z-index: -900;
 
-    background: linear-gradient(to bottom, #0009, transparent);
+    background: linear-gradient(to bottom, #000, transparent);
   }
 
   .nav__menuBg {
