@@ -4,18 +4,16 @@ import styles from "./Hero.module.css";
 
 const Hero = () => {
   return (
-    <section className={styles.Hero}>
-      <div className={styles.Hero__content}>
-        <aside className={styles.Hero__information}>
-          <h2 className={styles.Hero__heading}>
-            Next generation digital banking
-          </h2>
-          <p className={styles.Hero__text}>
+    <section className={styles.container}>
+      <div className={styles.content}>
+        <aside className={styles.information}>
+          <h2 className={styles.heading}>Next generation digital banking</h2>
+          <p className={styles.text}>
             Take your financial life online. Your Easybank account will be a
             one-stop-shop for spending, saving, budgeting, investing, and much
             more.
           </p>
-          <div className={styles.Hero__themeBtn}>
+          <div className={styles.themeBtn}>
             <Button />
           </div>
         </aside>
@@ -23,7 +21,7 @@ const Hero = () => {
       <img
         src={Mockup}
         alt="Illustration of Easybank's app mockup."
-        className={styles.Hero__img}
+        className={styles.img}
       />
     </section>
   );

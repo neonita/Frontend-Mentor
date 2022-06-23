@@ -14,7 +14,7 @@
 
 .MobileNav__themeBtn {
   position: absolute;
-  bottom: 3%;
+  bottom: -1000%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -23,4 +23,11 @@
   .MobileNav {
     display: none;
   }
+  /* 
+  .MobileNav__themeBtn {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+  } */
 }
