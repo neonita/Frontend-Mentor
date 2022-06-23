@@ -22,6 +22,7 @@
   --bg-mobile: url(./assets/images/bg-intro-mobile.svg);
 
   --px-lg: 0 1em;
+  --max-w: 1100px;
 
   --transition: 0.2s linear;
 }
