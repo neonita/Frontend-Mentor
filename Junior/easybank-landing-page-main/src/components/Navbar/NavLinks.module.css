@@ -18,7 +18,7 @@
 
 .nav__link:link,
 .nav__link:visited {
-  padding-bottom: 1.7em;
+  padding-bottom: 1.5em;
   text-decoration: none;
   color: var(--neut-blue);
   transition: var(--transition);
