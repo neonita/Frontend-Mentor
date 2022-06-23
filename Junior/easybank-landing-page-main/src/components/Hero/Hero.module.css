@@ -11,7 +11,7 @@
   background-position: top -20em left 38em;
 
   position: relative;
-  position: 900;
+  z-index: 900;
 }
 
 .content {
@@ -122,15 +122,40 @@
 
 @media (max-width: 640px) {
   .container {
-    /* height: 150vh; */
-    /* background-image: var(--bg-mobile); */
-    /* background-size: 100%; */
+    height: 100vh;
     background-position: center top;
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .information {
+    height: 50%;
+    padding: 1em 0em;
+    gap: 1em;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .text {
+    font-size: var(--text-mobile);
+    line-height: var(--text-leading-mobile);
+  }
+
+  .themeBtn {
+    margin-top: 1em;
   }
 
   .img {
     width: 100%;
     height: auto;
-    top: -7.8%;
+    top: -8.7%;
   }
 }

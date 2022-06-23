@@ -24,6 +24,9 @@
   --px-lg: 0 1em;
   --max-w: 1100px;
 
+  --text-mobile: 0.935rem;
+  --text-leading-mobile: 1.5rem;
+
   --transition: 0.2s linear;
 }
 
