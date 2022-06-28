@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Main from "./components/Main/Main";
+import Articles from "./components/Articles/Articles";
 
 function App() {
   useEffect(() => {
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <Hero />
       <Main />
+      <Articles />
     </>
   );
 }
