@@ -37,18 +37,11 @@
 
 .information {
   height: 21em;
-  /* border: 1px dashed yellowgreen; */
-  /* padding: 1em; */
 }
 
 .ul {
-  border: 1px dashed yellowgreen;
-
+  /* border: 1px dashed yellowgreen; */
   list-style: none;
-
-  /* display: flex;
-  justify-content: space-between;
-  gap: 1em; */
 
   display: grid;
   grid-template-rows: 1fr;
@@ -59,5 +52,31 @@
 @media (max-width: 1024px) {
   .content {
     padding: 6.5em 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: calc(100vh - 5em);
+  }
+
+  .content {
+    padding: 3em 1em;
+    justify-content: space-between;
+    gap: 2em;
+  }
+
+  .information {
+    height: auto;
+  }
+
+  .cardItem {
+    height: auto;
+  }
+
+  .ul {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
   }
 }
