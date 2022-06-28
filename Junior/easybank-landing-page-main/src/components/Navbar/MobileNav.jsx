@@ -33,7 +33,7 @@ const MobileNav = () => {
       </div>
     </>
   );
-  console.log(open);
+  // console.log(open);
 
   return (
     <div className={styles.MobileNav}>
