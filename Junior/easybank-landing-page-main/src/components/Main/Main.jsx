@@ -19,6 +19,7 @@ const Main = () => {
             financial hub.
           </p>
           <p className={styles.description}>
+            {" "}
             Control your finances like never before.
           </p>
         </div>

@@ -29,3 +29,21 @@
     height: 18em;
   }
 }
+
+@media (max-width: 640px) {
+  .card {
+    height: 100%;
+    align-items: center;
+    gap: 1.5em;
+  }
+
+  .cardTitle {
+    font-size: 1.3rem;
+  }
+
+  .cardText {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+}
