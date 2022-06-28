@@ -1,11 +1,28 @@
 .card {
-  /*  */
+  /* border: 1px solid orange; */
+
+  height: 21em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+
+.cardImg {
+  width: 75px;
+  height: 75px;
 }
 
 .cardTitle {
-  /*  */
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: var(--prim-blue);
 }
 
 .cardText {
-  /*  */
+  color: var(--neut-blue);
+  font-weight: 400;
+  /* font-size: 1.05rem; */
+  font-size: 1.05rem;
+  line-height: 1.55rem;
 }
