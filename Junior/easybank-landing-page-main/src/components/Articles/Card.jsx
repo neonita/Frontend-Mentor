@@ -15,7 +15,7 @@ const Card = ({ data }) => {
             {data.title}
           </a>
         </h4>
-        <p className={styles.textPreview}>{data.preview}...</p>
+        <p className={styles.textPreview}>{data.preview} ...</p>
       </div>
     </div>
   );
