@@ -9,7 +9,7 @@
   width: 100%;
   height: 100%;
   margin: auto;
-  padding: 5.1em 0 4.5em 0;
+  padding: 5.1rem 0 4.5rem 0;
 
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   justify-items: center;
-  grid-column-gap: 1.82em;
+  grid-column-gap: 1.82rem;
 }
 
 .cardItem {
@@ -63,7 +63,7 @@
   .content {
     margin: 0;
     height: 90%;
-    padding: 0 1em;
+    padding: 0 1rem;
     gap: 2.5em;
   }
 
@@ -78,7 +78,7 @@
   .ul {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 1.5em;
+    grid-gap: 1.5rem;
   }
 }
 
@@ -89,7 +89,7 @@
 
   .content {
     height: auto;
-    padding: 0 1.5em 2em 1.5em;
+    padding: 0 1.5rem 2rem 1.5rem;
   }
 
   .title {
