@@ -1,19 +1,42 @@
 .card {
-  /*  */
+  background-color: var(--neut-white);
+  overflow: hidden;
+
+  height: 24.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  /* gap: 1em; */
+}
+
+.content {
+  padding: 2em 1em;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 }
 
 .img {
-  /*  */
+  width: 100%;
+  height: auto;
 }
 
 .author {
-  /*  */
+  color: var(--neut-blue);
+  font-size: 0.7rem;
 }
 
 .title {
-  /*  */
+  color: var(--prim-blue);
+  font-weight: 400;
+  font-size: 1.1rem;
 }
 
 .textPreview {
-  /*  */
+  color: var(--neut-blue);
+  font-size: 0.85rem;
+  line-height: 1.2rem;
+  text-align: left;
 }
