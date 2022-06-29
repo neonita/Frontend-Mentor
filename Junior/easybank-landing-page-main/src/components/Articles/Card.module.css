@@ -7,19 +7,26 @@
   flex-direction: column;
   justify-content: space-between;
   border-radius: 5px;
-  /* gap: 1em; */
 }
 
 .content {
-  padding: 2em 1em;
+  padding: 1.3em 1em;
 
   display: flex;
   flex-direction: column;
   gap: 0.5em;
 }
 
-.img {
+.imgContainer {
+  overflow: hidden;
   width: 100%;
+  height: 51%;
+
+  /* border: 1px solid red; */
+}
+
+.img {
+  width: 116%;
   height: auto;
 }
 
@@ -29,9 +36,21 @@
 }
 
 .title {
-  color: var(--prim-blue);
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.1rem;
+}
+
+.titleLink:link,
+.titleLink:visited {
+  color: var(--prim-blue);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.titleLink:hover {
+  /*  */
+  color: var(--prim-green);
+  cursor: pointer;
 }
 
 .textPreview {

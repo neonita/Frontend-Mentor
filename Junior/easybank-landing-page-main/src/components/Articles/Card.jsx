@@ -1,19 +1,21 @@
 import styles from "./Card.module.css";
-import Img from "../../assets/images/image-currency.jpg";
+// import Img from "../../assets/images/image-currency.jpg";
 
-const Card = () => {
+const Card = ({ data }) => {
   return (
     <div className={styles.card}>
-      <img src={Img} alt="/" className={styles.img} />
+      <div className={styles.imgContainer}>
+        <img src={data.img} alt={data.title} className={styles.img} />
+      </div>
+
       <div className={styles.content}>
-        <small className={styles.author}>By Claire Robinson</small>
+        <small className={styles.author}>By {data.author}</small>
         <h4 className={styles.title}>
-          Receive money in any currency with no fees
+          <a href="/" className={styles.titleLink}>
+            {data.title}
+          </a>
         </h4>
-        <p className={styles.textPreview}>
-          The world is getting smaller and we're becoming more mobile. So why
-          should you be force to only receive money in a single...
-        </p>
+        <p className={styles.textPreview}>{data.preview}...</p>
       </div>
     </div>
   );

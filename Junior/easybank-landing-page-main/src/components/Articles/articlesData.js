@@ -1,7 +1,12 @@
+import Currency from "../../assets/images/image-currency.jpg";
+import Resto from "../../assets/images/image-restaurant.jpg";
+import Plane from "../../assets/images/image-plane.jpg";
+import Confetti from "../../assets/images/image-confetti.jpg";
+
 const articlesData = [
   {
     id: 0,
-    img: "../../assets/images/image-currency.jpg",
+    img: Currency,
     author: "Claire Robinson",
     title: "Receive money in a any currency with no fees",
     preview:
@@ -9,7 +14,7 @@ const articlesData = [
   },
   {
     id: 1,
-    img: "../../assets/images/image-restaurant.jpg",
+    img: Resto,
     author: "Wilson Hutton",
     title: "Treat yourself without worrying about money",
     preview:
@@ -17,7 +22,7 @@ const articlesData = [
   },
   {
     id: 2,
-    img: "../../assets/images/image-plane.jpg",
+    img: Plane,
     author: "Wilson Hutton",
     title: "Take your Easybank card wherever you go",
     preview:
@@ -25,7 +30,7 @@ const articlesData = [
   },
   {
     id: 3,
-    img: "../../assets/images/image-confetti.jpg",
+    img: Confetti,
     author: "Claire Robinson",
     title: "Our invite-only Beta accounts are now live!",
     preview:
