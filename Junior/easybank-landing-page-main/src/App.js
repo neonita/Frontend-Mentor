@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Main from "./components/Main/Main";
 import Articles from "./components/Articles/Articles";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   useEffect(() => {
@@ -17,6 +18,7 @@ function App() {
       <Hero />
       <Main />
       <Articles />
+      <Footer />
     </>
   );
 }
