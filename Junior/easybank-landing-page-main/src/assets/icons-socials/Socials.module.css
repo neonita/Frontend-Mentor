@@ -1,3 +1,8 @@
 .icon {
-  fill: red;
+  fill: var(--neut-white);
+  transition: var(--transition);
+}
+
+.icon:hover {
+  fill: var(--prim-green);
 }

@@ -1,7 +1,7 @@
 import Button from "../Button/Button";
 import MobileNav from "./MobileNav";
 import Navigation from "./Navigation";
-import Logo from ".././Logo/Logo";
+import { Logo } from ".././Logo/";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {

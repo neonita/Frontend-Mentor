@@ -1,4 +1,4 @@
-import Logo2 from ".././Logo/Logo2";
+import { Logo2 } from ".././Logo";
 import {
   FbIcon,
   YtIcon,
