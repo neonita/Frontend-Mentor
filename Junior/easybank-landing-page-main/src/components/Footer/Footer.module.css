@@ -1,14 +1,11 @@
-.footer {
-  /*  */
+.container {
   background-color: var(--prim-blue);
-  height: 190px;
+  height: 11.875em; /* 190px */
   width: 100%;
 }
 
-.p {
-  color: var(--neut-white);
+.content {
 }
 
-.logo {
-  color: white;
+.left {
 }
