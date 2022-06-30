@@ -1,11 +1,11 @@
 import Logo2 from ".././Logo/Logo2";
-import FbIcon from "../../assets/icons-socials/FbIcon";
-import IgIcon from "../../assets/icons-socials/IgIcon";
-// import FbIcon from "../../assets/icons-socials/icon-facebook.svg";
-// import YtIcon from "../../assets/icons-socials/icon-youtube.svg";
-// import TwIcon from "../../assets/icons-socials/icon-twitter.svg";
-// import PinIcon from "../../assets/icons-socials/icon-pinterest.svg";
-// import IgIcon from "../../assets/icons-socials/icon-instagram.svg";
+import {
+  FbIcon,
+  YtIcon,
+  TwIcon,
+  PinIcon,
+  IgIcon,
+} from "../../assets/icons-socials";
 import Button from ".././Button/Button";
 import styles from "./Footer.module.css";
 
@@ -29,17 +29,17 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {/* <img src={YtIcon} alt="YouTube icon" /> */}
+              <YtIcon />
             </a>
             <a
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {/* <img src={TwIcon} alt="/" /> */}
+              <TwIcon />
             </a>
             <a href="pinterest.ca" target="_blank" rel="noopener noreferrer">
-              {/* <img src={PinIcon} alt="Pinterest icon" /> */}
+              <PinIcon />
             </a>
             <a
               href="https://www.instagram.com/"
