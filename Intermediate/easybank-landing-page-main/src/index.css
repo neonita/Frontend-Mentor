@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+:root {
+  --prim-blue: hsl(233, 26%, 24%);
+  --prim-green: hsl(136, 65%, 51%);
+  --prim-cyan: hsl(192, 70%, 51%);
+
+  --neut-blue: hsl(233, 8%, 62%);
+  --neut-grayblue: hsl(220, 16%, 96%);
+  --neut-lightgray: hsl(0, 0%, 98%);
+  --neut-white: hsl(0, 0%, 100%);
+
+  --ff: "Public Sans", sans-serif;
+}
+
 *,
 *::before,
 *::after {
