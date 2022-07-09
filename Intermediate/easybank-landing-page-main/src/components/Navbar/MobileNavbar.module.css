@@ -24,6 +24,12 @@
   width: auto;
 }
 
+.closeIcon {
+  height: fit-content;
+  width: fit-content;
+  margin-top: 0.2rem;
+}
+
 .nav__container {
   height: calc(100vh - 3.875rem);
   width: 100%;

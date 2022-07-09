@@ -16,7 +16,13 @@ const Navbar = () => {
       </h1>
 
       <div className={styles.icon__container} onClick={() => setOpen(!open)}>
-        {!open ? <IconClose /> : <IconHamburger />}
+        {!open ? (
+          <div className={styles.closeIcon}>
+            <IconClose />
+          </div>
+        ) : (
+          <IconHamburger />
+        )}
       </div>
 
       {!open ? (
