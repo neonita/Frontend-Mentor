@@ -16,42 +16,44 @@ const Navbar = () => {
       </h1>
 
       <div className={styles.icon__container} onClick={() => setOpen(!open)}>
-        {!open ? <IconHamburger /> : <IconClose />}
+        {!open ? <IconClose /> : <IconHamburger />}
       </div>
 
-      <div className={styles.nav__container}>
-        <nav className={styles.nav}>
-          <ul className={styles.nav__list}>
-            <li className={styles.nav__item}>
-              <a href="/" className={styles.nav__link}>
-                Home
-              </a>
-            </li>
-            <li className={styles.nav__item}>
-              <a href="/" className={styles.nav__link}>
-                About
-              </a>
-            </li>
-            <li className={styles.nav__item}>
-              <a href="/" className={styles.nav__link}>
-                Contact
-              </a>
-            </li>
-            <li className={styles.nav__item}>
-              <a href="/" className={styles.nav__link}>
-                Blog
-              </a>
-            </li>
-            <li className={styles.nav__item}>
-              <a href="/" className={styles.nav__link}>
-                Careers
-              </a>
-            </li>
-          </ul>
-        </nav>
+      {!open ? (
+        <div className={styles.nav__container}>
+          <nav className={styles.nav}>
+            <ul className={styles.nav__list}>
+              <li className={styles.nav__item}>
+                <a href="/" className={styles.nav__link}>
+                  Home
+                </a>
+              </li>
+              <li className={styles.nav__item}>
+                <a href="/" className={styles.nav__link}>
+                  About
+                </a>
+              </li>
+              <li className={styles.nav__item}>
+                <a href="/" className={styles.nav__link}>
+                  Contact
+                </a>
+              </li>
+              <li className={styles.nav__item}>
+                <a href="/" className={styles.nav__link}>
+                  Blog
+                </a>
+              </li>
+              <li className={styles.nav__item}>
+                <a href="/" className={styles.nav__link}>
+                  Careers
+                </a>
+              </li>
+            </ul>
+          </nav>
 
-        <Button />
-      </div>
+          <Button />
+        </div>
+      ) : null}
     </header>
   );
 };
