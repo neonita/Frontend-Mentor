@@ -11,6 +11,8 @@
   --neut-white: hsl(0, 0%, 100%);
 
   --ff: "Public Sans", sans-serif;
+
+  --px-sm: 0 1.5rem;
 }
 
 *,
