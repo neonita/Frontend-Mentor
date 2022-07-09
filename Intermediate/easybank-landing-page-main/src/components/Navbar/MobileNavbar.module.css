@@ -76,11 +76,13 @@
 @media (min-width: 768px) {
   .header {
     height: 4.875rem;
+    padding: 0 var(--px-md);
   }
 
   .nav__container {
     height: calc(100vh - 4.875rem);
     top: 4.875rem;
+    padding: 1.25rem var(--px-md);
   }
 }
 
