@@ -1,4 +1,5 @@
 .header {
+  display: block;
   height: 3.875rem;
   width: 100%;
   padding: 0 var(--px-sm);
@@ -70,4 +71,21 @@
   color: var(--prim-blue);
   font-size: 1.125rem;
   font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 4.875rem;
+  }
+
+  .nav__container {
+    height: calc(100vh - 4.875rem);
+    top: 4.875rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    display: none;
+  }
 }
