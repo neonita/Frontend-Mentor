@@ -1,0 +1,13 @@
+.btn {
+  background: linear-gradient(90deg, var(--prim-green), var(--prim-cyan));
+  border: none;
+  border-radius: 50px;
+  color: var(--neut-white);
+  font-family: var(--ff);
+  font-weight: 700;
+  font-size: 0.98rem;
+  line-height: 2.813rem;
+  height: 2.813rem;
+  width: 10.13rem;
+  text-align: center;
+}

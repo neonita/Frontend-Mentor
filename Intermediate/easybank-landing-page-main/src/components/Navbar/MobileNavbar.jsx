@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Logo from "../Logo/Logo";
+import Button from "../Button/Button";
 import { IconHamburger, IconClose } from "../../assets/icons";
 import styles from "./MobileNavbar.module.css";
 
@@ -20,24 +21,36 @@ const Navbar = () => {
 
       <div className={styles.nav__container}>
         <nav className={styles.nav}>
-          <ul>
-            <li>
-              <a href="/">Home</a>
+          <ul className={styles.nav__list}>
+            <li className={styles.nav__item}>
+              <a href="/" className={styles.nav__link}>
+                Home
+              </a>
             </li>
-            <li>
-              <a href="/">About</a>
+            <li className={styles.nav__item}>
+              <a href="/" className={styles.nav__link}>
+                About
+              </a>
             </li>
-            <li>
-              <a href="/">Contact</a>
+            <li className={styles.nav__item}>
+              <a href="/" className={styles.nav__link}>
+                Contact
+              </a>
             </li>
-            <li>
-              <a href="/">Blog</a>
+            <li className={styles.nav__item}>
+              <a href="/" className={styles.nav__link}>
+                Blog
+              </a>
             </li>
-            <li>
-              <a href="/">Careers</a>
+            <li className={styles.nav__item}>
+              <a href="/" className={styles.nav__link}>
+                Careers
+              </a>
             </li>
           </ul>
         </nav>
+
+        <Button />
       </div>
     </header>
   );
