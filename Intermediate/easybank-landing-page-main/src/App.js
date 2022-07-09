@@ -1,11 +1,9 @@
-import Logo from "./components/Logo/Logo";
-import Navbar from "./components/Navbar/Navbar";
+import MobileNavbar from "./components/Navbar/MobileNavbar";
 
 function App() {
   return (
     <div>
-      <Logo />
-      <Navbar />
+      <MobileNavbar />
     </div>
   );
 }
