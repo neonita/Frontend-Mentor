@@ -11,21 +11,21 @@ const Navbar = () => {
     <header className={styles.header}>
       <h1 className={styles.logo__container}>
         <a href="/">
-          <Logo color="#2d314d" />
+          <Logo fill="#2d314d" />
         </a>
       </h1>
 
       <div className={styles.icon__container} onClick={() => setOpen(!open)}>
         {!open ? (
+          <IconHamburger />
+        ) : (
           <div className={styles.closeIcon}>
             <IconClose />
           </div>
-        ) : (
-          <IconHamburger />
         )}
       </div>
 
-      {!open ? (
+      {!open ? null : (
         <div className={styles.nav__container}>
           <nav className={styles.nav}>
             <ul className={styles.nav__list}>
@@ -59,7 +59,7 @@ const Navbar = () => {
 
           <Button />
         </div>
-      ) : null}
+      )}
     </header>
   );
 };
