@@ -18,8 +18,11 @@
 
   --max-w-lg: 72.812rem;
   --nav-h-lg: 5rem;
+  --nav-h-sm: 4rem;
 
   --transition: 0.2s linear;
+
+  --bt: 1px solid red;
 }
 
 *,

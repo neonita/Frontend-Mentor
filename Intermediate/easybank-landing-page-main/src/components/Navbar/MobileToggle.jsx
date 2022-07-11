@@ -1,7 +1,7 @@
 import React from "react";
 
 const MobileToggle = () => {
-  return <div>MobileToggle</div>;
+  return <div>X</div>;
 };
 
 export default MobileToggle;
