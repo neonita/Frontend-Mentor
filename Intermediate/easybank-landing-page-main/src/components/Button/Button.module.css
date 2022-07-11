@@ -4,10 +4,16 @@
   border-radius: 50px;
   color: var(--neut-white);
   font-family: var(--ff);
-  font-weight: 700;
+  font-weight: 400;
   font-size: 0.98rem;
   line-height: 2.813rem;
   height: 2.813rem;
   width: 10.13rem;
   text-align: center;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: inset 10rem 10rem 5px #fff7;
 }
