@@ -16,6 +16,7 @@
 }
 
 .logo__container {
+  display: block !important;
   height: fit-content;
   width: auto;
 }
@@ -75,13 +76,13 @@
 
 @media (min-width: 768px) {
   .header {
-    height: 4.875rem;
+    height: 5rem;
     padding: 0 var(--px-md);
   }
 
   .nav__container {
-    height: calc(100vh - 4.875rem);
-    top: 4.875rem;
+    height: calc(100vh - 5rem);
+    top: 5rem;
     padding: 1.25rem var(--px-md);
   }
 }
