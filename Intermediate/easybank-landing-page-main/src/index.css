@@ -14,6 +14,11 @@
 
   --px-sm: 1.5rem;
   --px-md: 2rem;
+  --px-lg: 2rem;
+
+  --max-w-lg: 72.812rem;
+  --nav-h-lg: 5rem;
+
   --transition: 0.2s linear;
 }
 

@@ -2,6 +2,8 @@ import React from "react";
 import Button from "../Button/Button";
 import Logo from "../Logo/Logo";
 import styles from "./Navbar.module.css";
+import Navigation from "./Navigation";
+import MobileNavbar from "./MobileNavbar";
 
 const Navbar = () => {
   return (
@@ -13,39 +15,15 @@ const Navbar = () => {
           </a>
         </h1>
 
-        <nav className={styles.nav}>
-          <ul className={styles.nav__list}>
-            <li className={styles.nav__item}>
-              <a href="/" className={styles.nav__link}>
-                Home
-              </a>
-            </li>
-            <li className={styles.nav__item}>
-              <a href="/" className={styles.nav__link}>
-                About
-              </a>
-            </li>
-            <li className={styles.nav__item}>
-              <a href="/" className={styles.nav__link}>
-                Contact
-              </a>
-            </li>
-            <li className={styles.nav__item}>
-              <a href="/" className={styles.nav__link}>
-                Blog
-              </a>
-            </li>
-            <li className={styles.nav__item}>
-              <a href="/" className={styles.nav__link}>
-                Careers
-              </a>
-            </li>
-          </ul>
-        </nav>
+        {/* <div className={styles.nav__container}> */}
+        <Navigation />
+        {/* </div> */}
 
         <div className={styles.btn}>
           <Button />
         </div>
+
+        <MobileNavbar />
       </div>
     </header>
   );

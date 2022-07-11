@@ -1,12 +1,39 @@
-:root {
-  --max-w-lg: 72.812rem;
-  --px-lg: 2rem;
-  --nav-h-lg: 5rem;
+/* 
+  ----- Mobile Navbar
+*/
+.header {
+  display: block;
+  height: 3.875rem;
+  width: 100%;
+  background-color: var(--neut-white);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
-@media (min-width: 640px) {
+.header__container {
+  background-color: lightpink;
+  /* background-color: var(--neut-white); */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--px-sm);
+}
+
+.logo__container {
+  display: block !important;
+  height: fit-content;
+  width: auto;
+}
+
+@media (min-width: 768px) {
   .header {
-    display: none;
+    height: 5rem;
+    padding: 0 var(--px-md);
   }
 }
 
@@ -19,13 +46,7 @@
   }
 
   .header__container {
-    background-color: var(--neut-white);
-    height: 100%;
-    width: 100%;
     max-width: var(--max-w-lg);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin: 0 auto;
     padding: 0 var(--px-lg);
   }
@@ -40,7 +61,7 @@
     cursor: pointer;
   }
 
-  .nav {
+  /* .nav {
     height: var(--nav-h-lg);
     max-width: 22rem;
     min-width: 22rem;
@@ -75,7 +96,7 @@
     cursor: pointer;
     color: var(--prim-blue);
     border-bottom: 3.5px solid var(--prim-green);
-  }
+  } */
 }
 
 /* @media (max-width: 1023px) {
