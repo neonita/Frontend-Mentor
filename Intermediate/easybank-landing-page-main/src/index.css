@@ -35,6 +35,5 @@
 }
 
 body {
-  font-family: sans-serif;
-  /* background-color: pink; */
+  font-family: var(--ff);
 }
