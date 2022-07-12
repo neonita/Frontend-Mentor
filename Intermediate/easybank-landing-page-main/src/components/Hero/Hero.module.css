@@ -1,0 +1,31 @@
+.container {
+  display: block;
+  height: 41.875rem; /* 670px | 70.5vh */
+  width: 100%;
+
+  background-color: var(--neut-lightgray);
+}
+
+.content {
+  border: var(--bt);
+
+  height: 100%;
+  width: 100%;
+  max-width: var(--max-w-lg);
+  margin: 0 auto;
+  padding: var(--nav-h-sm) var(--px-sm);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.illustration {
+  width: 95%;
+  height: auto;
+  position: absolute;
+  top: -9.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
