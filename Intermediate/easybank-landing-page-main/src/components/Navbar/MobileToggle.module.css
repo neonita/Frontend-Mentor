@@ -28,7 +28,7 @@
 
 @media (min-width: 768px) {
   .nav {
-    height: calc(100vh - var(--nav-h-lg));
+    height: calc(100vh - var(--nav-h-md));
     padding: 1.375rem var(--px-md);
     top: var(--nav-h-lg);
   }

@@ -24,13 +24,6 @@ const MobileToggle = () => {
           <IconHamburger />
         )}
       </div>
-
-      {/* {open && (
-        <nav className={styles.nav}>
-          <NavLinks />
-          <Button />
-        </nav>
-      )} */}
     </>
   );
 };
