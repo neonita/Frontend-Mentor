@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from "../Button/Button";
 import { IconHamburger, IconClose } from "../../assets/icons";
 import styles from "./MobileToggle.module.css";
+import NavLinks from "./NavLinks";
 
 const MobileToggle = () => {
   const [open, setOpen] = useState(false);
@@ -13,47 +14,23 @@ const MobileToggle = () => {
         {open ? (
           <div className={styles.iconClose}>
             <IconClose />
+
+            <nav className={styles.nav}>
+              <NavLinks />
+              <Button />
+            </nav>
           </div>
         ) : (
           <IconHamburger />
         )}
       </div>
 
-      {open && (
+      {/* {open && (
         <nav className={styles.nav}>
-          {/* component start */}
-          <ul className={styles.list}>
-            <li className={styles.list__item}>
-              <a href="/" className={styles.list__link}>
-                Home
-              </a>
-            </li>
-            <li className={styles.list__item}>
-              <a href="/" className={styles.list__link}>
-                About
-              </a>
-            </li>
-            <li className={styles.list__item}>
-              <a href="/" className={styles.list__link}>
-                Contact
-              </a>
-            </li>
-            <li className={styles.list__item}>
-              <a href="/" className={styles.list__link}>
-                Blog
-              </a>
-            </li>
-            <li className={styles.list__item}>
-              <a href="/" className={styles.list__link}>
-                Careers
-              </a>
-            </li>
-          </ul>
-          {/* component end */}
-
+          <NavLinks />
           <Button />
         </nav>
-      )}
+      )} */}
     </>
   );
 };

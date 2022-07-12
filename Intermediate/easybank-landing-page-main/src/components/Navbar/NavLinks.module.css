@@ -1,0 +1,23 @@
+.list {
+  list-style: none;
+  background-color: var(--neut-white);
+  width: 100%;
+  height: fit-content;
+  border-radius: 4.5px;
+  padding: 1.85rem 0;
+  text-align: center;
+}
+
+.list__item {
+}
+
+.list__item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.list__link:link,
+.list__link:visited {
+  color: var(--prim-blue);
+  text-decoration: none;
+  font-size: 1.125rem;
+}
