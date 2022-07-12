@@ -34,4 +34,8 @@
   .header {
     height: var(--nav-h-lg);
   }
+
+  .header__container {
+    padding: 0 var(--px-md);
+  }
 }
