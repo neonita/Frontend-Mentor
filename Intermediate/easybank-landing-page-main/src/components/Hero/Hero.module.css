@@ -2,8 +2,13 @@
   display: block;
   height: calc(41.875rem + var(--nav-h-sm)); /* 670px | 41.875rem */
   width: 100%;
-
   background-color: var(--neut-lightgray);
+
+  background-image: url(../../assets/images/bg-intro-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: local;
+  background-position: top 0.5rem center;
 }
 
 .content {
@@ -51,4 +56,19 @@
   top: -9.5%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+  .container {
+    height: 100vh;
+  }
+
+  .content {
+    padding: var(--nav-h-md) var(--px-md) 5.375rem var(--px-md);
+  }
+
+  .illustration {
+    width: 50%;
+    top: 11%;
+  }
 }
