@@ -1,6 +1,8 @@
+import Button from "../Button/Button";
 import Logo from "../Logo/Logo";
 import MobileToggle from "./MobileToggle";
 import styles from "./Navbar.module.css";
+import NavLinks from "./NavLinks";
 
 const Navbar = () => {
   return (
@@ -11,6 +13,14 @@ const Navbar = () => {
             <Logo fill="#2d314d" />
           </a>
         </h1>
+
+        <nav className={styles.nav}>
+          <NavLinks />
+        </nav>
+
+        <div className={styles.btn}>
+          <Button />
+        </div>
 
         <MobileToggle />
       </div>
