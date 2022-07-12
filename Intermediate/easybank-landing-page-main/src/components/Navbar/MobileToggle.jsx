@@ -10,48 +10,50 @@ const MobileToggle = () => {
   return (
     <>
       <div className={styles.icon__container} onClick={() => setOpen(!open)}>
-        {!open ? (
-          <IconHamburger />
-        ) : (
+        {open ? (
           <div className={styles.iconClose}>
             <IconClose />
           </div>
+        ) : (
+          <IconHamburger />
         )}
       </div>
 
-      <nav className={styles.nav}>
-        {/* component start */}
-        <ul className={styles.list}>
-          <li className={styles.list__item}>
-            <a href="/" className={styles.list__link}>
-              Home
-            </a>
-          </li>
-          <li className={styles.list__item}>
-            <a href="/" className={styles.list__link}>
-              About
-            </a>
-          </li>
-          <li className={styles.list__item}>
-            <a href="/" className={styles.list__link}>
-              Contact
-            </a>
-          </li>
-          <li className={styles.list__item}>
-            <a href="/" className={styles.list__link}>
-              Blog
-            </a>
-          </li>
-          <li className={styles.list__item}>
-            <a href="/" className={styles.list__link}>
-              Careers
-            </a>
-          </li>
-        </ul>
-        {/* component end */}
+      {open && (
+        <nav className={styles.nav}>
+          {/* component start */}
+          <ul className={styles.list}>
+            <li className={styles.list__item}>
+              <a href="/" className={styles.list__link}>
+                Home
+              </a>
+            </li>
+            <li className={styles.list__item}>
+              <a href="/" className={styles.list__link}>
+                About
+              </a>
+            </li>
+            <li className={styles.list__item}>
+              <a href="/" className={styles.list__link}>
+                Contact
+              </a>
+            </li>
+            <li className={styles.list__item}>
+              <a href="/" className={styles.list__link}>
+                Blog
+              </a>
+            </li>
+            <li className={styles.list__item}>
+              <a href="/" className={styles.list__link}>
+                Careers
+              </a>
+            </li>
+          </ul>
+          {/* component end */}
 
-        <Button />
-      </nav>
+          <Button />
+        </nav>
+      )}
     </>
   );
 };
