@@ -1,0 +1,15 @@
+.icon__container {
+  display: block;
+  height: fit-content;
+  width: auto;
+}
+
+.iconClose {
+  margin-top: 0.2rem;
+}
+
+@media (min-width: 1024px) {
+  .icon__container {
+    display: none;
+  }
+}
