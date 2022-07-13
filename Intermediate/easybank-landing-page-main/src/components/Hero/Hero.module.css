@@ -1,26 +1,29 @@
 .container {
   display: block;
-  height: calc(41.875rem + var(--nav-h-sm)); /* 670px | 41.875rem */
+  /* 670px | 41.875rem */
+  min-height: 100vh;
+  height: 100%;
   width: 100%;
-  background-color: var(--neut-lightgray);
 
+  background-color: var(--neut-lightgray);
   background-image: url(../../assets/images/bg-intro-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: local;
-  background-position: top 0.5rem center;
+  background-position: top 0.25rem center;
 }
 
 .content {
+  min-height: 100vh; /* just to make sure  */
   height: 100%;
   width: 100%;
-  max-width: var(--max-w-lg);
-  margin: 0 auto;
-  padding: var(--nav-h-sm) var(--px-sm) 5.375rem var(--px-sm);
+
+  padding: var(--nav-h-sm) var(--px-sm);
+  /* padding: var(--nav-h-sm) var(--px-sm) 5.375rem var(--px-sm); */
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -29,31 +32,44 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .header .title {
-  font-size: 2rem;
-  line-height: 2.45rem;
+  font-size: 2.5rem;
+  line-height: 1.2;
   color: var(--prim-blue);
   font-weight: 300;
   text-align: center;
-  padding: 0 1rem;
 }
 
 .text {
   color: var(--neut-blue);
   font-weight: 300;
   font-size: 0.95rem;
-  line-height: 1.5rem;
+  line-height: 1.5;
   text-align: center;
+  padding-bottom: 1.2rem;
 }
 
-.illustration {
-  width: 95%;
+.img__container {
+  /* border: 1px solid blue; */
+  display: block;
+  width: 100%;
+  min-height: 45vh;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.img {
+  width: 105%;
   height: auto;
   position: absolute;
-  top: -9.5%;
+  /* top: -122px; */
+  top: clamp(-122px, -9.5%, -125px);
   left: 50%;
   transform: translateX(-50%);
 }
@@ -61,17 +77,42 @@
 @media (min-width: 768px) {
   .container {
     height: 100vh;
-
     background-size: cover;
-    background-position: top -15.7rem center;
+    background-position: top -20rem center;
   }
 
   .content {
-    padding: var(--nav-h-md) var(--px-md) 5.375rem var(--px-md);
+    padding: var(--nav-h-md) var(--px-md) 96px var(--px-md);
   }
 
-  .illustration {
-    width: 50%;
-    top: 11%;
+  .description {
+    gap: 2.25rem;
+  }
+
+  .header .title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    padding: 0;
+  }
+
+  .text {
+    padding: 0 6rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+
+  .img {
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 1024px) {
+  .content {
+    max-width: var(--max-w-lg);
+    width: 100%;
+    margin: 0 auto;
   }
 }
