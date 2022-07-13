@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
 import { IconHamburger, IconClose } from "../../assets/icons";
 import styles from "./MobileToggle.module.css";
 import NavLinks from "./NavLinks";
@@ -17,7 +17,7 @@ const MobileToggle = () => {
 
             <nav className={styles.nav}>
               <NavLinks />
-              <Button />
+              {/* <Button /> */}
             </nav>
           </div>
         ) : (
