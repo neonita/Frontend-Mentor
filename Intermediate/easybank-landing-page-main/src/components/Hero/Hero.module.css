@@ -1,3 +1,8 @@
+:root {
+  --hero-h-lg: 45.937rem;
+  --lg-min-h: calc(var(--hero-h-lg) - var(--nav-h-lg));
+}
+
 .container {
   display: block;
   /* 670px | 41.875rem */
@@ -65,8 +70,8 @@
 }
 
 .img {
-  width: 105%;
-  height: auto;
+  height: 140%;
+  width: auto;
   position: absolute;
   /* top: -122px; */
   top: clamp(-122px, -9.5%, -125px);
@@ -101,18 +106,94 @@
     line-height: 2rem;
   }
 
+  .img__container {
+    min-height: 60vh;
+  }
+
   .img {
-    width: 70%;
+    width: auto;
+    height: 95%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
+  .container {
+    max-height: var(--lg-min-h);
+    min-height: var(--lg-min-h);
+    height: 100%;
+    margin-top: var(--nav-h-lg);
+
+    background-image: none;
+    /* background-image: url(../../assets/images/bg-intro-desktop.svg); */
+    /* background-position: top -5rem right -10rem; */
+  }
+
   .content {
     max-width: var(--max-w-lg);
     width: 100%;
+
+    min-height: var(--lg-min-h);
+    max-height: var(--lg-min-h);
+    height: 100%;
+
     margin: 0 auto;
+    padding: 0 var(--px-lg);
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .description {
+    order: 1;
+    align-items: flex-start;
+  }
+
+  .header .title {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    text-align: start;
+    padding-right: 3rem;
+  }
+
+  .text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: start;
+    padding: 0 6.7rem 0 0;
+  }
+
+  .img__container {
+    order: 2;
+    min-height: var(--lg-min-h);
+    height: 100%;
+    left: 0;
+    transform: translateX(0);
+  }
+
+  .img {
+    transform: translate(0, 0);
+    top: -8rem;
+    left: -3.8rem;
+    height: 150%;
+  }
+
+  /* .img__container::before {
+    content: "";
+    width: 100%;
+    height: var(--lg-min-h);
+    background-image: url(../../assets/images/image-mockups.png);
+    background-size: 93%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  } */
+}
+
+@media (min-width: 1280px) {
+  .img {
+    left: 3.5%;
   }
 }
