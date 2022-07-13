@@ -10,9 +10,12 @@
 
 .nav {
   width: 100%;
-  height: calc(100vh - var(--nav-h-sm));
+  min-height: calc(100vh - var(--nav-h-sm));
+  height: 100%;
 
+  /*padding: 1.375rem var(--px-sm) 7rem var(--px-sm); /* the 5rem adds more bottom padding to surpass the mobile search engine */
   padding: 1.375rem var(--px-sm);
+
   position: absolute;
   top: var(--nav-h-sm);
   left: 0;
@@ -28,7 +31,8 @@
 
 @media (min-width: 768px) {
   .nav {
-    height: calc(100vh - var(--nav-h-md));
+    min-height: calc(100vh - var(--nav-h-md));
+    height: 100%;
     padding: 1.375rem var(--px-md);
     top: var(--nav-h-lg);
   }
