@@ -36,4 +36,5 @@
 
 body {
   font-family: var(--ff);
+  overflow-x: hidden;
 }
