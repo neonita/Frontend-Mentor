@@ -1,0 +1,10 @@
+@use "../variables";
+.hero {
+  &__logo {
+    color: $darkGrayishBlue;
+    font-size: 10rem;
+  }
+
+  //   &__text {
+  //   }
+}
