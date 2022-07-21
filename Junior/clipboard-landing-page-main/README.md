@@ -88,6 +88,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [Structuring your SASS projects](https://www.easeout.co/blog/2020-08-25-structuring-your-sass-projects/) - A point of reference on how to structure Sass/React projects.
+- [Styling React Using SASS](https://www.w3schools.com/react/react_sass_styling.asp) - Shows how to install Sass in React projects since Sass needs to be compiled. I learned that all Sass or Scss files will be automatically compiled.
 
 ## Author
 
