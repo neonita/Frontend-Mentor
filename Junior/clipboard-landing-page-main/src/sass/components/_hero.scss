@@ -1,7 +1,8 @@
-@use "../variables";
+@import "../variables";
+
 .hero {
   &__logo {
-    color: $darkGrayishBlue;
+    color: $lightBlue;
     font-size: 10rem;
   }
 
