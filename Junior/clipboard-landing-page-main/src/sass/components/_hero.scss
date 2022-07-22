@@ -1,11 +1,11 @@
-@import "../variables";
-
 .hero {
-  &__logo {
-    color: $lightBlue;
-    font-size: 10rem;
-  }
+  // &__logo {
+  // }
 
-  //   &__text {
-  //   }
+  &__text {
+    h1 {
+      color: $lightBlue;
+      font-size: 3rem;
+    }
+  }
 }

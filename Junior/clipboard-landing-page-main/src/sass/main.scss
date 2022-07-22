@@ -1,6 +1,7 @@
-@use "variables";
+@import "variables";
 @import "mixins";
 @import "animations";
-
 @import "globals";
+
+// Components
 @import "components/hero";

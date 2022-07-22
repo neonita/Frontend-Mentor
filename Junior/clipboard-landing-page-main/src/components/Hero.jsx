@@ -1,5 +1,3 @@
-import "../sass/components/_hero.scss";
-
 const Hero = () => {
   return (
     <section className="hero">
