@@ -1,4 +1,6 @@
-@import "./variables";
+html {
+  font-size: 100%;
+}
 
 *,
 *::before,
@@ -10,4 +12,52 @@
 
 body {
   font-family: $BaiJamjuree;
+  color: $grayishBlue;
+  font-weight: 400;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-center {
+    justify-content: center;
+  }
+
+  &-ai-center {
+    align-items: center;
+  }
+
+  &-col {
+    flex-direction: column;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.938rem 5.137rem;
+  border-radius: 50px;
+  color: $white;
+  font-weight: 600;
+  text-align: center;
+  font-size: $font-md;
+
+  &__primary {
+    background-color: $strongCyan;
+    box-shadow: 0 2px 1px 1px $primaryBtnShadow;
+  }
+
+  &__secondary {
+    background-color: $lightBlue;
+    box-shadow: 0 2px 1px 1px $secondaryBtnShadow;
+  }
 }

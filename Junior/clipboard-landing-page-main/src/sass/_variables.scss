@@ -5,7 +5,16 @@ $strongCyan: hsl(171, 66%, 44%);
 $lightBlue: hsl(233, 100%, 69%);
 $darkGrayishBlue: hsl(210, 10%, 33%);
 $grayishBlue: hsl(201, 11%, 66%);
+$primaryBtnShadow: hsl(171, 68%, 29%);
+$secondaryBtnShadow: hsl(233, 58%, 56%);
+$white: #fff;
 
 // Font
 $BaiJamjuree: "Bai Jamjuree", sans-serif;
+$font-h1: 1.625rem;
+$font-sm: 0.75rem; // 12px
 $font-md: 1.125rem; // 18px
+
+// Background image
+$bg-mobile: url("../../assets/images/bg-header-mobile.png");
+$bg-desktop: url("../../assets/images/bg-header-desktop.png");
