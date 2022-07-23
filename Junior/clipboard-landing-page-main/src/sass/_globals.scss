@@ -14,6 +14,20 @@ body {
   font-family: $BaiJamjuree;
   color: $grayishBlue;
   font-weight: 400;
+  background-color: $white;
+}
+
+h1 {
+  color: $darkGrayishBlue;
+  font-size: $font-h1;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+p {
+  // padding: 0 0.755rem;
+  font-size: $font-sm;
+  line-height: 26px;
 }
 
 a,
@@ -22,6 +36,7 @@ a:hover {
   text-decoration: none;
 }
 
+// Flexbox
 .flex {
   display: flex;
 
@@ -42,22 +57,30 @@ a:hover {
   }
 }
 
+.section-p {
+  &-mobile {
+    padding: 7.625rem 2.1rem;
+  }
+}
+
 .btn {
-  display: inline-block;
-  padding: 0.938rem 5.137rem;
+  // display: block;
+  // padding: 0.938rem 2.0625rem;
+  width: 19.375rem;
+  padding: 0.938rem 0rem;
   border-radius: 50px;
   color: $white;
   font-weight: 600;
-  text-align: center;
   font-size: $font-md;
+  text-align: center;
 
   &__primary {
     background-color: $strongCyan;
-    box-shadow: 0 2px 1px 1px $primaryBtnShadow;
+    box-shadow: inset 0 -2px 1px 1px $primaryBtnShadow;
   }
 
   &__secondary {
     background-color: $lightBlue;
-    box-shadow: 0 2px 1px 1px $secondaryBtnShadow;
+    box-shadow: inset 0 -2px 1px 1px $secondaryBtnShadow;
   }
 }
