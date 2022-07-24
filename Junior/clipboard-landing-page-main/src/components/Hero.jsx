@@ -1,8 +1,9 @@
 import Logo from "../assets/icons/logo.svg";
+import Buttons from "./Buttons";
 
 const Hero = () => {
   return (
-    <section className="hero flex flex-jc-sb flex-col flex-ai-center section-p-mobile">
+    <section className="hero flex flex-jc-sb flex-col flex-ai-center section-p">
       <div className="hero__logo">
         <img src={Logo} alt="Clipboard Logo" />
       </div>
@@ -15,7 +16,9 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className="hero__btns flex flex-jc-center flex-ai-center flex-col">
+      <Buttons />
+
+      {/* <div className="hero__btns ">
         <a href="/" className="btn btn__primary">
           Download for iOS
         </a>{" "}
@@ -23,7 +26,7 @@ const Hero = () => {
         <a href="/" className="btn btn__secondary">
           Download for Mac
         </a>
-      </div>
+      </div> */}
     </section>
   );
 };

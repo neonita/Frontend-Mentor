@@ -89,6 +89,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - [Structuring your SASS projects](https://www.easeout.co/blog/2020-08-25-structuring-your-sass-projects/) - A point of reference on how to structure Sass/React projects.
 - [Styling React Using SASS](https://www.w3schools.com/react/react_sass_styling.asp) - Shows how to install Sass in React projects since Sass needs to be compiled. I learned that all Sass or Scss files will be automatically compiled.
+- [Is there a way to use two CSS3 box shadows on one element?](https://stackoverflow.com/questions/8556604/is-there-a-way-to-use-two-css3-box-shadows-on-one-element) - This explains how to apply two shadows, using CSS' `box-shadow` property.
 
 ## Author
 

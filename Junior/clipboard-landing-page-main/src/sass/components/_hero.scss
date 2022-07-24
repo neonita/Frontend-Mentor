@@ -2,7 +2,13 @@
   padding-top: 7.625rem;
   background-image: $bg-mobile;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
+
+  @include breakpoint-up(lg) {
+    padding-top: 7.9375rem;
+    background-image: $bg-desktop;
+    background-size: contain;
+  }
 
   &__logo {
     height: 7.8125rem;

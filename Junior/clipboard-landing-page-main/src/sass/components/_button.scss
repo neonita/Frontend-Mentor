@@ -1,0 +1,39 @@
+.btns {
+  //   border: 1px solid magenta;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem; // 24px
+
+  @include breakpoint-up(md) {
+    width: 29.5rem; // 472px
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  &__btn {
+    padding: 0.938rem 0rem;
+    border: none;
+    border-radius: 50px;
+    color: $white;
+    font-size: $font-sm; // 16px
+    font-weight: 600;
+    text-align: center;
+
+    @include breakpoint-up(md) {
+      width: 100%;
+    }
+
+    &--primary {
+      background-color: $strongCyan;
+      box-shadow: inset 0 -2px 1px 1px $primaryBtnShadow, 0 5px 14px 1px $glow;
+    }
+
+    &--secondary {
+      background-color: $lightBlue;
+      box-shadow: inset 0 -2px 1px 1px $secondaryBtnShadow;
+    }
+  }
+}
