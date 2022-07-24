@@ -18,12 +18,12 @@
     border: none;
     border-radius: 50px;
     color: $white;
-    font-size: $font-sm; // 16px
     font-family: $BaiJamjuree;
+    font-size: $font-sm; // 16px
     font-weight: 600;
     text-align: center;
     opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity $transition;
 
     @include breakpoint-up(md) {
       width: 100%;
