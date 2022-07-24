@@ -2,9 +2,10 @@ import data from "../data.js";
 
 const About = () => {
   console.log(data);
+
   return (
     <section className="about">
-      <div className="container">
+      <div className="container--px">
         <div className="about__text">
           <h1>Keep track of your snippets</h1>
           <p>
