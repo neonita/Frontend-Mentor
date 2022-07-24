@@ -2,7 +2,6 @@ import data from "../data.js";
 
 const About = () => {
   console.log(data);
-
   return (
     <section className="about">
       <div className="container--px">
@@ -19,13 +18,12 @@ const About = () => {
 
         <div className="about__features">
           <ul>
-            <li>
-              <h2>Quick Search</h2>
-              <p>
-                Easily search your snippets by content, category, web address,
-                application, and more.
-              </p>
-            </li>
+            {data[0].map((x) => (
+              <li key={x.id}>
+                <h2>{x.title}</h2>
+                <p>{x.description}</p>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
