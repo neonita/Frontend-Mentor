@@ -3,8 +3,7 @@ import Buttons from "./Buttons";
 
 const Hero = () => {
   return (
-    <section className="hero flex flex-jc-sb flex-col flex-ai-center">
-      {/*.section-p */}
+    <section className="hero flex flex-jc-sb flex-col flex-ai-center container--px container--py">
       <div className="hero__bg"></div>
       <div className="hero__logo">
         <img src={Logo} alt="Clipboard Logo" />

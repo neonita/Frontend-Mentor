@@ -35,7 +35,7 @@ p {
 
   @include breakpoint-up(lg) {
     font-size: $font-lg;
-    letter-spacing: -1.5%;
+    // letter-spacing: -1.5%;
   }
 }
 
@@ -66,10 +66,20 @@ a:hover {
   }
 }
 
-.section-p {
-  padding: 5.125rem 2.1rem;
+// Spacing
+.container {
+  &--px {
+    padding-left: 1.65rem; // 26.4px
+    padding-right: 1.65rem; // 26.4px
+  }
 
-  @include breakpoint-up(lg) {
-    padding: 0 23.4375rem;
+  &--py {
+    padding-top: 5.25rem; // 84px
+    padding-bottom: 5.25rem; // 84px
+
+    @include breakpoint-up(lg) {
+      padding-top: 4.9375rem; // 79px
+      padding-bottom: 4.9375rem; // 79px
+    }
   }
 }

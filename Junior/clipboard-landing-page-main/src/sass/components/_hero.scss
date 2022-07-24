@@ -2,9 +2,8 @@
   position: relative;
 
   &__bg {
-    // border: 1px solid red;
-
     position: absolute;
+    top: 0;
     z-index: -1;
     width: 100%;
     background-image: $bg-mobile;
@@ -27,11 +26,12 @@
   &__logo {
     height: 7.8125rem;
     width: 7.8125rem;
-    margin-top: 7.625rem;
+    margin-top: 2.375rem;
     margin-bottom: 4.4375rem;
 
     @include breakpoint-up(lg) {
-      margin-top: 130px;
+      // margin-top: 130px;
+      margin-top: 51px;
     }
 
     img {
@@ -46,6 +46,23 @@
 
     h1 {
       margin-bottom: 1.375rem;
+    }
+
+    p {
+      @include breakpoint-up(md) {
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+
+      @include breakpoint-up(lg) {
+        padding-left: 8rem;
+        padding-right: 8rem;
+      }
+
+      @include breakpoint-up(xl) {
+        padding-left: 21rem;
+        padding-right: 21rem;
+      }
     }
   }
 }
