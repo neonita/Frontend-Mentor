@@ -9,15 +9,23 @@
   }
 
   &__image {
+    // border: 1px solid red;
     width: 100%;
     min-height: 15.5rem;
     background-image: url("../../assets/images/image-computer.png");
     background-size: 100% auto;
+    background-position: center center;
     background-repeat: no-repeat;
     margin-bottom: 3.6875rem;
+
+    @include breakpoint-up(md) {
+      min-height: 34.25rem;
+    }
   }
 
   &__features {
+    border: 1px solid red;
+
     ul {
       list-style: none;
       gap: 58px;
