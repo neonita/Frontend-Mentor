@@ -9,8 +9,8 @@ const Hero = () => {
         <img src={Logo} alt="Clipboard Logo" />
       </div>
       <div className="hero__text">
-        <h1>A history of everything you copy</h1>
-        <p>
+        <h1 className="h-1">A history of everything you copy</h1>
+        <p className="txt-1">
           Clipboard allows you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
         </p>

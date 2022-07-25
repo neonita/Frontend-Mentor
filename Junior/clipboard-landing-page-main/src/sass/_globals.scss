@@ -18,7 +18,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   color: $darkGrayishBlue;
   font-weight: 600;
 }
@@ -34,10 +35,10 @@ h1 {
   }
 }
 
-h2 {
-  font-size: $font-xl;
-  letter-spacing: -0.025em;
-}
+// h2 {
+//   font-size: $font-xl;
+//   letter-spacing: -0.025em;
+// }
 
 p {
   font-weight: 400;
@@ -96,46 +97,61 @@ a:hover {
   }
 }
 
-.text {
+// Texts
+.h {
   &-1 {
-    font-size: 21px; // 21px
-    line-height: 30px; // 30px
-    letter-spacing: -0.015em;
+    @include breakpoint-up(lg) {
+      font-size: 48px;
+      line-height: 60px;
+      letter-spacing: -0.0355em;
+    }
   }
 
   &-2 {
-    font-size: 18px;
-    line-height: 30px;
-    letter-spacing: 0.0075em;
+    @include breakpoint-up(lg) {
+      font-size: 36px;
+      letter-spacing: -0.0165em;
+    }
   }
 
   &-3 {
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.0075em;
-  }
-
-  &-4 {
-    font-size: 18px;
-    line-height: auto;
-    letter-spacing: 0.0055em;
+    @include breakpoint-up(lg) {
+      font-size: 24px;
+      letter-spacing: -0.019em;
+    }
   }
 }
 
-.h {
+.txt {
   &-1 {
-    font-size: 48px;
-    line-height: 60px;
-    letter-spacing: -0.0355em;
+    @include breakpoint-up(lg) {
+      font-size: 21px; // 21px
+      line-height: 30px; // 30px
+      letter-spacing: -0.015em;
+    }
   }
 
   &-2 {
-    font-size: 36px;
-    letter-spacing: -0.0165em;
+    @include breakpoint-up(lg) {
+      font-size: 18px;
+      line-height: 30px;
+      letter-spacing: 0.0075em;
+    }
   }
 
   &-3 {
-    font-size: 24px;
-    letter-spacing: -0.019em;
+    @include breakpoint-up(lg) {
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.0075em;
+    }
+  }
+
+  &-4 {
+    @include breakpoint-up(lg) {
+      font-size: 18px;
+      line-height: auto;
+      letter-spacing: 0.0055em;
+    }
   }
 }
