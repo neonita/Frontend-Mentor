@@ -20,13 +20,13 @@ body {
 h1,
 h2 {
   color: $darkGrayishBlue;
+  font-weight: 600;
 }
 
 h1 {
   font-size: $font-xxl;
   letter-spacing: -0.02em;
   line-height: 1.2;
-  font-weight: 600;
 
   @include breakpoint-up(lg) {
     font-size: 3rem;
@@ -40,9 +40,10 @@ h2 {
 }
 
 p {
-  font-size: $font-sm;
-  line-height: 26px;
-  letter-spacing: 0.01em;
+  font-weight: 400;
+  // font-size: $font-sm;
+  // line-height: 26px;
+  // letter-spacing: 0.01em;
 
   // @include breakpoint-up(lg) {
   //   font-size: $font-lg;
@@ -78,13 +79,13 @@ a:hover {
 }
 
 // Spacing
-.container {
-  &--px {
+.padding {
+  &--x {
     padding-left: 1.65rem; // 26.4px
     padding-right: 1.65rem; // 26.4px
   }
 
-  &--py {
+  &--y {
     padding-top: 5.25rem; // 84px
     padding-bottom: 5.25rem; // 84px
 
@@ -92,5 +93,49 @@ a:hover {
       padding-top: 4.9375rem; // 79px
       padding-bottom: 4.9375rem; // 79px
     }
+  }
+}
+
+.text {
+  &-1 {
+    font-size: 21px; // 21px
+    line-height: 30px; // 30px
+    letter-spacing: -0.015em;
+  }
+
+  &-2 {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.0075em;
+  }
+
+  &-3 {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.0075em;
+  }
+
+  &-4 {
+    font-size: 18px;
+    line-height: auto;
+    letter-spacing: 0.0055em;
+  }
+}
+
+.h {
+  &-1 {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.0355em;
+  }
+
+  &-2 {
+    font-size: 36px;
+    letter-spacing: -0.0165em;
+  }
+
+  &-3 {
+    font-size: 24px;
+    letter-spacing: -0.019em;
   }
 }
