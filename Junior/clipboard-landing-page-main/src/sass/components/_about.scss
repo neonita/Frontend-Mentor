@@ -1,16 +1,8 @@
 .about {
   border: 1px solid red;
 
-  h2,
-  h3 {
+  h2 {
     margin-bottom: 1.3125rem;
-  }
-
-  .container {
-    @include breakpoint-up(lg) {
-      display: flex;
-      align-items: center;
-    }
   }
 
   &__text {
@@ -18,11 +10,6 @@
     margin-bottom: 4.25rem;
 
     p {
-      // @include breakpoint-up(md) {
-      //   padding-left: 3rem;
-      //   padding-right: 3rem;
-      // }
-
       @include breakpoint-up(lg) {
         padding-left: 8rem;
         padding-right: 8rem;
@@ -40,34 +27,90 @@
     }
   }
 
+  .container {
+    height: 100%;
+
+    @include breakpoint-up(lg) {
+      display: flex;
+      align-items: center;
+      gap: 6.8125rem;
+    }
+  }
+
   &__image {
-    // border: 1px solid red;
+    border: 1px dashed green;
+    // position: relative;
     width: 100%;
-    min-height: 15.5rem;
-    background-image: url("../../assets/images/image-computer.png");
-    background-size: 100% auto;
-    background-position: center center;
-    background-repeat: no-repeat;
+    min-height: 15.25rem;
     margin-bottom: 3.6875rem;
 
+    background-image: url("../../assets/images/image-computer.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: top center;
+
     @include breakpoint-up(md) {
-      min-height: 34.25rem;
+      min-height: 28rem;
     }
 
     @include breakpoint-up(lg) {
+      height: 35.875rem;
+      margin-bottom: 0rem;
       background-image: none;
+    }
+
+    &::after {
+      @include breakpoint-up(lg) {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        max-height: 35.875rem;
+
+        background-image: url("../../assets/images/image-computer.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+      }
     }
   }
 
   &__features {
     border: 1px solid red;
+    width: 100%;
 
     ul {
       list-style: none;
       gap: 58px;
 
+      @include breakpoint-up(lg) {
+        gap: 65px;
+      }
+
       li {
         text-align: center;
+
+        @include breakpoint-up(lg) {
+          text-align: left;
+        }
+
+        h3 {
+          @include breakpoint-up(lg) {
+            margin-bottom: 21px;
+          }
+        }
+
+        p {
+          @include breakpoint-up(lg) {
+            padding-right: 4.5rem;
+          }
+
+          @include breakpoint-up(xl) {
+            padding-right: 17.1rem;
+          }
+        }
       }
     }
   }

@@ -42,9 +42,9 @@ h1 {
 
 p {
   font-weight: 400;
-  // font-size: $font-sm;
-  // line-height: 26px;
-  // letter-spacing: 0.01em;
+  font-size: $font-sm;
+  line-height: 26px;
+  letter-spacing: 0.01em;
 
   // @include breakpoint-up(lg) {
   //   font-size: $font-lg;
@@ -102,7 +102,7 @@ a:hover {
   &-1 {
     @include breakpoint-up(lg) {
       font-size: 48px;
-      line-height: 60px;
+      line-height: auto;
       letter-spacing: -0.0355em;
     }
   }
@@ -141,9 +141,9 @@ a:hover {
 
   &-3 {
     @include breakpoint-up(lg) {
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.0075em;
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 0.01em;
     }
   }
 

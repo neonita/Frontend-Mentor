@@ -3,7 +3,7 @@ import data from "../data.js";
 const About = () => {
   console.log(data);
   return (
-    <section className="about padding--x padding--y">
+    <section className="about padding--x padding--y flex flex-col">
       <div className="about__text">
         <h2 className="h-2">Keep track of your snippets</h2>
         <p className="txt-2">
