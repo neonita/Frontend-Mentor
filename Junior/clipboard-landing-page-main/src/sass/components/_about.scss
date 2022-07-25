@@ -9,7 +9,6 @@
   }
 
   &__image {
-    // border: 1px solid red;
     width: 100%;
     min-height: 15.5rem;
     background-image: url("../../assets/images/image-computer.png");
@@ -21,6 +20,7 @@
   &__features {
     ul {
       list-style: none;
+      gap: 58px;
 
       li {
         text-align: center;
