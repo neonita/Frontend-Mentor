@@ -1,5 +1,5 @@
 .about {
-  border: 1px solid red;
+  // border: 1px solid red;
 
   h2 {
     margin-bottom: 1.3125rem;
@@ -38,8 +38,6 @@
   }
 
   &__image {
-    border: 1px dashed green;
-    // position: relative;
     width: 100%;
     min-height: 15.25rem;
     margin-bottom: 3.6875rem;
@@ -64,21 +62,26 @@
       @include breakpoint-up(lg) {
         content: "";
         position: absolute;
-        left: 0;
+        left: -5.15%;
+
         width: 50%;
         height: 100%;
         max-height: 35.875rem;
 
         background-image: url("../../assets/images/image-computer.png");
-        background-size: contain;
+        background-size: 47rem;
         background-repeat: no-repeat;
-        background-position: top center;
+        background-position: center right;
+      }
+
+      @include breakpoint-up(xl) {
+        left: -3.75%;
       }
     }
   }
 
   &__features {
-    border: 1px solid red;
+    // border: 1px solid red;
     width: 100%;
 
     ul {
