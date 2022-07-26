@@ -82,8 +82,10 @@ a:hover {
 // Spacing
 .padding {
   &--x {
-    padding-left: 1.65rem; // 26.4px
-    padding-right: 1.65rem; // 26.4px
+    padding-left: 1.88rem; // 26.4px
+    padding-right: 1.88rem; // 26.4px
+    // padding-left: 1.65rem; // 26.4px
+    // padding-right: 1.65rem; // 26.4px
   }
 
   &--y {
@@ -100,6 +102,9 @@ a:hover {
 // Texts
 .h {
   &-1 {
+    font-size: 31px;
+    line-height: auto;
+
     @include breakpoint-up(lg) {
       font-size: 48px;
       line-height: auto;
@@ -108,6 +113,10 @@ a:hover {
   }
 
   &-2 {
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: -0.015em;
+
     @include breakpoint-up(lg) {
       font-size: 36px;
       letter-spacing: -0.0165em;
@@ -115,18 +124,23 @@ a:hover {
   }
 
   &-3 {
-    @include breakpoint-up(lg) {
-      font-size: 24px;
-      letter-spacing: -0.019em;
-    }
+    font-size: 24px;
+    line-height: auto;
+    letter-spacing: -0.019em;
   }
 }
 
 .txt {
+  font-size: 1rem;
+  line-height: 1.625rem; // 26px
+  letter-spacing: 0.007em;
+
   &-1 {
+    letter-spacing: 0.01em;
+
     @include breakpoint-up(lg) {
-      font-size: 21px; // 21px
-      line-height: 30px; // 30px
+      font-size: 1.3125rem; // 21px
+      line-height: 1.875rem; // 30px
       letter-spacing: -0.015em;
     }
   }
@@ -148,9 +162,10 @@ a:hover {
   }
 
   &-4 {
+    font-size: 18px;
+    line-height: auto;
+
     @include breakpoint-up(lg) {
-      font-size: 18px;
-      line-height: auto;
       letter-spacing: 0.0055em;
     }
   }

@@ -90,7 +90,7 @@
 
     ul {
       list-style: none;
-      gap: 58px;
+      gap: 3.625rem; // 58px
 
       @include breakpoint-up(lg) {
         gap: 4.0625rem; // 65px
@@ -104,8 +104,9 @@
         }
 
         h3 {
+          margin-bottom: 1rem;
           @include breakpoint-up(lg) {
-            margin-bottom: 21px;
+            margin-bottom: 1.3125rem; // 21px
           }
         }
 
