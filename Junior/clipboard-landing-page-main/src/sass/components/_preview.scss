@@ -12,6 +12,23 @@
     h2 {
       margin-bottom: 1.375rem;
     }
+
+    p {
+      @include breakpoint-up(lg) {
+        padding-left: 8rem;
+        padding-right: 8rem;
+
+        font-size: 1.125rem; // 18px
+        font-weight: 400;
+        letter-spacing: 0.0075em;
+        line-height: 1.875rem; // 30px
+      }
+
+      @include breakpoint-up(xl) {
+        padding-left: 21rem;
+        padding-right: 21rem;
+      }
+    }
   }
 
   &__image {
@@ -23,5 +40,20 @@
     background-repeat: no-repeat;
     background-size: 110.8%;
     background-position: top center;
+
+    @include breakpoint-up(md) {
+      height: 30rem;
+    }
+
+    @include breakpoint-up(lg) {
+      margin: 0 auto;
+      width: 85%;
+      height: 35rem;
+    }
+
+    // @include breakpoint-up(xl) {
+    //   width: 84%;
+    //   height: 50rem;
+    // }
   }
 }
