@@ -32,28 +32,39 @@
   }
 
   &__image {
-    // border: 1px solid red;
-    height: 13.5rem;
-    width: 100%;
+    border: 0.5px solid red;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    height: 15rem;
+    width: 22.5rem;
+    // height: 13.5rem;
+    // width: 115%;
 
     background-image: url("../../assets/images/image-devices.png");
     background-repeat: no-repeat;
-    background-size: 110.8%;
-    background-position: top center;
+    background-size: 96%;
+    background-position: top left 0.7rem;
 
     @include breakpoint-up(md) {
-      height: 30rem;
+      height: 22rem;
+      width: 100%;
+      background-size: contain;
+      background-position: top center;
     }
 
     @include breakpoint-up(lg) {
-      margin: 0 auto;
-      width: 85%;
+      width: 57.5rem; // 920px
       height: 35rem;
     }
 
-    // @include breakpoint-up(xl) {
-    //   width: 84%;
-    //   height: 50rem;
-    // }
+    @include breakpoint-up(xl) {
+      width: 100%;
+      height: 38rem;
+      max-width: 68%;
+      background-size: 100%;
+    }
   }
 }
