@@ -1,8 +1,8 @@
 .preview {
-  border: 1px solid pink;
+  // border: 1px solid pink;
 
-  .container {
-    // border: 1px solid blue;
+  @include breakpoint-up(xl) {
+    padding-bottom: 2.875rem; // 46px
   }
 
   &__text {
@@ -32,7 +32,7 @@
   }
 
   &__image {
-    border: 0.5px solid red;
+    // border: 0.5px solid red;
 
     position: relative;
     left: 50%;
@@ -40,8 +40,6 @@
 
     height: 15rem;
     width: 22.5rem;
-    // height: 13.5rem;
-    // width: 115%;
 
     background-image: url("../../assets/images/image-devices.png");
     background-repeat: no-repeat;
