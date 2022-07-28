@@ -1,2 +1,21 @@
 .services {
+  text-align: center;
+
+  ul {
+    list-style: none;
+  }
+
+  //     &__text {
+
+  //     }
+
+  //   &__list {
+  //   }
+
+  &__sponsors {
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
 }
