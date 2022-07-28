@@ -1,6 +1,4 @@
 .preview {
-  // border: 1px solid pink;
-
   @include breakpoint-up(xl) {
     padding-bottom: 2.875rem; // 46px
   }
@@ -32,8 +30,6 @@
   }
 
   &__image {
-    // border: 0.5px solid red;
-
     position: relative;
     left: 50%;
     transform: translateX(-50%);
