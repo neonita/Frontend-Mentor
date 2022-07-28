@@ -3,11 +3,6 @@
   margin: 0 auto;
   padding-bottom: 5.375rem; // 87px
 
-  //   @include breakpoint-up(xl) {
-  //     width: 1121px;
-  //     width: 100%;
-  //   }
-
   ul {
     list-style: none;
   }
@@ -33,11 +28,9 @@
 
     ul {
       gap: 3.375rem; // 54px;
-      height: 220px;
 
       @include breakpoint-up(xl) {
-        // border: 1px solid red;
-        // min-height: 220px;
+        height: 220px;
         width: 1121px;
 
         display: flex;
