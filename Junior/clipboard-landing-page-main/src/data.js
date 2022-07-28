@@ -56,9 +56,9 @@ const data = [
   ],
   [
     { id: 0, png: <Google />, alt: "Google logo" },
-    { id: 1, png: <HP />, alt: "HP logo" },
     { id: 2, png: <IBM />, alt: "IBM logo" },
     { id: 3, png: <Microsoft />, alt: "Microsoft logo" },
+    { id: 1, png: <HP />, alt: "HP logo" },
     { id: 4, png: <VG />, alt: "Vector Graphics logo" },
   ],
 ];

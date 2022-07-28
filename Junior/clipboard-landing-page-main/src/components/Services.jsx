@@ -4,7 +4,7 @@ const Services = () => {
   //   console.log(data[1]);
 
   return (
-    <section className="services padding--x padding--y flex flex-col flex-ai-center">
+    <section className="services padding--x padding--y flex flex-col">
       <header className="services__text">
         <h2 className="h h-2">Supercharge your workflow</h2>
         <p className="txt txt-2">

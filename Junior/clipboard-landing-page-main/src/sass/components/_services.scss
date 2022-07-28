@@ -1,21 +1,48 @@
 .services {
   text-align: center;
+  margin: 0 auto;
 
   ul {
     list-style: none;
   }
 
-  //     &__text {
+  &__text {
+    margin-bottom: 5.62rem; // 83.2px
 
-  //     }
+    h2 {
+      margin-bottom: 0.9rem;
+    }
+  }
 
-  //   &__list {
-  //   }
+  &__list {
+    margin-bottom: 8.1875rem; // 131px
+
+    ul {
+      //   gap: 3.5625rem; // 57px
+      gap: 3.375rem; // 54px;
+
+      h3 {
+        margin-bottom: 1.1rem; // 17.6px
+      }
+
+      img {
+        margin-bottom: 2.15rem; // 34.4px
+      }
+    }
+  }
 
   &__sponsors {
-    img {
-      height: 100%;
-      width: auto;
+    ul {
+      gap: 3.9375rem; // 63px
+
+      li:not(:last-child) {
+        margin-bottom: 3.625rem; // 58px
+      }
+
+      img {
+        height: 100%;
+        width: auto;
+      }
     }
   }
 }
