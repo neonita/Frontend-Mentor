@@ -1,6 +1,8 @@
-import IconBlacklist from "../assets/icons/icon-blacklist.svg";
+import data from "../data";
 
 const Services = () => {
+  console.log(data[1]);
+
   return (
     <section className="services container--x container--y">
       <header className="services__text">
@@ -11,18 +13,26 @@ const Services = () => {
       {/* List of services */}
       <div className="services__list">
         <ul>
-          <li>
-            <img src={IconBlacklist} alt="icon" />
-            <h3>Create blacklists</h3>
-            <p>
-              Ensure sensitive information never makes its way to your clipboard
-              by excluding certain sources.
-            </p>
-          </li>
+          {data[1].map((service) => (
+            <li>
+              <img src={service.svg.type} alt={service.alt} />
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+            </li>
+          ))}
         </ul>
       </div>
 
       {/* List of sponsors */}
+      <div className="services__sponsors">
+        <ul>
+          {data[2].map((sponsor) => (
+            <li key={sponsor.id}>
+              <img src={sponsor.png.type} alt={sponsor.alt} />
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };
