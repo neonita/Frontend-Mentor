@@ -27,7 +27,7 @@ const Services = () => {
 
       {/* List of sponsors */}
       <div className="services__sponsors">
-        <ul className="flex flex-col">
+        <ul className="flex flex-col flex-jc-sb flex-ai-center">
           {data[2].map((sponsor) => (
             <li key={sponsor.id}>
               <img src={sponsor.png.type} alt={sponsor.alt} />
