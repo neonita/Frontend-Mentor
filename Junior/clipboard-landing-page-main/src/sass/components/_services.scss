@@ -28,7 +28,7 @@
     margin-bottom: 8.1875rem; // 131px
 
     @include breakpoint-up(xl) {
-      margin: 0 auto 8rem auto;
+      margin: 0 auto 9.625rem auto; // 154px
     }
 
     ul {
@@ -36,7 +36,7 @@
       height: 220px;
 
       @include breakpoint-up(xl) {
-        border: 1px solid red;
+        // border: 1px solid red;
         // min-height: 220px;
         width: 1121px;
 
