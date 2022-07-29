@@ -35,21 +35,11 @@ h1 {
   }
 }
 
-// h2 {
-//   font-size: $font-xl;
-//   letter-spacing: -0.025em;
-// }
-
 p {
   font-weight: 400;
   font-size: $font-sm;
   line-height: 26px;
   letter-spacing: 0.01em;
-
-  // @include breakpoint-up(lg) {
-  //   font-size: $font-lg;
-  //   // letter-spacing: -1.5%;
-  // }
 }
 
 a,
@@ -84,8 +74,6 @@ a:hover {
   &--x {
     padding-left: 1.88rem; // 26.4px
     padding-right: 1.88rem; // 26.4px
-    // padding-left: 1.65rem; // 26.4px
-    // padding-right: 1.65rem; // 26.4px
   }
 
   &--y {
