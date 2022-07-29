@@ -1,0 +1,55 @@
+.footer {
+  background-color: $lightGray;
+  padding-top: 3.1875rem; // 51px
+  padding-bottom: 3.1875rem;
+
+  ul {
+    list-style: none;
+  }
+
+  &__logo {
+    height: 3.75rem; // 60px
+    width: auto;
+    margin-bottom: 44px;
+  }
+
+  &__links {
+    margin-bottom: 53px;
+
+    ul {
+      height: 13.625rem; // 218px
+
+      a:link,
+      a:visited {
+        color: $darkGrayishBlue;
+        transition: $transition;
+      }
+
+      a:hover {
+        cursor: pointer;
+        color: $strongCyan;
+      }
+    }
+  }
+
+  &__socials {
+    ul {
+      height: 1.625rem; // 26px
+      width: 9.875rem; // 158px
+
+      li:nth-child(2) a img {
+        height: 85%;
+        width: auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
