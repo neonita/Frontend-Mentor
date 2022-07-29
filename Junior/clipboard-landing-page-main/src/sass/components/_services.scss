@@ -90,16 +90,21 @@
 
   // List of sponsors
   &__sponsors {
-    margin: 0 auto;
+    width: 100%;
 
     ul {
+      margin: 0 auto;
       height: 27.6875rem; // 443px
       width: 9rem; // 144px
 
-      @include breakpoint-up(xl) {
+      @include breakpoint-up(lg) {
         flex-direction: row;
+        height: 3.6875rem; // 59px
+        width: 90%;
+      }
 
-        width: 10.0625rem; // 1121px
+      @include breakpoint-up(xl) {
+        width: 70.0625rem; // 1121px
         height: 3.6875rem; // 59px
       }
 
