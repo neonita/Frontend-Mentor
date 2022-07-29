@@ -19,6 +19,7 @@
     }
   }
 
+  // List of services
   &__list {
     margin-bottom: 8.1875rem; // 131px
 
@@ -29,39 +30,65 @@
     ul {
       gap: 3.375rem; // 54px;
 
-      @include breakpoint-up(xl) {
-        height: 220px;
-        width: 1121px;
-
+      @include breakpoint-up(lg) {
+        height: auto;
+        width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: auto;
+        align-items: flex-start;
+      }
+
+      @include breakpoint-up(xl) {
+        width: 70.0625rem; // 1121px
+        height: 13.75rem; // 220px
+      }
+
+      li {
+        @include breakpoint-up(lg) {
+          width: calc(100% / 3);
+        }
+      }
+
+      li:nth-child(1) {
+        @include breakpoint-up(xl) {
+          width: 21rem; // 336px
+        }
+      }
+
+      li:nth-child(2) {
+        @include breakpoint-up(xl) {
+          width: 21.1875rem; // 339px
+        }
+      }
+
+      li:nth-child(3) {
+        @include breakpoint-up(xl) {
+          width: 21.1875rem; // 339px
+        }
       }
 
       h3 {
         margin-bottom: 1.1rem; // 17.6px
 
         @include breakpoint-up(xl) {
-          margin-bottom: 22px;
+          margin-bottom: 1.375rem; // 22px
         }
       }
 
       img {
-        height: 100%;
+        height: 2.8125rem; // 45px
         width: auto;
         margin-bottom: 2.15rem; // 34.4px
+        // line-height: 2.8125rem; // 45px
 
-        @include breakpoint-up(xl) {
-          height: 45px;
-          line-height: 45px;
-          margin-bottom: 37px;
+        @include breakpoint-up(lg) {
+          margin-bottom: 2.3125rem; // 37px
         }
       }
     }
   }
 
+  // List of sponsors
   &__sponsors {
     margin: 0 auto;
 
@@ -72,8 +99,8 @@
       @include breakpoint-up(xl) {
         flex-direction: row;
 
-        width: 1121px;
-        height: 59px;
+        width: 10.0625rem; // 1121px
+        height: 3.6875rem; // 59px
       }
 
       img {
@@ -84,7 +111,7 @@
 
       li {
         @include breakpoint-up(xl) {
-          height: 59px;
+          height: 3.6875rem; // 59px
           width: auto;
         }
       }
