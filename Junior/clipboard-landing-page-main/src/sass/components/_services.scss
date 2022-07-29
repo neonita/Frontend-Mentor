@@ -10,12 +10,20 @@
   &__text {
     margin-bottom: 5.62rem; // 83.2px
 
+    @include breakpoint-up(lg) {
+      margin-bottom: 3.75rem;
+    }
+
     @include breakpoint-up(xl) {
       margin-bottom: 4.3125rem; // 69px
     }
 
     h2 {
       margin-bottom: 0.9rem;
+
+      @include breakpoint-up(lg) {
+        margin-bottom: 1.5rem;
+      }
     }
   }
 
@@ -24,7 +32,7 @@
     margin-bottom: 8.1875rem; // 131px
 
     @include breakpoint-up(xl) {
-      margin: 0 auto 9.625rem auto; // 154px
+      margin: 0 auto 10.4375rem auto; // 167px
     }
 
     ul {
