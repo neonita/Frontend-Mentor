@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Preview from "./components/Preview";
 import Services from "./components/Services";
 import CTA from "./components/CTA";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Preview />
       <Services />
       <CTA />
+      <Footer />
     </>
   );
 }
