@@ -1,7 +1,13 @@
 .cta {
   text-align: center;
+  padding-bottom: 10.5rem; // 168px
 
   &__text {
+    margin-bottom: 2.75rem; // 44px
+
+    h2 {
+      margin-bottom: 1.25rem; // 24px
+    }
   }
 
   &__btns {
