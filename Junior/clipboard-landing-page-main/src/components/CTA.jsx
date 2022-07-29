@@ -10,7 +10,7 @@ const CTA = () => {
           with iCloud and you’re ready to start adding to your clipboard.
         </p>
       </header>
-      <div className="cta__btns">
+      <div className="cta__btns flex flex-jc-center">
         <Buttons />
       </div>
     </section>
