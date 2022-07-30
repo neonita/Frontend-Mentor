@@ -3,8 +3,14 @@
   padding-top: 3.1875rem; // 51px
   padding-bottom: 3.1875rem;
 
-  .socialsIcon {
-    fill: red;
+  .icon {
+    fill: $darkGrayishBlue;
+    transition: fill 0.25s ease-in-out;
+  }
+
+  .icon:hover {
+    cursor: pointer;
+    fill: $strongCyan;
   }
 
   @include breakpoint-up(lg) {
@@ -111,23 +117,18 @@
         height: 1.75rem; // 28px
       }
 
-      li:nth-child(2) a img {
+      li:nth-child(2) a .icon {
         height: 85%;
         width: auto;
         position: relative;
         top: 50%;
         transform: translateY(-50%);
+      }
 
-        a:link,
-        a:visited {
-          height: 100%;
-          width: 100%;
-          object-fit: contain;
-        }
-
-        // .socialsIcon {
-        //   fill: red;
-        // }
+      .icon {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
       }
     }
   }

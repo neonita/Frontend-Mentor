@@ -47,7 +47,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <IconFacebook className="socialsIcon" />
+                <IconFacebook className="icon" />
               </a>
             </li>
             <li>
@@ -56,7 +56,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <IconTwitter className="socialsIcon" />
+                <IconTwitter className="icon" />
               </a>
             </li>
             <li>
@@ -65,7 +65,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <IconInstagram className="socialsIcon" />
+                <IconInstagram className="icon" />
               </a>
             </li>
           </ul>
