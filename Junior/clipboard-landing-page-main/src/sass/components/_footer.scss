@@ -3,6 +3,30 @@
   padding-top: 3.1875rem; // 51px
   padding-bottom: 3.1875rem;
 
+  @include breakpoint-up(lg) {
+    padding-top: 2.625rem; // 42px
+    padding-bottom: 2.625rem;
+
+    display: block;
+  }
+
+  .container {
+    @include breakpoint-up(lg) {
+      height: 4rem;
+      width: 54.6875rem; // 875px
+      margin: 0 auto;
+
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 10.625rem auto 10.625rem; // 170px
+      grid-column-gap: 1.3125rem; // 21px
+    }
+
+    @include breakpoint-up(xl) {
+      width: 69.75rem; // 1116px
+    }
+  }
+
   ul {
     list-style: none;
   }
@@ -10,19 +34,56 @@
   &__logo {
     height: 3.75rem; // 60px
     width: auto;
-    margin-bottom: 44px;
+    margin-bottom: 2.75rem; // 44px
+
+    @include breakpoint-up(lg) {
+      margin-bottom: 0px;
+      grid-column: 1/2;
+    }
   }
 
+  // Footer links
   &__links {
-    margin-bottom: 53px;
+    margin-bottom: 3.3125rem; // 53px
+
+    @include breakpoint-up(lg) {
+      margin-bottom: 0px;
+    }
 
     ul {
       height: 13.625rem; // 218px
 
+      @include breakpoint-up(lg) {
+        height: 4rem;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr); // or 170px
+
+        grid-column-gap: 1.3125rem; // 21px
+        align-items: start;
+      }
+
+      @include breakpoint-up(xl) {
+        grid-template-columns: repeat(4, 1fr); // or 170px
+      }
+
+      li:nth-of-type(2n + 1) {
+        @include breakpoint-up(lg) {
+          grid-row: 1/2;
+        }
+      }
+
+      li:nth-of-type(2n) {
+        @include breakpoint-up(lg) {
+          grid-row: 2/3;
+          align-self: end;
+        }
+      }
+
       a:link,
       a:visited {
         color: $darkGrayishBlue;
-        transition: $transition;
+        transition: color 0.25s ease-in-out;
       }
 
       a:hover {
@@ -33,9 +94,18 @@
   }
 
   &__socials {
+    @include breakpoint-up(lg) {
+      grid-column: 3/4;
+      justify-self: end;
+    }
     ul {
       height: 1.625rem; // 26px
       width: 9.875rem; // 158px
+
+      @include breakpoint-up(lg) {
+        width: 7.75rem; // 124px
+        height: 1.75rem; // 28px
+      }
 
       li:nth-child(2) a img {
         height: 85%;
@@ -43,12 +113,17 @@
         position: relative;
         top: 50%;
         transform: translateY(-50%);
-      }
 
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
+        a:link,
+        a:visited {
+          color: $darkGrayishBlue;
+
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+          }
+        }
       }
     }
   }
