@@ -1,7 +1,7 @@
 import Logo from "../assets/icons/logo.svg";
-import IconFacebook from "../assets/icons/icon-facebook.svg";
-import IconTwitter from "../assets/icons/icon-twitter.svg";
-import IconInstagram from "../assets/icons/icon-instagram.svg";
+import { ReactComponent as IconFacebook } from "../assets/icons/icon-facebook.svg";
+import { ReactComponent as IconTwitter } from "../assets/icons/icon-twitter.svg";
+import { ReactComponent as IconInstagram } from "../assets/icons/icon-instagram.svg";
 
 const Footer = () => {
   return (
@@ -47,7 +47,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <img src={IconFacebook} alt="Facebook icon" />
+                <IconFacebook className="socialsIcon" />
               </a>
             </li>
             <li>
@@ -56,7 +56,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <img src={IconTwitter} alt="Twitter icon" />
+                <IconTwitter className="socialsIcon" />
               </a>
             </li>
             <li>
@@ -65,7 +65,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <img src={IconInstagram} alt="Instagram icon" />
+                <IconInstagram className="socialsIcon" />
               </a>
             </li>
           </ul>

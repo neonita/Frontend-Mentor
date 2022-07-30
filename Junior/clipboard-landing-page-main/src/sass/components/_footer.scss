@@ -3,6 +3,10 @@
   padding-top: 3.1875rem; // 51px
   padding-bottom: 3.1875rem;
 
+  .socialsIcon {
+    fill: red;
+  }
+
   @include breakpoint-up(lg) {
     padding-top: 2.625rem; // 42px
     padding-bottom: 2.625rem;
@@ -116,14 +120,14 @@
 
         a:link,
         a:visited {
-          color: $darkGrayishBlue;
-
-          img {
-            height: 100%;
-            width: 100%;
-            object-fit: contain;
-          }
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
         }
+
+        // .socialsIcon {
+        //   fill: red;
+        // }
       }
     }
   }
