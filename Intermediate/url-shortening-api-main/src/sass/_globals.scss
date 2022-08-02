@@ -17,11 +17,18 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-weight: 700;
 }
 
+// screen reader title
 h1 {
+  position: absolute;
+  left: -1000%;
+}
+
+h2 {
   font-size: 2.625rem; // 42px
   line-height: 3rem; // 48px
   letter-spacing: -0.025em;
@@ -32,7 +39,7 @@ h1 {
   }
 }
 
-h2 {
+h3 {
   font-size: 1.75rem; // 28px
   line-height: 2.625rem; // 42px
   letter-spacing: -0.025em;
@@ -44,7 +51,7 @@ h2 {
   }
 }
 
-h3 {
+h4 {
   font-size: 1.5rem; // 24px
   line-height: 1.625rem; // 26px
   letter-spacing: -0.045em;
@@ -56,7 +63,7 @@ h3 {
   }
 }
 
-h4 {
+h5 {
   font-size: 1rem; // 16px
   line-height: 1.5rem; // 24px
   letter-spacing: -0.025em;
