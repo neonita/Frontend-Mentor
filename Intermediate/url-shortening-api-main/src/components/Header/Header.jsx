@@ -2,8 +2,13 @@ import { useState } from "react";
 import { ReactComponent as Logo } from "../../assets/images/logo.svg";
 
 const Header = () => {
-  const [open, isOpen] = useState(!open);
+  const [open, setOpen] = useState(false);
   console.log(open);
+
+  const openMenu = () => {
+    setOpen(!open);
+    console.log("clicked");
+  };
 
   return (
     <header className="header">
@@ -11,12 +16,15 @@ const Header = () => {
       <h1>Shortly</h1>
 
       {/* Logo */}
-      <div className="header__logo-container">
+      <a href="/" className="header__logo-container">
         <Logo className="logo" />
-      </div>
+      </a>
 
       {/* Hamburger menu */}
-      <div className="header__hamburger">
+      <div
+        className={!open ? "header__hamburger" : "header__hamburger--open"}
+        onClick={openMenu}
+      >
         <span></span>
         <span></span>
         <span></span>
