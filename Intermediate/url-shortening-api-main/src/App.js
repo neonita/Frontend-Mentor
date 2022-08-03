@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <Header />
-      <p>
+      <p className="padding-top">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
         reprehenderit temporibus nobis reiciendis necessitatibus alias placeat
         ipsum, voluptatum illum corporis quas? Recusandae non ducimus

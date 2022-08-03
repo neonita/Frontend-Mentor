@@ -31,6 +31,44 @@ const Header = () => {
       </div>
 
       {/* Menu */}
+      <menu
+        className={
+          !open ? "header__menu" : "header__menu header__menu--open padding-x"
+        }
+      >
+        {/* Links */}
+        <ul>
+          <li>
+            <a href="/" className="txt txt-4">
+              Features
+            </a>
+          </li>
+          <li>
+            <a href="/" className="txt txt-4">
+              Pricing
+            </a>
+          </li>
+          <li>
+            <a href="/" className="txt txt-4">
+              Resources
+            </a>
+          </li>
+        </ul>
+
+        <hr />
+
+        {/* Login | Sign up */}
+        <ul>
+          <li>
+            <a href="/" className="txt txt-4">
+              Login
+            </a>
+          </li>
+          <li>
+            <button>Sign Up</button>
+          </li>
+        </ul>
+      </menu>
     </header>
   );
 };
