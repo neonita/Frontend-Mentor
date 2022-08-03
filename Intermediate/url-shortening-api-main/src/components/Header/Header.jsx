@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <header className="header">
+    <header className="header padding-x">
       {/* Screen reader only */}
       <h1>Shortly</h1>
 
@@ -29,6 +29,8 @@ const Header = () => {
         <span></span>
         <span></span>
       </div>
+
+      {/* Menu */}
     </header>
   );
 };

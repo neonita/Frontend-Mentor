@@ -2,8 +2,7 @@
   border-bottom: 1px dashed red;
   width: 100%;
   height: 5.9375rem; // 95px
-  padding-left: 1.4375rem; // 23px
-  padding-right: 1.4375rem; // 23px
+
   padding-top: 1.05rem; // 16.8px
 
   display: flex;
@@ -34,7 +33,7 @@
       width: 100%;
       height: 0.1875rem; // 3px
       background-color: $gray;
-      transition: transform 0.5s ease-in-out, opacity 0.25s ease-in-out;
+      transition: transform 0.5s ease-in-out, opacity 1s ease-in-out;
     }
 
     span:not(:last-child) {
