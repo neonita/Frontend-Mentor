@@ -1,0 +1,30 @@
+.header {
+  border-bottom: 1px dashed red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100%;
+  height: 5.9375rem; // 95px
+  padding-top: 1.05rem; // 16.8px
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #fff;
+
+  &__logo-container {
+    width: 7.625rem; // 122px
+    height: 2.625rem; // 42px
+    display: flex;
+    align-items: center;
+
+    .logo {
+      margin: 0 auto;
+      object-fit: contain;
+      fill: $veryDarkViolet;
+    }
+  }
+}

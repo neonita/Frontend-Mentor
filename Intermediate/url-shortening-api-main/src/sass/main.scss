@@ -3,4 +3,6 @@
 @import "globals";
 
 // Components
-@import "components/header";
+@import "components/header/header";
+@import "components/header/navlinks";
+@import "components/header/mobiletoggle";
