@@ -28,7 +28,7 @@ const NavLinks = () => {
           </a>
         </li>
         <li>
-          <button>Sign Up</button>
+          <button href="/">Sign Up</button>
         </li>
       </ul>
     </div>

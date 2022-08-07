@@ -1,9 +1,11 @@
 import { ReactComponent as Logo } from "../../assets/images/logo.svg";
 import MobileToggle from "./MobileToggle";
+import NavLinks from "./NavLinks";
 
 const Header = () => {
   return (
     <header className="header padding-x">
+      {/* <div className="container"> */}
       {/* Screen reader only */}
       <h1>Shortly</h1>
 
@@ -12,7 +14,10 @@ const Header = () => {
         <Logo className="logo" />
       </a>
 
+      <NavLinks />
+
       <MobileToggle />
+      {/* </div> */}
     </header>
   );
 };

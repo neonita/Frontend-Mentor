@@ -15,6 +15,22 @@
 
   background-color: #fff;
 
+  // .container {
+  //   width: 100%;
+  // }
+
+  @include lg {
+    height: auto;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    gap: 40px;
+  }
+
+  @include xl {
+    margin: 0 auto;
+    // width: 1111px; // 1111px
+  }
+
   &__logo-container {
     width: 7.625rem; // 122px
     height: 2.625rem; // 42px
