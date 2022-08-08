@@ -43,4 +43,12 @@
       fill: $veryDarkViolet;
     }
   }
+
+  &__navlinks {
+    display: none;
+
+    @include lg {
+      display: block;
+    }
+  }
 }

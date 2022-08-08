@@ -14,7 +14,9 @@ const Header = () => {
         <Logo className="logo" />
       </a>
 
-      <NavLinks />
+      <div className="header__navlinks">
+        <NavLinks />
+      </div>
 
       <MobileToggle />
       {/* </div> */}
