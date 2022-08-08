@@ -1,4 +1,17 @@
+import { useState } from "react";
+
 const Hero = () => {
+  const [url, setUrl] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(`Url to shorten: ${url}`);
+  };
+
+  const updateUrl = (e) => {
+    setUrl(e.target.value);
+  };
+
   return (
     <section className="hero">
       <div className="hero__illustration"></div>
@@ -11,6 +24,15 @@ const Hero = () => {
         </p>
         <button>Get Started</button>
       </div>
+
+      <form onSubmit={handleSubmit} className="hero__submit">
+        <input
+          type="url"
+          placeholder="Shorten a link here..."
+          onChange={updateUrl}
+        />
+        <input type="submit" value="Shorten It!" />
+      </form>
     </section>
   );
 };
