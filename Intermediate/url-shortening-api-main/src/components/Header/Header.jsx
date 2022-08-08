@@ -5,21 +5,22 @@ import NavLinks from "./NavLinks";
 const Header = () => {
   return (
     <header className="header padding-x">
-      {/* <div className="container"> */}
       {/* Screen reader only */}
-      <h1>Shortly</h1>
+      <div className="container">
+        <h1>Shortly</h1>
 
-      {/* Logo */}
-      <a href="/" className="header__logo-container">
-        <Logo className="logo" />
-      </a>
+        {/* Logo */}
+        <a href="/" className="header__logo-container">
+          <Logo className="logo" />
+        </a>
 
-      <div className="header__navlinks">
-        <NavLinks />
+        {/* Desktop nav links */}
+        <div className="header__navlinks">
+          <NavLinks />
+        </div>
+
+        <MobileToggle />
       </div>
-
-      <MobileToggle />
-      {/* </div> */}
     </header>
   );
 };

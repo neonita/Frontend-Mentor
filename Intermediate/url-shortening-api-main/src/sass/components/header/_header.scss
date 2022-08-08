@@ -9,26 +9,27 @@
   height: 5.9375rem; // 95px
   padding-top: 1.05rem; // 16.8px
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   background-color: #fff;
 
-  // .container {
-  //   width: 100%;
-  // }
+  .container {
+    @include lg {
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2.5rem; // 40px
+    }
+
+    @include xl {
+      width: 69.4375rem; // 1111px
+    }
+  }
 
   @include lg {
     height: auto;
-    padding-top: 42px;
-    padding-bottom: 42px;
-    gap: 40px;
-  }
-
-  @include xl {
-    margin: 0 auto;
-    // width: 1111px; // 1111px
+    padding-top: 3rem; // 48px
+    padding-bottom: 2.6875rem; // 43px
   }
 
   &__logo-container {
@@ -49,6 +50,7 @@
 
     @include lg {
       display: block;
+      width: 100%;
     }
   }
 }
