@@ -40,7 +40,13 @@ const Hero = () => {
           </form>
 
           {/* Results */}
-          <div className="result"></div>
+          <section className="results">
+            <div className="results__result">
+              <p>http://www.frontendmentor.io</p>
+              <p>https://rel.ink/k4lKyk</p>
+              <button>Copy</button>
+            </div>
+          </section>
         </div>
       </div>
     </section>
