@@ -19,7 +19,9 @@ const Header = () => {
           <NavLinks />
         </div>
 
-        <MobileToggle />
+        <div className="header__mobiletoggle">
+          <MobileToggle className="header__mobiletoggle" />
+        </div>
       </div>
     </header>
   );
