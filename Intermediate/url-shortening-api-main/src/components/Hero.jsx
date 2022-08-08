@@ -25,15 +25,23 @@ const Hero = () => {
         <button>Get Started</button>
       </div>
 
-      <div className="hero__submit">
-        <form onSubmit={handleSubmit}>
-          <input
-            type="url"
-            placeholder="Shorten a link here..."
-            onChange={updateUrl}
-          />
-          <input type="submit" value="Shorten It!" />
-        </form>
+      <div className="hero__shortener">
+        <div className="container">
+          {/* Form */}
+          <form onSubmit={handleSubmit} noValidate>
+            <input
+              type="url"
+              placeholder="Shorten a link here..."
+              onChange={updateUrl}
+              required
+            />
+
+            <input type="submit" value="Shorten It!" />
+          </form>
+
+          {/* Results */}
+          <div className="result"></div>
+        </div>
       </div>
     </section>
   );
