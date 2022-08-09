@@ -10,6 +10,7 @@ const Hero = () => {
 
   const updateUrl = (e) => {
     setUrl(e.target.value);
+    console.log(e);
   };
 
   return (
