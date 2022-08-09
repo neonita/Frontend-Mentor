@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Result from "./Result";
 
 const Links = () => {
   const [url, setUrl] = useState("");
@@ -16,7 +17,6 @@ const Links = () => {
   return (
     <section className="links">
       <div className="links__container">
-        {/* <div className="container"> */}
         {/* Form */}
         <form onSubmit={handleSubmit} noValidate>
           <input
@@ -25,20 +25,15 @@ const Links = () => {
             onChange={updateUrl}
             required
           />
-
           <input type="submit" value="Shorten It!" />
         </form>
 
+        <Result className="result" />
         {/* Results */}
-        <div className="results">
-          <div className="results__result">
-            <p>http://www.frontendmentor.io</p>
-            <p>https://rel.ink/k4lKyk</p>
-            <button>Copy</button>
-          </div>
-        </div>
+        {/* <div className="results"> */}
+        {/* <Result /> */}
+        {/* </div> */}
       </div>
-      {/* </div> */}
     </section>
   );
 };

@@ -1,10 +1,10 @@
 .links {
-  border: 1px solid blue;
+  // border: 1px solid blue;
   background-color: $gray2;
   width: 100%;
 
   &__container {
-    border: 3px solid lightgreen;
+    // border: 3px solid lightgreen;
 
     position: relative;
     top: -83px; // 86px
@@ -71,17 +71,12 @@
       }
     }
 
-    // Results
-    .results {
-      border: 1px dashed orange;
-
-      &__result {
-        height: 155px; // 155px
-        width: 327px; // 327px
-        background-color: #fff;
-        border-radius: 6px;
-        border: 1px solid grey;
-      }
+    .result {
+      display: block;
     }
+    // Results
+    // .results {
+    // border: 1px dashed orange;
+    // }
   }
 }

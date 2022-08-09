@@ -1,0 +1,59 @@
+.result {
+  height: 9.6875rem; // 155px
+  width: 20.4375rem; // 327px
+  padding-top: 1rem; // 16px
+  padding-bottom: 1rem; // 16px
+
+  background-color: #fff;
+  border-radius: 6px;
+  border: none;
+
+  //   Submitted link
+  > p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.75rem; // 12px
+    color: $veryDarkViolet;
+    font-weight: 500;
+    font-size: 1rem; // 16px
+    line-height: 1.5rem; // 24px
+    letter-spacing: -0.025em;
+  }
+
+  &__short {
+    border-top: 1px solid #e5e5e5;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem; // 12px
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.75rem; // 12px
+
+    // Shortcut link
+    p {
+      color: $cyan;
+      font-weight: 500;
+      font-size: 1rem; // 16px
+      line-height: 1.5rem; // 24px
+      letter-spacing: -0.025em;
+    }
+
+    button {
+      width: 100%;
+      height: 2.5625rem; // 41px
+
+      background-color: $cyan;
+      border: none;
+      border-radius: 6px;
+
+      color: #fff;
+      font-family: $poppins;
+      font-weight: 700;
+      font-size: 1rem; // 16px
+      line-height: 1.5rem; // 24px
+      letter-spacing: -0.025em;
+    }
+  }
+}
