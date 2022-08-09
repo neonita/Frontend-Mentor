@@ -1,9 +1,9 @@
 const Results = () => {
   return (
-    <div className="result">
+    <div className="card">
       <p>http://www.frontendmentor.io</p>
 
-      <div className="result__short">
+      <div className="card__short">
         <p>https://rel.ink/k4lKyk</p>
         <button>Copy</button>
       </div>

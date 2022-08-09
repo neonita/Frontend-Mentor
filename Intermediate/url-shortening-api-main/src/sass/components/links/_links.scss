@@ -16,67 +16,12 @@
     align-items: center;
     gap: 1.5rem;
 
-    form {
-      width: 327px; // 327px
-      height: 160px; // 160px
-      border-radius: 9px;
-      padding: 1.5rem; // 0 24px
-
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      background-color: $veryDarkViolet;
-      background-image: url("../../../assets/images/bg-shorten-mobile.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: 250% -2rem;
-
-      input {
-        height: 48px; // 48px
-        width: 100%;
-        border-radius: 4px;
-        border: none;
-        font-family: $poppins;
-
-        &[type="url"] {
-          background-color: #fff;
-          padding: 0 16px;
-          font-weight: 500;
-          font-size: 1rem; // 16px
-          line-height: 30px; // 30px
-          letter-spacing: -0.0025em;
-          color: $veryDarkBlue;
-
-          &::placeholder {
-            color: $gray;
-          }
-
-          &:focus {
-            outline: none;
-            // transition: outline 0.2s linear;
-            // outline: 2px solid rgba(227, 226, 226, 0.837);
-            // border-radius: 4px;
-          }
-        }
-
-        &[type="submit"] {
-          background-color: $cyan;
-          color: #fff;
-          font-weight: 700;
-          font-size: 18px; // 18px
-          line-height: 48px; // to center vertically
-          letter-spacing: normal;
-        }
-      }
+    .form {
+      display: block;
     }
 
     .card {
       display: block;
     }
-    // Results
-    // .results {
-    // border: 1px dashed orange;
-    // }
   }
 }
