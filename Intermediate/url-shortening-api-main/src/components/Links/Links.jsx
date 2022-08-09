@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Result from "./Result";
+import Card from "./Card";
 
 const Links = () => {
   const [url, setUrl] = useState("");
@@ -28,11 +28,7 @@ const Links = () => {
           <input type="submit" value="Shorten It!" />
         </form>
 
-        <Result className="result" />
-        {/* Results */}
-        {/* <div className="results"> */}
-        {/* <Result /> */}
-        {/* </div> */}
+        <Card className="card" />
       </div>
     </section>
   );
