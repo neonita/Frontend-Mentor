@@ -1,10 +1,10 @@
-const Results = () => {
+const Results = ({ links }) => {
   return (
     <div className="card">
-      <p>http://www.frontendmentor.io</p>
+      <p>{links.original}</p>
 
       <div className="card__short">
-        <p>https://rel.ink/k4lKyk</p>
+        <p>{links.short}</p>
         <button>Copy</button>
       </div>
     </div>
