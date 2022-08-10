@@ -35,10 +35,10 @@ form {
       }
 
       &:focus {
-        outline: none;
-        // transition: outline 0.2s linear;
-        // outline: 2px solid rgba(227, 226, 226, 0.837);
-        // border-radius: 4px;
+        // outline: none;
+        // transition: all 0.2s ease-in-out;
+        outline: 2px solid $cyan;
+        background-color: rgb(248, 255, 255);
       }
     }
 

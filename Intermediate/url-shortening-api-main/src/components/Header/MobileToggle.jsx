@@ -3,11 +3,11 @@ import NavLinks from "./NavLinks";
 
 const MobileToggle = () => {
   const [open, setOpen] = useState(false);
-  console.log(open);
+  // console.log(open);
 
   const openMenu = () => {
     setOpen(!open);
-    console.log("clicked");
+    // console.log("clicked");
   };
   return (
     <div className="mobiletoggle">
