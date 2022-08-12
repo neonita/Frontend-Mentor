@@ -1,10 +1,29 @@
 .hero {
   width: 100%;
   padding-top: 5.9375rem; // 95px
-  margin-bottom: 167px; // 167px
+  margin-bottom: 10.4375rem; // 167px
   background: #fff;
 
+  @include lg {
+    // border: 1px solid red;
+
+    margin: 0 auto 10.4375rem auto;
+    padding-top: 14.5625rem; // 133px | 233px
+
+    position: relative;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  @include xl {
+    max-width: 69.4375rem; // 1111px
+    margin: 0 auto 10.4375rem auto;
+  }
+
   &__illustration {
+    // position: relative;
     width: 100%;
     height: 344px;
 
@@ -14,21 +33,68 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -15%;
+
+    @include lg {
+      // border: 1px solid blue;
+      order: 2;
+      flex: 1;
+
+      position: relative;
+
+      margin-bottom: 0;
+      background-image: none;
+    }
+
+    &::before {
+      @include lg {
+        // overflow-x: hidden;
+        // border: 2px dashed rgb(226, 30, 180);
+
+        content: "";
+        height: 142.11%;
+        width: 133.18%;
+
+        position: absolute;
+        top: -5rem;
+        left: 0;
+
+        background-image: url("../../../assets/images/illustration-working.svg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: contain;
+        background-position-x: 5rem;
+        // background-position: -120% 83%;
+      }
+    }
   }
 
   &__description {
-    border: 1px solid red;
+    // border: 1px solid red;
 
     text-align: center;
-    height: 287px;
+    height: 17.9375rem; // 287px
     // margin-bottom: 166px; // 166px
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
+    @include lg {
+      order: 1;
+      flex: 1.2;
+
+      height: auto;
+      // gap: 1rem;
+      align-items: flex-start;
+      text-align: left;
+    }
+
     h2 {
       color: $veryDarkBlue;
+
+      @include md {
+        line-height: 5.625rem;
+      }
     }
 
     p {
@@ -50,6 +116,10 @@
       font-size: 20px;
       line-height: 30px;
       letter-spacing: 0.01em;
+
+      @include lg {
+        margin-top: 2rem;
+      }
     }
   }
 }

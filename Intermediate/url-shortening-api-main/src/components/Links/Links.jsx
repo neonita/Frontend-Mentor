@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Form from "./Form";
-import Card from "./Card";
+// import Card from "./Card";
 
 const Links = () => {
   const [url, setUrl] = useState("");
@@ -64,9 +64,9 @@ const Links = () => {
       <div className="links__container">
         <Form className="form" handlesubmit={handleSubmit} getlink={getLink} />
 
-        {list.map((x, index) => (
-          <Card className="card" links={x} key={index} />
-        ))}
+        {/* {list.map((x, index) => (
+          <Card className="card " links={x} key={index} />
+        ))} */}
       </div>
     </section>
   );
