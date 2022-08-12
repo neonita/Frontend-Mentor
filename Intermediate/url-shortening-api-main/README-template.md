@@ -94,7 +94,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [SASS Tutorial (build your own CSS library) #15 - Media Queries](https://www.example.com) - A straightforward way to create and apply media queries using `@mixin`s.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Storing objects in Local Storage in JavaScript](https://www.youtube.com/watch?v=AUOzvFzdIk4) - A concise video on manipulating data with `localStorage`. A solution to storing data from the API.
 
 ## Author
 
