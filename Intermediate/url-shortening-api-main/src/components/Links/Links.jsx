@@ -60,7 +60,7 @@ const Links = () => {
   };
 
   return (
-    <section className="links">
+    <section className="links padding-x">
       <div className="links__container">
         <Form className="form" handlesubmit={handleSubmit} getlink={getLink} />
 
