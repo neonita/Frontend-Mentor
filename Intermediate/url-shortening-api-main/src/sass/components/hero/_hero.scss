@@ -7,7 +7,7 @@
   @include lg {
     // border: 1px solid red;
 
-    margin: 0 auto 10.4375rem auto;
+    margin: 0 auto 13.4375rem auto; // mb-215px
     padding-top: 14.5625rem; // 133px | 233px
 
     position: relative;
@@ -19,7 +19,7 @@
 
   @include xl {
     max-width: 69.4375rem; // 1111px
-    margin: 0 auto 10.4375rem auto;
+    // margin: 0 auto 10.4375rem auto;
   }
 
   &__illustration {
