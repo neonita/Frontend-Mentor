@@ -31,12 +31,16 @@ h1 {
 
 h2 {
   font-size: 2.625rem; // 42px
-  line-height: 3rem; // 48px
+  // line-height: 3rem; // 48px
+  line-height: 1.2;
   letter-spacing: -0.025em;
 
   @include md {
+    font-size: 3.25rem; // 52px
+  }
+
+  @include lg {
     font-size: 5rem; // 80px
-    line-heigt: 5.625rem; // 90px
   }
 }
 
