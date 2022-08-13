@@ -3,7 +3,7 @@ const Hero = () => {
     <section className="hero">
       <div className="hero__illustration"></div>
 
-      <div className="hero__description">
+      <div className="hero__description padding-x">
         <h2>More than just shorter links</h2>
         <p className="txt txt-1">
           Build your brand's recognition and get detailed insights on how your
