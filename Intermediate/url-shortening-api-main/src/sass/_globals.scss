@@ -40,6 +40,11 @@ h2 {
   }
 
   @include lg {
+    // font-size: 4.25rem;
+    font-size: 5rem;
+  }
+
+  @include xl {
     font-size: 5rem; // 80px
   }
 }
@@ -83,6 +88,10 @@ h5 {
     letter-spacing: -0.0008em;
 
     @include md {
+      font-size: 1.2rem;
+    }
+
+    @include lg {
       font-size: 1.375rem; // 22px
       line-height: 2.1875rem; // 35px
       letter-spacing: 0.0025em;

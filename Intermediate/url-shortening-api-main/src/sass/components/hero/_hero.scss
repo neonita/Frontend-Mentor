@@ -2,11 +2,14 @@
   width: 100%;
   padding-top: 5.9375rem; // 95px
   margin-bottom: 10.4375rem; // 167px
+  margin-left: auto;
+  margin-right: auto;
   background: #fff;
 
   @include md {
     padding-left: 0;
     padding-right: 0;
+    padding-top: 7.5rem; // 120px
 
     position: relative;
 
@@ -17,11 +20,12 @@
 
   @include lg {
     margin: 0 auto 13.4375rem auto; // mb-215px
-    padding-top: 14.5625rem; // 133px | 233px
+    padding-top: 12rem;
   }
 
   @include xl {
     max-width: 69.4375rem; // 1111px
+    padding-top: 14.5625rem; // 133px | 233px
   }
 
   &__illustration {
@@ -31,9 +35,16 @@
     margin-bottom: 2.25rem; // 36px
 
     background-image: url("../../../assets/images/illustration-working.svg");
-    background-size: cover;
+    // background-size: 137.5%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: -15%;
+
+    // @media (min-width: 500px) {
+    //   border: 1px dashed blue;
+    //   background-size: contain;
+    //   background-position: right;
+    // }
 
     @include md {
       order: 2;
@@ -57,15 +68,23 @@
         width: 133.18%;
 
         position: absolute;
-        top: -5rem;
-        left: 0.75%;
+        top: -22%;
+        left: 1%;
 
         background-image: url("../../../assets/images/illustration-working.svg");
         background-repeat: no-repeat;
         background-position: center bottom;
-        background-size: contain;
-        background-position-x: 5rem;
+        background-size: cover;
+        background-position-x: 6.5rem;
         // background-position: -120% 83%;
+      }
+
+      @include xl {
+        height: 142.11%;
+        width: 133.18%;
+
+        top: -5rem;
+        left: 0.75%;
       }
     }
   }
@@ -82,23 +101,22 @@
     align-items: center;
 
     @include md {
+      // border: 1px solid red;
       order: 1;
       flex: 1.2;
 
       height: auto;
 
       align-items: flex-start;
+      gap: 0.25vmin;
       text-align: left;
     }
 
     @include lg {
-      // order: 1;
-      // flex: 1.2;
-
-      // height: auto;
-      // gap: 1rem;
-      // align-items: flex-start;
-      // text-align: left;
+      // border: 1px solid orange;
+      flex: 1.34;
+      padding-right: 0;
+      padding-left: 1.4375rem;
     }
 
     h2 {
@@ -125,7 +143,7 @@
       line-height: 30px;
       letter-spacing: 0.01em;
 
-      @include lg {
+      @include md {
         margin-top: 2rem;
       }
     }
