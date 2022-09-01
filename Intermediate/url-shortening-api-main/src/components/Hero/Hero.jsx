@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <section className="hero">
-      <div className="hero__illustration"></div>
+      {/* <div className="hero__illustration"></div> */}
 
       <div className="hero__description padding-x">
         <h2>More than just shorter links</h2>

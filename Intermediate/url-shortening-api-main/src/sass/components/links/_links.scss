@@ -3,11 +3,16 @@
   background-color: $gray2;
   width: 100%;
 
+  @include lg {
+    padding-left: 4rem; // 64px
+    padding-right: 4rem;
+  }
+
   &__container {
     // border: 3px solid lightgreen;
 
     position: relative;
-    top: -83px; // 86px
+    top: -5.1875rem; // -83px
     width: 100%;
 
     display: flex;
@@ -15,6 +20,12 @@
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+
+    @include xl {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 69.4375rem; // 1111px
+    }
 
     .form {
       display: block;

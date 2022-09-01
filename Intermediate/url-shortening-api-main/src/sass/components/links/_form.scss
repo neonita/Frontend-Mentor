@@ -13,7 +13,24 @@ form {
   background-image: url("../../../assets/images/bg-shorten-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 250% -2rem;
+  background-position: 13rem -2rem;
+
+  @include md {
+    height: 7rem;
+    padding: 4.5% 5%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem; // 24px
+
+    background-image: url("../../../assets/images/bg-shorten-desktop.svg");
+    background-size: 100% 100%;
+    background-position: revert;
+  }
+
+  @include xl {
+    padding: 52px 65px; // 52px 65px
+  }
 
   input {
     height: 48px; // 48px
@@ -21,6 +38,11 @@ form {
     border-radius: 4px;
     border: none;
     font-family: $poppins;
+
+    @include md {
+      // height: 64px;
+      height: 100%;
+    }
 
     &[type="url"] {
       background-color: #fff;
@@ -30,6 +52,10 @@ form {
       line-height: 30px; // 30px
       letter-spacing: -0.0025em;
       color: $veryDarkBlue;
+
+      @include md {
+        flex: 3.2;
+      }
 
       &::placeholder {
         color: $gray;
@@ -50,6 +76,12 @@ form {
       font-size: 18px; // 18px
       line-height: 48px; // to center vertically
       letter-spacing: normal;
+
+      @include md {
+        flex: 1;
+        // height: 100%;
+        // width: 11.8125rem; // 189px
+      }
     }
   }
 }
