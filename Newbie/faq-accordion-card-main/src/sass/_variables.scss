@@ -6,7 +6,11 @@ $primary-text-red: hsl(14, 88%, 65%);
 $neutral-text-dark-blue: hsl(237, 12%, 33%);
 $neutral-text-grayish-blue: hsl(240, 6%, 50%);
 $dividers-light-blue: hsl(240, 5%, 91%);
-$bg-gradient: linear-gradient(to right, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+$bg-gradient: linear-gradient(
+  to bottom,
+  hsl(273, 75%, 66%),
+  hsl(240, 73%, 65%)
+);
 
 // Font
 $fs-base: 0.75rem; // 12px
