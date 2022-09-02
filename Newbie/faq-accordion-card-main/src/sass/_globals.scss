@@ -11,6 +11,9 @@ html {
 }
 
 body {
+  height: 100vh;
+  background: $bg-gradient;
+  background-repeat: no-repeat;
   font-family: $ff;
 }
 
